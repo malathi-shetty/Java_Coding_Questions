@@ -1,4 +1,4 @@
-package arrays;
+package arrays_check_Number_is_Even_Or_Odd;
 
 public class Print_Even_and_Odd_Numbers_from_an_Array_1 {
 

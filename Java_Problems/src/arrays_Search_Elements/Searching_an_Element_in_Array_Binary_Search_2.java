@@ -1,4 +1,4 @@
-package arrays;
+package arrays_Search_Elements;
 
 import java.util.Arrays;
 

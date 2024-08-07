@@ -1,4 +1,4 @@
-package arrays;
+package arrays_Equality;
 
 public class Check_The_Equality_Of_Two_Arrays_2 {
 	public static void main(String[] args) {

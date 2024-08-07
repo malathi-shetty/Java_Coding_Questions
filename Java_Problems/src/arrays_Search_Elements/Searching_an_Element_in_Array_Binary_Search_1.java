@@ -1,4 +1,4 @@
-package arrays;
+package arrays_Search_Elements;
 
 public class Searching_an_Element_in_Array_Binary_Search_1 {
 

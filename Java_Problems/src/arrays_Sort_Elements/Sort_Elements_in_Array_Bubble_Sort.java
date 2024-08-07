@@ -1,4 +1,4 @@
-package arrays;
+package arrays_Sort_Elements;
 
 import java.util.Arrays;
 
@@ -7,7 +7,7 @@ public class Sort_Elements_in_Array_Bubble_Sort {
 	public static void main(String[] args) {
 		
 		int a[] = {4,2,1,5,3}; 
-		System.out.println("Array Before Swapping: " + Arrays.toString(a));
+		System.out.println("Array Before Sorting: " + Arrays.toString(a));
 		
 		int n = a.length; // n = 5
 		System.out.println("Length of the Array: " + n);
@@ -24,6 +24,6 @@ public class Sort_Elements_in_Array_Bubble_Sort {
 				}
 			}
 		}		
-		System.out.println("Array After Swapping: " + Arrays.toString(a));
+		System.out.println("Array After Sorting: " + Arrays.toString(a));
 	}
 }
