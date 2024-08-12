@@ -22,5 +22,4 @@ public class Count_Words_in_a_String {
 		}
 		System.out.println("Number of words in a String: " + count);
 	}
-
 }

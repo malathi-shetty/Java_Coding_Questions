@@ -1,6 +1,6 @@
 package remove;
 
-public class How_To_Remove_White_Spaces_in_a_String {
+public class How_To_Remove_White_Spaces_in_a_String_1 {
 
 	public static void main(String[] args) {
 		
