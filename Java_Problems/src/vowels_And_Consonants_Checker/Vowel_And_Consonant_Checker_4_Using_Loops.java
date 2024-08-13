@@ -2,7 +2,7 @@ package vowels_And_Consonants_Checker;
 
 import java.util.Scanner;
 
-public class Vowel_And_Consonant_Checker_4 {
+public class Vowel_And_Consonant_Checker_4_Using_Loops {
 
 	public static void main(String[] args) {
 		
@@ -46,4 +46,20 @@ public class Vowel_And_Consonant_Checker_4 {
    - Print the number of vowels.
    - Print the number of consonants.
 8. **End**.
+
+
+ //  private static final String VOWELS = "AEIOUaeiou";
+ Step 5: Initialize counters
+        int vowelsCount = 0;
+        int consonantsCount = 0;
+
+        // Step 6: Loop through each character
+        for (char ch : input.toCharArray()) {
+            if (Character.isLetter(ch)) { // Check if the character is a letter
+                if (VOWELS.indexOf(ch) != -1) { // Check if it is a vowel
+                    vowelsCount++;
+                } else {
+                    consonantsCount++; // Increment consonants count
+                }
+
 */

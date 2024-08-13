@@ -2,7 +2,7 @@ package vowels_And_Consonants_Checker;
 
 import java.util.Scanner;
 
-public class Vowel_And_Consonant_Checker_5 {
+public class Vowel_And_Consonant_Checker_5_Using_Regular_Expressions {
 
 	public static void main(String[] args) {
 

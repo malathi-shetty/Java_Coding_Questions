@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-public class Vowel_And_Consonant_Checker_7 {
+public class Vowel_And_Consonant_Checker_7_Using_Map_HashMap {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
