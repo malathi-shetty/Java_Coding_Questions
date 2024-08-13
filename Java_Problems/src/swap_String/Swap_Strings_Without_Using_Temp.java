@@ -1,4 +1,4 @@
-package swap;
+package swap_String;
 
 public class Swap_Strings_Without_Using_Temp {
 

@@ -1,4 +1,4 @@
-package reverse_A_Number_3_Ways;
+package reverse_A_Number_Different_Ways;
 
 import java.util.Scanner;
 
@@ -8,18 +8,20 @@ public class Reverse_A_Number_1 {
 		
 		// Taking inputs from User
 		
-		Scanner sc = new Scanner(System.in); // Accepts input from user at Runtime
-		System.out.println("Enter a Number: "); // For user to enter a number
-		
+	/*	Scanner sc = new Scanner(System.in); // Accepts input from user at Runtime
+		System.out.println("Enter a Number: "); // For user to enter a number	
 		int num = sc.nextInt(); // Accepts number from user & save it in variable num -- 4321 should be reversed as 1234
+	*/	
+		//Or
 		
+		int num =1234;
 		// Logic 1: Using Algorithm
 		
 		int rev=0; // tempaorary nnumber
 		
 		while(num!=0)
 		{
-			rev = rev * 10 + num % 10; 
+			rev = rev * 10 + num % 10; // 0*10+1234%10 == 4
 			num = num / 10; 
 		}
 		System.out.println("Reverse Number is: " + rev);

@@ -1,6 +1,6 @@
-package reverse;
+package reverse_A_Number_Different_Ways;
 
-public class Reverse_a_Number_1 {
+public class Descending_Number_in_Reverse {
 
 	public static void main(String[] args) {
 		
@@ -10,7 +10,7 @@ public class Reverse_a_Number_1 {
 		
 		for(k=a.length-1; k>=0; k--)
 		{
-			System.out.println(a[k] + "");
+			System.out.print(a[k]  + " ");
 		}
 
 	}

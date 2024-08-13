@@ -1,4 +1,4 @@
-package reverse_A_Number_3_Ways;
+package reverse_A_Number_Different_Ways;
 
 import java.util.Scanner;
 

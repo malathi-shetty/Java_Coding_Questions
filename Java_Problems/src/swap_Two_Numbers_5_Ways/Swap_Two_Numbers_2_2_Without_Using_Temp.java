@@ -1,6 +1,6 @@
-package swap;
+package swap_Two_Numbers_5_Ways;
 
-public class Swap_Numbers_Without_Using_Temp {
+public class Swap_Two_Numbers_2_2_Without_Using_Temp {
 
 	public static void main(String[] args) {
 		

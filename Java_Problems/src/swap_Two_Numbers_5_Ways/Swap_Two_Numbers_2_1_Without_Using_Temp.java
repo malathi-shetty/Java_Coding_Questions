@@ -1,6 +1,6 @@
 package swap_Two_Numbers_5_Ways;
 
-public class Swap_Two_Numbers_2 {
+public class Swap_Two_Numbers_2_1_Without_Using_Temp {
 
 	public static void main(String[] args) {
 		// Swapping is Interchanging values of Variables

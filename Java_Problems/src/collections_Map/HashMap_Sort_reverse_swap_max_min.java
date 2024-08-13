@@ -30,10 +30,10 @@ public class HashMap_Sort_reverse_swap_max_min {
 		
 		System.out.println(" ");
 		
-		System.out.println("swap:");
+		System.out.println("swap_String:");
 		System.out.println("element printed: " + newobj);
 		Collections.swap(newobj,0,2);// it will reverse
-		System.out.println("after swap printed: " + newobj);
+		System.out.println("after swap_String printed: " + newobj);
 		
 		
 		System.out.println(" ********** ");

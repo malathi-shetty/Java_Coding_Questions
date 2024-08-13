@@ -1,4 +1,4 @@
-package reverse_A_String_3_Ways;
+package reverse_A_String_Different_Ways;
 
 public class How_To_Reverse_Each_Word_in_a_String {
 

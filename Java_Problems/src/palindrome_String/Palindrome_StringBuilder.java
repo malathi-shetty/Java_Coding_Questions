@@ -1,4 +1,4 @@
-package palindrome;
+package palindrome_String;
 
 public class Palindrome_StringBuilder {
 
