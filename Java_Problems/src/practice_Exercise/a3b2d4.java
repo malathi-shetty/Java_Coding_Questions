@@ -2,13 +2,13 @@ package practice_Exercise;
 
 import java.util.HashMap;
 
-public class Convert_output_in_proper_occurence {
+public class a3b2d4 {
 
 	public static void main(String[] args) {
 		
-		 String s = "javaoops";
+		// String s = "javaoops";
 		// OR
-		 //String s = "aaabbc";
+		 String s = "aaabbcdddd";
 		char[] a = s.toCharArray();	
 		HashMap<Character, Integer> newobj = new HashMap<Character, Integer>();
 		int count = 1;
@@ -31,7 +31,7 @@ public class Convert_output_in_proper_occurence {
 		// If we want only duplicate characters how much time it is repeated -- only duplicate keys are displayed
 			if(newobj.get(j) > 1)
 			{
-				System.out.println(j + "" + newobj.get(j));
+				System.out.print(j + "" + newobj.get(j));
 			}	
 	}
 }

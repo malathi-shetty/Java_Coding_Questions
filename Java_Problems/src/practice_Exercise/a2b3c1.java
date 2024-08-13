@@ -1,6 +1,6 @@
 package practice_Exercise;
 
-public class Convert_output_in_proper_way {
+public class a2b3c1 {
 
 	public static void main(String[] args) {
 		

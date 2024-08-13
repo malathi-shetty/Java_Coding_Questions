@@ -1,4 +1,4 @@
-package practice_Exercise;
+package remove;
 
 public class Using_StringBuffer_Remove_the_special_characters_from_the_string {
 
