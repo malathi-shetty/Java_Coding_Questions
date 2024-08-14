@@ -2,7 +2,7 @@ package check_Given_Number_is_Prime_Or_Not;
 
 import java.util.Scanner;
 
-public class Prime_Number {
+public class Prime_Number_1_1 {
 
 	public static void main(String[] args) {
 		// Natural Number should be greater than 1

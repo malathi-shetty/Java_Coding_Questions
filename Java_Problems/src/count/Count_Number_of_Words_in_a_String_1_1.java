@@ -2,7 +2,7 @@ package count;
 
 import java.util.Scanner;
 
-public class Count_Words_in_a_String {
+public class Count_Number_of_Words_in_a_String_1_1 {
 
 	public static void main(String[] args) {
 		
