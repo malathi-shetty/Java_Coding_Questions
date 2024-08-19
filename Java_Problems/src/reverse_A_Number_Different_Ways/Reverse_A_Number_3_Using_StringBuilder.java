@@ -21,6 +21,6 @@ public class Reverse_A_Number_3_Using_StringBuilder {
 Note: 
  sb - a class object is created in StringBuilder
  num is appended to the object sb
- we have to access the reverse number by using object & then reverse is stored in return StringBuilder type
+ we have to access the inversion_Of_A_Sentence_Number number by using object & then inversion_Of_A_Sentence_Number is stored in return StringBuilder type
  
  */

@@ -39,8 +39,8 @@ public class Unique_Characters_In_A_String_3_Using_HashMap_1_2 {
 
 /*
  * Two StringBuilder objects are used: uniqueChars for unique characters and repeatedChars for repeated characters.
-The method checks the count of each character. If the count is 1, the character is appended to uniqueChars. 
-If the count is greater than 1, the character and its count are appended to repeatedChars.
+The method checks the count_Number_of_Words_in_a_String of each character. If the count_Number_of_Words_in_a_String is 1, the character is appended to uniqueChars. 
+If the count_Number_of_Words_in_a_String is greater than 1, the character and its count_Number_of_Words_in_a_String are appended to repeatedChars.
 The method prints both unique characters and repeated characters with their counts.
 
 Unique Characters: The output shows the characters that appear exactly once in the string.

@@ -17,15 +17,15 @@ public class Anagram_Check {
 	            return false;
 	        }
 
-	        // Convert strings to character arrays
+	        // Convert strings to character find_Maximum_And_Minimum_Values_in_arrays
 	        char[] arr1 = str1.toCharArray();
 	        char[] arr2 = str2.toCharArray();
 
-	        // Sort character arrays
+	        // Sort character find_Maximum_And_Minimum_Values_in_arrays
 	        Arrays.sort(arr1);
 	        Arrays.sort(arr2);
 
-	        // Compare sorted arrays
+	        // Compare sorted find_Maximum_And_Minimum_Values_in_arrays
 	        return Arrays.equals(arr1, arr2);
 	    }
 

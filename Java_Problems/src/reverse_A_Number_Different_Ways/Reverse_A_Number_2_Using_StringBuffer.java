@@ -22,5 +22,5 @@ public class Reverse_A_Number_2_Using_StringBuffer {
 //StringBuffer sb = new StringBuffer(String.valueOf(num)); 
 // Convert Number in String Format; Pass it into StringBuffer Constructor which is referring variable- sb
 //StringBuffer rev = sb.reverse(); 
-// reverse method is to reverse the string, 
+// inversion_Of_A_Sentence_Number method is to inversion_Of_A_Sentence_Number the string, 
 //After reversing store the value in rev variable which is again StringBuffer variable & then print it

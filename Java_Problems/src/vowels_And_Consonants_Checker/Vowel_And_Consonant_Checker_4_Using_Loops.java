@@ -59,7 +59,7 @@ public class Vowel_And_Consonant_Checker_4_Using_Loops {
                 if (VOWELS.indexOf(ch) != -1) { // Check if it is a vowel
                     vowelsCount++;
                 } else {
-                    consonantsCount++; // Increment consonants count
+                    consonantsCount++; // Increment consonants count_Number_of_Words_in_a_String
                 }
 
 */

@@ -22,9 +22,9 @@ public class Vowel_And_Consonant_Checker_6_Using_Streams_Java_8_and_Above {
  *         // Count vowels and consonants using streams
         long vowelsCount = input.chars()
                                  .filter(ch -> VOWELS.indexOf(ch) != -1)
-                                 .count();
+                                 .count_Number_of_Words_in_a_String();
         
         long consonantsCount = input.chars()
                                      .filter(ch -> Character.isLetter(ch) && VOWELS.indexOf(ch) == -1)
-                                     .count();
+                                     .count_Number_of_Words_in_a_String();
  * */

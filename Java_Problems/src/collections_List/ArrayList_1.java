@@ -12,7 +12,7 @@ public class ArrayList_1 {
 		// List is an interface so we cannot create an object
 		
 		System.out.println("******1st Approach*******");
-		List newobj = new ArrayList<String>();// we have take; LIST interface and class name is arraylist
+		List newobj = new ArrayList<String>();// we have take; LIST interface and class name is find_numberOccurrence_Using_Arraylist
 		
 		newobj.add("java");
 		newobj.add("Class");	
@@ -38,7 +38,7 @@ public class ArrayList_1 {
 		System.out.println(" ");
 		System.out.println("******4th Approach*******");
 		
-		//List<String> newobj = new ArrayList<String>(); // we take List interface and class name is arraylist
+		//List<String> newobj = new ArrayList<String>(); // we take List interface and class name is find_numberOccurrence_Using_Arraylist
 		Iterator ids = newobj.iterator();
 		
 		while(ids.hasNext())

@@ -42,11 +42,11 @@ public class Unique_Characters_In_A_String_3_Using_HashMap_1_1 {
 
 /*
  * A loop iterates through each character in the input string.
-If a character is not already in the charCount map, it adds the character with an initial count of 1.
-If the character is already in the map, it increments its count.
+If a character is not already in the charCount map, it adds the character with an initial count_Number_of_Words_in_a_String of 1.
+If the character is already in the map, it increments its count_Number_of_Words_in_a_String.
 
 A StringBuilder named uniqueChars is used to collect characters that appear exactly once.
-Another loop iterates through the keys (characters) in the charCount map. If a character's count is 1, 
+Another loop iterates through the keys (characters) in the charCount map. If a character's count_Number_of_Words_in_a_String is 1, 
 it is appended to uniqueChars.
 Return Value: The method returns the string of unique characters.
 

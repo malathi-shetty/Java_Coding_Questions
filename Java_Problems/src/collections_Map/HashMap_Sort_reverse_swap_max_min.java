@@ -24,15 +24,15 @@ public class HashMap_Sort_reverse_swap_max_min {
 		
 		System.out.println(" ");
 		
-		System.out.println("reverse:");
-		Collections.reverse(newobj);// it will reverse
-		System.out.println("after reverse printed: " + newobj);
+		System.out.println("inversion_Of_A_Sentence_Number:");
+		Collections.reverse(newobj);// it will inversion_Of_A_Sentence_Number
+		System.out.println("after inversion_Of_A_Sentence_Number printed: " + newobj);
 		
 		System.out.println(" ");
 		
 		System.out.println("swap_String:");
 		System.out.println("element printed: " + newobj);
-		Collections.swap(newobj,0,2);// it will reverse
+		Collections.swap(newobj,0,2);// it will inversion_Of_A_Sentence_Number
 		System.out.println("after swap_String printed: " + newobj);
 		
 		
