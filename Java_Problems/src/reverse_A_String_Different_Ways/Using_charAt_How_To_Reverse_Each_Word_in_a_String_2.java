@@ -4,7 +4,7 @@ public class Using_charAt_How_To_Reverse_Each_Word_in_a_String_2 {
 
 	public static void main(String[] args) {
 		
-		String s = "HEllo";
+		String s = "Java coding questions";
 		String rev = "";
 		
 		for(int i=s.length()-1; i>=0; i--) // i--= 3 characters; i-- =2; i-- = 1; i-- = 0

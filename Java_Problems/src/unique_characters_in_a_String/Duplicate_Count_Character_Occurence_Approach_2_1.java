@@ -1,4 +1,4 @@
-package find_duplicate_Count_Character_Occurence_Approach;
+package unique_characters_in_a_String;
 
 public class Duplicate_Count_Character_Occurence_Approach_2_1 {
 
