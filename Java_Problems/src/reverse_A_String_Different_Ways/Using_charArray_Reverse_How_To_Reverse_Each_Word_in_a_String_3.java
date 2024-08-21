@@ -16,6 +16,7 @@ public class Using_charArray_Reverse_How_To_Reverse_Each_Word_in_a_String_3 {
 		for (int i = len - 1; i >= 0; i--) // 6 5 4 3 2 1 0 -1(come out of the loop)
 		{
 			rev = rev + a[i]; // g n i t s e T
+	
 		}
 
 		System.out.println("Reverse String is: " + rev);
@@ -32,5 +33,16 @@ public class Using_charArray_Reverse_How_To_Reverse_Each_Word_in_a_String_3 {
  * 
  * // toCharArray(); - a method to convert string into into multiple characters
  * // store into character array char a[]
+ * 
+ * 
+ * for (int i = len - 1; i >= 0; i--) // 6 5 4 3 2 1 0 -1(come out of the loop)
+		{
+			rev = rev + a[i]; // h e y 
+   1st loop: "" = "" + y
+   2nd loop: y = e + e
+   3rd loop: ye = ye + h
+    4th loop: yeh -- out of the loop
+		}
+
  * 
  */
