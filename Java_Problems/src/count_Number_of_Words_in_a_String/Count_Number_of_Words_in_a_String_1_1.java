@@ -9,7 +9,7 @@ public class Count_Number_of_Words_in_a_String_1_1 {
 		System.out.print("Enter the string: ");
 		Scanner sc = new Scanner(System.in);
 		
-		String s = sc.nextLine(); // Welcome to Java
+		String s = sc.nextLine(); // Welcome to Java world
 		//System.out.println(s.length());
 		
 		int count = 1;

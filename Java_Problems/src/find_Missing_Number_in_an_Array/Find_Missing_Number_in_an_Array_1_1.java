@@ -4,7 +4,8 @@ public class Find_Missing_Number_in_an_Array_1_1 {
 
 	public static void main(String[] args) {
 
-		int[] a = { 1, 2, 3, 5, 6, 7, 8, 9, 10 }; // maxNumber is 10
+		//int[] a = { 1, 2, 3, 5, 6, 7, 8, 9, 10 }; // maxNumber is 10
+		int[] a = { 1, 2, 3, 5};
 		int sum = 0;
 
 		for (int i = 0; i < a.length; i++) {
@@ -14,7 +15,8 @@ public class Find_Missing_Number_in_an_Array_1_1 {
 		System.out.println("sum of the array: " + sum);
 
 		int sum1 = 0;
-		for (int j = 1; j <= 10; j++) // i.e j<maxNumber i.e 10
+	//	for (int j = 1; j <= 10; j++) // i.e j<maxNumber i.e 10
+		for (int j = 1; j <= 5; j++) // i.e j<maxNumber i.e 10
 		{
 
 			sum1 = sum1 + j;
