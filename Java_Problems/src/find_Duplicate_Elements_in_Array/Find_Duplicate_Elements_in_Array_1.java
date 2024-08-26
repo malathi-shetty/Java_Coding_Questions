@@ -12,11 +12,13 @@ public class Find_Duplicate_Elements_in_Array_1 {
 		boolean flag = false;
 		for(int i=0; i<a.length; i++)
 		{
+			int count =1;
 			for(int j = i+1; j<a.length; j++)//comparing so take i+1
 			{
 				if(a[i] == a[j])
 				{
-					System.out.println("Found Duplicate Element: " + a[i]);
+					count++;
+					System.out.println("Found Duplicate Element: " + a[i] + " --> " + count);
 					flag = true;
 				}
 			}
