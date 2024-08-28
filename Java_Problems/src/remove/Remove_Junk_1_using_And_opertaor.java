@@ -1,6 +1,6 @@
 package remove;
 
-public class Remove_Junk_1 {
+public class Remove_Junk_1_using_And_opertaor {
 
 	public static void main(String[] args) {
 		String s = "priyanka123!@";

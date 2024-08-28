@@ -1,6 +1,6 @@
 package remove;
 
-public class Keep_Only_Text_1 {
+public class Keep_Only_Text_1_using_Index {
 
 	public static void main(String[] args) {
 		

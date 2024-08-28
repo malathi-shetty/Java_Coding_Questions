@@ -1,6 +1,6 @@
 package remove;
 
-public class Keep_Only_Text_3 {
+public class Keep_Only_Text_3_using_Character_isLetter {
 
 	public static void main(String[] args) {
 		

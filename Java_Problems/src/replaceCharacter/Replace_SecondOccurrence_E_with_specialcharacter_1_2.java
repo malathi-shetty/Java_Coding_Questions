@@ -1,6 +1,6 @@
 package replaceCharacter;
 
-public class Replace_SecondOccurrence_E_with_specialcharacter_1_1 {
+public class Replace_SecondOccurrence_E_with_specialcharacter_1_2 {
 
 	public static void main(String[] args) {
 		 String s = "BOOKEEPER";
