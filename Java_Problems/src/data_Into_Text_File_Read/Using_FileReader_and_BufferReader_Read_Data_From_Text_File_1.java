@@ -1,4 +1,4 @@
-package read_Data_From_Text_File;
+package data_Into_Text_File_Read;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -9,7 +9,7 @@ public class Using_FileReader_and_BufferReader_Read_Data_From_Text_File_1 {
 	public static void main(String[] args) throws IOException {
 		// Approach 1 : Using File Reader & Buffer Reader
 
-		FileReader fr = new FileReader(System.getProperty("user.dir") +   "/src/read_Data_From_Text_File/Test.txt");
+		FileReader fr = new FileReader(System.getProperty("user.dir") +   "/src/data_Into_Text_File_Read/Test.txt");
 		BufferedReader br = new BufferedReader(fr);
 		
 		String s;
@@ -23,7 +23,7 @@ public class Using_FileReader_and_BufferReader_Read_Data_From_Text_File_1 {
 }
 
 /*
- * //C:\Users\malat\git\Java_Problems\Java_Problems\src\read_Data_From_Text_File\Read_Data_From_Text_File.java
-		String File = System.getProperty("user.dir") +   "/src/read_Data_From_Text_File/Test.txt";
+ * //C:\Users\malat\git\Java_Problems\Java_Problems\src\data_Into_Text_File_Read\Read_Data_From_Text_File.java
+		String File = System.getProperty("user.dir") +   "/src/data_Into_Text_File_Read/Test.txt";
  user.dir: C:\Users\malat\git\Java_Problems\Java_Problems
 */

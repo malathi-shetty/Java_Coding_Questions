@@ -1,4 +1,4 @@
-package read_Data_From_Text_File;
+package data_Into_Text_File_Read;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -8,7 +8,7 @@ public class Using_Scanner_and_File_Read_Data_From_Text_File_3 {
 
 	public static void main(String[] args) throws FileNotFoundException {
 		
-		File file = new File(System.getProperty("user.dir") + "/src/read_Data_From_Text_File/Test.txt");
+		File file = new File(System.getProperty("user.dir") + "/src/data_Into_Text_File_Read/Test.txt");
 		Scanner sc = new Scanner(file);
 		
 		sc.useDelimiter("\\Z");
