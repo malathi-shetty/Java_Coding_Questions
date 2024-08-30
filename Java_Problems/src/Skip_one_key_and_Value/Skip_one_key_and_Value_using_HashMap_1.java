@@ -1,11 +1,11 @@
-package remove;
+package Skip_one_key_and_Value;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
 
-public class HashMap_1 {
+public class Skip_one_key_and_Value_using_HashMap_1 {
 
 	public static void main(String[] args) {
 		HashMap<String, Integer> newobj = new HashMap<String, Integer>();
