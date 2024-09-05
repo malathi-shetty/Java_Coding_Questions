@@ -5,29 +5,34 @@ import java.util.Scanner;
 public class Reverse_A_Number_1 {
 
 	public static void main(String[] args) {
-		
+
+		// Java Program to Reverse a Given Number Without Using Predefined Methods
+
 		// Taking inputs from User
-		
-	/*	Scanner sc = new Scanner(System.in); // Accepts input from user at Runtime
-		System.out.println("Enter a Number: "); // For user to enter a number	
-		int num = sc.nextInt(); // Accepts number from user & save it in variable num -- 4321 should be reversed as 1234
-	*/	
-		//Or
-		
-		int num =1234;
+
+		/*
+		 * Scanner sc = new Scanner(System.in); // Accepts input from user at Runtime
+		 * System.out.println("Enter a Number: "); // For user to enter a number int num
+		 * = sc.nextInt(); // Accepts number from user & save it in variable num -- 4321
+		 * should be reversed as 1234
+		 */
+		// Or
+
+		int num = 1234;
 		// Logic 1: Using Algorithm
-		
-		int rev=0; // tempaorary nnumber
-		
-		while(num!=0)
-		{
+
+		int rev = 0; // tempaorary nnumber
+
+		while (num != 0) {
 			rev = rev * 10 + num % 10; // 0*10+1234%10 == 4
-			num = num / 10; 
+			num = num / 10;
 		}
 		System.out.println("Reverse Number is: " + rev);
 	}
 
 }
+
+// Extract digits and build reversed number.
 
 //int rev=0;
 //num = 4321
@@ -48,4 +53,3 @@ public class Reverse_A_Number_1 {
 
 //123  = 123 * 10 + 4    % 10  = 1230 + 4 --- rev = 1234
 //4    = 4 / 10                = 0.4      --- num = 0
-
