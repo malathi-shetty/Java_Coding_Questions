@@ -8,6 +8,8 @@ import java.util.stream.Collectors;
 
 public class Find_additional_element_in_list_while_comparing_2_List_2_Using_Streams {
 
+	//JDK issues
+	
 	public static void main(String[] args) {
 		List<String> list1 = new ArrayList<>();
 		list1.add("Apple");
@@ -25,17 +27,17 @@ public class Find_additional_element_in_list_while_comparing_2_List_2_Using_Stre
 		Set<String> set2 = new HashSet<>(list2);
 
 		// Find additional elements using streams
-		Set<String> additionalElements = set2.stream().filter(element -> !set1.contains(element))
-				.collect(Collectors.toSet());
+	//	Set<String> additionalElements = set2.stream().filter(element -> !set1.contains(element))
+//				.collect(Collectors.toSet());
 
 		// Print the additional elements
-		System.out.println("Additional elements in list2: " + additionalElements);
+//		System.out.println("Additional elements in list2: " + additionalElements);
 
 		// Find common elements using streams
-		Set<String> commonElements = set1.stream().filter(set2::contains).collect(Collectors.toSet());
+//		Set<String> commonElements = set1.stream().filter(set2::contains).collect(Collectors.toSet());
 
 		// Print common elements
-		System.out.println("Common elements: " + commonElements);
+//		System.out.println("Common elements: " + commonElements);
 	}
 
 }

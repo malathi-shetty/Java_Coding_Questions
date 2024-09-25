@@ -4,6 +4,8 @@ import java.util.HashMap;
 
 public class Unique_Characters_In_A_String_3_Using_HashMap_1_2 {
 
+	//JDK Issues
+	
 	public static void main(String[] args) {
 		 String s = "hello world!";
 	        findUniqueAndRepeatedCharacters(s);
@@ -15,7 +17,7 @@ public class Unique_Characters_In_A_String_3_Using_HashMap_1_2 {
 	        // Count occurrences of each character
 	        for (int i = 0; i < str.length(); i++) {
 	            char c = str.charAt(i); // Get the character at index i
-	            charCount.put(c, charCount.getOrDefault(c, 0) + 1);
+//	            charCount.put(c, charCount.getOrDefault(c, 0) + 1);
 	        }
 
 	        // Build strings for unique and repeated characters

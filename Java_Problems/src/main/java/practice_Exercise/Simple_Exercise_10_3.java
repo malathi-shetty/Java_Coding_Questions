@@ -4,11 +4,13 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Simple_Exercise_10_3 {
+	
+	//JDK Issues
 
 	public static void main(String[] args) {
 		List<String> list = Arrays.asList("a", "b", "c");
 
-		list.forEach(System.out::print); // Prints: abc
+//		list.forEach(System.out::print); // Prints: abc
 		long count = list.size(); // Size of the list
 		System.out.println(count); // Prints: 3
 

@@ -18,6 +18,11 @@ public class GroupAnagrams {
 	 */
 
 	private static List<List<String>> groupAnagrams(String[] words) {
+		// Handle null or empty input
+		if (words == null || words.length == 0) {
+			return new ArrayList<>();
+		}
+
 		// Create a HashMap to store the anagrams
 		Map<String, List<String>> anagramMap = new HashMap<>();
 
@@ -25,9 +30,13 @@ public class GroupAnagrams {
 		for (String word : words) {
 			// Find a representative key for the anagram group
 			String key = generateAnagramKey(word);
-
 			// Use the key to group the strings
-			anagramMap.computeIfAbsent(key, k -> new ArrayList<>()).add(word);
+			List<String> anagramList = anagramMap.get(key);
+			if (anagramList == null) {
+				anagramList = new ArrayList<>();
+				anagramMap.put(key, anagramList);
+			}
+			anagramList.add(word);
 		}
 
 		// Convert the map values to a list of lists
@@ -54,9 +63,7 @@ public class GroupAnagrams {
 }
 
 /*
- * Use of computeIfAbsent: Simplified the code using computeIfAbsent to handle
- * the case where the key is not yet in the map - GroupAnagrams method, where
- * the genius lies in grouping anagrams.
+ * 
  * 
  * GroupAnagrams: The method name - Refers to the HashMap used to store and
  * group the anagrams.
@@ -74,6 +81,107 @@ public class GroupAnagrams {
  * 
  * Efficiently: How the data is managed and retrieved.- Highlights the use of
  * computeIfAbsent to manage the anagram groups efficiently
+ * 
+ * 
+ * ArrayList: A resizable array implementation of the List interface.
+ * 
+ * Arrays: Contains utility methods for working with arrays, such as sorting.
+ * 
+ * HashMap: A hash table-based implementation of the Map interface, used for
+ * key-value pairs.
+ * 
+ * public static void main(String[] args) {
+ * 
+ * String[] words = { "eat", "tea", "tan", "ate", "nat", "bat" };
+ * 
+ * List<List<String>> result = groupAnagrams(words);
+ * 
+ * // Print the result
+ * 
+ * for (List<String> group : result) {
+ * 
+ * System.out.println(group); } }
+ * 
+ * 
+ * The main method is the entry point of the program. It defines an array of
+ * strings (words) and calls the groupAnagrams method to group the anagrams.
+ * 
+ * It then prints each group of anagrams.
+ * 
+ * 
+ * 
+ * private static List<List<String>> groupAnagrams(String[] words) {
+ * 
+ * // Handle null or empty input
+ * 
+ * if (words == null || words.length == 0) {
+ * 
+ * return new ArrayList<>();
+ * 
+ * } // Create a HashMap to store the anagrams
+ * 
+ * Map<String, List<String>> anagramMap = new HashMap<>();
+ * 
+ * // Process each string in the input array
+ * 
+ * for (String word : words) {
+ * 
+ * // Find a representative key for the anagram group
+ * 
+ * String key = generateAnagramKey(word);
+ * 
+ * // Use the key to group the strings
+ * 
+ * List<String> anagramList = anagramMap.get(key);
+ * 
+ * if (anagramList == null) {
+ * 
+ * anagramList = new ArrayList<>();
+ * 
+ * anagramMap.put(key, anagramList); }
+ * 
+ * anagramList.add(word); }
+ * 
+ * // Convert the map values to a list of lists return new
+ * ArrayList<>(anagramMap.values()); }
+ * 
+ * 
+ * 
+ * Input Handling: Checks if the input array is null or empty. If so, it returns
+ * an empty list.
+ * 
+ * HashMap Creation: A HashMap named anagramMap is created to store groups of
+ * anagrams, where the key is the sorted version of the word and the value is a
+ * list of words that are anagrams.
+ * 
+ * Processing Each Word: The method iterates through each word in the words
+ * array:
+ * 
+ * It generates a key by calling the generateAnagramKey method.
+ * 
+ * It retrieves the current list of anagrams associated with that key.
+ * 
+ * If the list is null (meaning no anagrams have been added yet), it creates a
+ * new ArrayList, adds it to the map, and then adds the word to that list.
+ * 
+ * 
+ * private static String generateAnagramKey(String str) {
+ * 
+ * char[] chars = str.toLowerCase().toCharArray();
+ * 
+ * Arrays.sort(chars);
+ * 
+ * return new String(chars); }
+ * 
+ * 
+ * This method generates a key for each word:
+ * 
+ * It converts the word to lowercase and splits it into a character array.
+ * 
+ * It sorts the character array, ensuring that all anagrams yield the same
+ * sorted string.
+ * 
+ * Finally, it returns the sorted characters as a new string.
  * 
  * 
  */

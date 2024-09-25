@@ -7,9 +7,11 @@ import java.util.List;
 public class Simple_Exercise_14_1_fixed {
 
 	public static void main(String[] args) {
+		
+		//JDK Issues
 
 		List<String> words = new ArrayList<>(Arrays.asList("apple", "banana", "cherry"));
 		words.add("orange"); // This is allowed
-		words.stream().forEach(System.out::println);
+//		words.stream().forEach(System.out::println);
 	}
 }

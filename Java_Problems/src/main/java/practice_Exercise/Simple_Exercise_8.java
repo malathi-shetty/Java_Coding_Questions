@@ -3,9 +3,12 @@ package practice_Exercise;
 public class Simple_Exercise_8 {
 
 	public static void main(String[] args) {
+		
+		//JDK issue
+		
 		int number = 12345;
-		int sum = String.valueOf(number).chars().map(Character::getNumericValue).filter(n -> n % 2 != 0).sum();
-		System.out.println("Sum of digits: " + sum);
+	//	int sum = String.valueOf(number).chars().map(Character::getNumericValue).filter(n -> n % 2 != 0).sum();
+	//	System.out.println("Sum of digits: " + sum);
 	}
 
 }

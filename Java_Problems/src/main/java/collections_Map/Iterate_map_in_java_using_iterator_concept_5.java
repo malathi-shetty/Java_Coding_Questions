@@ -5,6 +5,8 @@ import java.util.Map;
 
 public class Iterate_map_in_java_using_iterator_concept_5 {
 
+	
+	//JDK - issues else code is proper
 	public static void main(String[] args) {
 		// Iterate Map using forEach() Method
 		
@@ -17,7 +19,7 @@ public class Iterate_map_in_java_using_iterator_concept_5 {
 		   map.put("Switzerland", " Bern");
 		      
 		// Iteration over map using forEach() method.   
-		   map.forEach((k,v) -> System.out.println("Country: "+ k + ", Capital: " + v)); 
+	//	   map.forEach((k,v) -> System.out.println("Country: "+ k + ", Capital: " + v)); 
 
 	}
 

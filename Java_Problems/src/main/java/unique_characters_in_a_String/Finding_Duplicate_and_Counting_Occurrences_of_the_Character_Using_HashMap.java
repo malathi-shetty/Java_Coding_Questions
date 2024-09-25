@@ -5,6 +5,8 @@ import java.util.Map;
 
 public class Finding_Duplicate_and_Counting_Occurrences_of_the_Character_Using_HashMap  {
 
+	//JDK issues
+	
 	public static void main(String[] args) {
 		  String input = "programming";
 		  DuplicatescountCharacterOccurrences(input);
@@ -15,7 +17,7 @@ public class Finding_Duplicate_and_Counting_Occurrences_of_the_Character_Using_H
 
 	        // Count occurrences
 	        for (char c : str.toCharArray()) {
-	            charCountMap.put(c, charCountMap.getOrDefault(c, 0) + 1);
+	//            charCountMap.put(c, charCountMap.getOrDefault(c, 0) + 1);
 	        }
 
 	        // Print all character counts

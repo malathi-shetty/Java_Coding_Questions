@@ -4,6 +4,8 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Simple_Exercise_14 {
+	
+	//JDK Issues
 
 	public static void main(String[] args) {
 		// List<String> words = List.of("apple", "banana", "cherry"); // java 9 & above
@@ -11,7 +13,7 @@ public class Simple_Exercise_14 {
 		List<String> words = Arrays.asList("apple", "banana", "cherry"); // This will throw
 																			// UnsupportedOperationException
 		words.add("orange");
-		words.stream().forEach(System.out::println);
+//		words.stream().forEach(System.out::println);
 
 	}
 

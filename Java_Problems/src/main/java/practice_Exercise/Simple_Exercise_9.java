@@ -4,12 +4,14 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Simple_Exercise_9 {
+	
+	//JDK issues
 
 	public static void main(String[] args) {
-
+		/*
 		List<Integer> numbers = Arrays.asList(1, 2, 3, 4);
 		
-		System.out.println("*****int*****");
+			System.out.println("*****int*****");
 		numbers.stream().mapToInt(Integer::intValue) // Convert to IntStream
 				.mapToObj(Simple_Exercise_9::process) // Apply the process(int) method
 				.forEach(System.out::println);
@@ -20,7 +22,7 @@ public class Simple_Exercise_9 {
 		numbers.stream()
 	    .map(Simple_Exercise_9::process)
 	    .forEach(System.out::println);
-	}
+*/	}
 
 	static String process(int n) {
 		return "int: " + n;
@@ -32,6 +34,7 @@ public class Simple_Exercise_9 {
 	}
 
 }
+
 
 /*
  * 1. Initialize the List: List<Integer> numbers = Arrays.asList(1, 2, 3, 4);

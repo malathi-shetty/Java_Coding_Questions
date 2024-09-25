@@ -6,15 +6,18 @@ import java.util.Optional;
 
 public class Simple_Exercise_11 {
 
+	
+	//JDK Issues
+	
 	public static void main(String[] args) {
 		// List<String> words = List.of("apple", "banana", "cherry"); // For Java 9 or later
 		List<String> words = Arrays.asList("apple", "banana", "cherry");
-		 Optional<String> result = words.stream()
+/*	 Optional<String> result = words.stream()
                  .filter(s -> s.length() > 6)
                  .map(s -> s.substring(0, 3))
                  .findAny();
 		System.out.println(result.orElse("None"));
-
+*/
 	}
 
 }
