@@ -25,6 +25,9 @@ public class Code_printing_pyramid_triangle_Inverse_8 {
 			System.out.println("");
 		}
 
+		
+	
+		
 	}
 
 }
