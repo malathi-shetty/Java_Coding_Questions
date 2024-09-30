@@ -66,15 +66,23 @@ public class Code_printing_pyramid_Alphabet {
 }
 
 //Ascending
-//A 
-//A B 
-//A B C 
+//A	
+//A	B	
+//A	B	C	
+//A	B	C	D	
+//--- to have space & form like a pyramid ---- 
+//   A 
+//  A B 
+// A B C 
 //A B C D 
-//A B C D E 
-
+ 
 //Descending
-//A B C D E 
+//A	 B	 C	 D	  
+//A	 B	 C	  
+//A	 B	  
+//A	  
+//Character Pattern:
 //A B C D 
-//A B C 
-//A B 
-//A 
+// A B C 
+//  A B 
+//   A 
