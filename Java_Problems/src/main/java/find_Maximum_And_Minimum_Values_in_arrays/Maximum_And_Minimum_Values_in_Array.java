@@ -6,6 +6,7 @@ public class Maximum_And_Minimum_Values_in_Array {
 		
 		int a[]= {50,100,40,20,60};
 		
+		  // Initialize highest and lowest
 		int max=a[0]; //a[0]= 50
 		//consider initial element as maximum element - compare each element with the initial maximum value,
 		//if any element is greater than maximum then replace the element as maximum
