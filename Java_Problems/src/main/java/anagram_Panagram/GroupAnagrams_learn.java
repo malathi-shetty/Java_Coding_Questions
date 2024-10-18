@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class GroupAnagrams {
+public class GroupAnagrams_learn {
 
 	/*
 	 * Given an array of Strings a , group all the anagrams together
@@ -17,7 +17,7 @@ public class GroupAnagrams {
 	 * 
 	 */
 
-	private static List<List<String>> groupAnagrams(String[] words) {
+	public static List<List<String>> groupAnagrams(String[] words) {
 		// Handle null or empty input
 		if (words == null || words.length == 0) {
 			return new ArrayList<>();
@@ -44,7 +44,7 @@ public class GroupAnagrams {
 	}
 
 	// Helper method to generate a key for an anagram group
-	private static String generateAnagramKey(String str) {
+	public static String generateAnagramKey(String str) {
 		char[] chars = str.toLowerCase().toCharArray();
 		Arrays.sort(chars);
 		return new String(chars);
@@ -165,7 +165,7 @@ public class GroupAnagrams {
  * new ArrayList, adds it to the map, and then adds the word to that list.
  * 
  * 
- * private static String generateAnagramKey(String str) {
+ * public static String generateAnagramKey(String str) {
  * 
  * char[] chars = str.toLowerCase().toCharArray();
  * 

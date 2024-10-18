@@ -58,4 +58,84 @@ public class Anagram_learn {
  * 
  * Anagrams: Hence, "eat" and "ate" are anagrams.
  * 
+ * 
+ * 
+ * 
+ * 
+ * Anagram_learn class step by step:
+ * 
+ * Class Overview
+ * 
+ * The Anagram_learn class checks if two strings are anagrams. An anagram is a
+ * word formed by rearranging the letters of another, using all the original
+ * letters exactly once.
+ * 
+ * Components of the Class
+ * 
+ * 
+ * Method: ana(String a, String b)
+ * 
+ * Purpose: To determine if the two input strings a and b are anagrams.
+ * 
+ * Parameters:
+ * 
+ * String a: The first string to compare.
+ * 
+ * String b: The second string to compare.
+ * 
+ * Logic:
+ * 
+ * Length Check: First, it checks if the lengths of a and b are the same. If
+ * not, they can't be anagrams, and the method returns false.
+ * 
+ * Character Conversion: If they are of the same length, both strings are
+ * converted to lowercase and turned into character arrays.
+ * 
+ * Sorting: Both character arrays are sorted alphabetically.
+ * 
+ * Comparison: The sorted arrays are then compared using Arrays.equals(). If
+ * they are equal, it means a and b are anagrams, and the method returns true;
+ * otherwise, it returns false.
+ * 
+ * 
+ * Main Method
+ * 
+ * Creating an Instance: An instance of the Anagram_learn class is created
+ * (newobj).
+ * 
+ * Test Strings: Two strings, "eat" and "ate", are defined.
+ * 
+ * Anagram Check: The ana method is called with the test strings, and the result
+ * (true or false) is printed to the console.
+ * 
+ * 
+ * Comments Section
+ * 
+ * This part provides a clear explanation of how the anagram checking works:
+ * 
+ * Method Explanation: Describes what the ana method does.
+ * 
+ * Sort and Compare: Summarizes the sorting and comparison process, emphasizing
+ * that if the sorted arrays are equal, the original strings are anagrams.
+ * 
+ * Example: Illustrates the process with the example of "eat" and "ate",
+ * explaining how both are sorted to "aet".
+ * 
+ * 
+ * Summary
+ * 
+ * The Anagram_learn class efficiently checks for anagrams using a
+ * straightforward algorithm:
+ * 
+ * Check length.
+ * 
+ * Convert to lowercase and sort characters.
+ * 
+ * Compare sorted arrays.
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
  */

@@ -1,3 +1,4 @@
+
 package armstrong_Numbers;
 
 public class Checking_Armstrong_Number_1 {
@@ -21,5 +22,4 @@ public class Checking_Armstrong_Number_1 {
 		System.out.println("Is given num " + org_num + " Armstrong? : " + isArmstrong);
 
 	}
-
 }
