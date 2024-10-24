@@ -2,7 +2,7 @@ package arrays_Equality;
 
 import java.util.Arrays;
 
-public class Check_The_Equality_Of_Two_Arrays_1 {
+public class Check_The_Equality_Of_Two_Arrays_1_learn {
 
 	public static void main(String[] args) {
 		//Approach -1:
