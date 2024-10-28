@@ -1,4 +1,4 @@
-package array_Coding_Questions_Assignment;
+package array_Coding_Questions_Assignment_check_Array_ArrayList_are_sorted_or_not;
 
 public class Check_Array_Sorted_or_not {
 

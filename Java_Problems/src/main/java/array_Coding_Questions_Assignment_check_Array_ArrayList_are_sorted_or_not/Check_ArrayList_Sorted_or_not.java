@@ -1,4 +1,4 @@
-package array_Coding_Questions_Assignment;
+package array_Coding_Questions_Assignment_check_Array_ArrayList_are_sorted_or_not;
 
 import java.util.ArrayList;
 

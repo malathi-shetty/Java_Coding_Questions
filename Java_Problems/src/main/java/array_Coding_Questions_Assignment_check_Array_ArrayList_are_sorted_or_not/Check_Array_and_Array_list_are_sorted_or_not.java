@@ -1,4 +1,4 @@
-package array_Coding_Questions_Assignment;
+package array_Coding_Questions_Assignment_check_Array_ArrayList_are_sorted_or_not;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -54,10 +54,7 @@ public class Check_Array_and_Array_list_are_sorted_or_not {
 		}
 		return true; // The list is sorted
 	}
-
 }
-
-
 /*
 
 The SortedChecker class contains two methods: isArraySorted for checking an integer array and 
