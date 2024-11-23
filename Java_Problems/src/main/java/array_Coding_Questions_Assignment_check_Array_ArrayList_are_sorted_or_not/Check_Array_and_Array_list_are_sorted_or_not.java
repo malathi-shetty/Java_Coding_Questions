@@ -12,6 +12,7 @@ public class Check_Array_and_Array_list_are_sorted_or_not {
 		int[] sort = { 1, 2, 3, 4, 5 };
 		int[] unsort = { 5, 3, 4, 1, 2 };
 
+		System.out.println("***Check Array***");
 		System.out.println("Is sortedArray sorted? " + isArraySorted(sort)); // true
 		System.out.println("Is unsortedArray sorted? " + isArraySorted(unsort)); // false
 		System.out.println("");
@@ -21,7 +22,7 @@ public class Check_Array_and_Array_list_are_sorted_or_not {
 		ArrayList<Integer> sortedList = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5));
 
 		ArrayList<Integer> unsortedList = new ArrayList<>(Arrays.asList(5, 3, 4, 1, 2));
-
+		System.out.println("***Check ArrayList***");
 		System.out.println("Is sortedList sorted? " + isArrayListSorted(sortedList)); // true
 		System.out.println("Is unsortedList sorted? " + isArrayListSorted(unsortedList)); // false
 
@@ -29,30 +30,34 @@ public class Check_Array_and_Array_list_are_sorted_or_not {
 
 	// Check if an array is sorted
 	public static boolean isArraySorted(int[] a) {
-		if (a == null || a.length < 2) {
-			return true; // An empty array or a single-element array is considered sorted
-		}
-
-		for (int i = 0; i < a.length - 1; i++) {
-			if (a[i] > a[i + 1]) {
-				return false; // Found an element greater than the next one
-			}
-		}
-		return true; // The array is sorted
+	    if (a == null) {
+	        throw new IllegalArgumentException("Array cannot be null");
+	    }
+	    if (a.length < 2) {
+	        return true; // An empty array or a single-element array is considered sorted
+	    }
+	    for (int i = 0; i < a.length - 1; i++) {
+	        if (a[i] > a[i + 1]) {
+	            return false; // Found an element greater than the next one
+	        }
+	    }
+	    return true; // The array is sorted
 	}
 
 	// Check if an ArrayList is sorted
 	public static boolean isArrayListSorted(ArrayList<Integer> list) {
-		if (list == null || list.size() < 2) {
-			return true; // An empty list or a single-element list is considered sorted
-		}
-
-		for (int i = 0; i < list.size() - 1; i++) {
-			if (list.get(i) > list.get(i + 1)) {
-				return false; // Found an element greater than the next one
-			}
-		}
-		return true; // The list is sorted
+		 if (list == null) {
+		        throw new IllegalArgumentException("ArrayList cannot be null");
+		    }
+		    if (list.size() < 2) {
+		        return true; // An empty list or a single-element list is considered sorted
+		    }
+		    for (int i = 0; i < list.size() - 1; i++) {
+		        if (list.get(i) > list.get(i + 1)) {
+		            return false; // Found an element greater than the next one
+		        }
+		    }
+		    return true; // The list is sorted
 	}
 }
 /*
