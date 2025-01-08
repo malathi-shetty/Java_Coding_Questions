@@ -2,9 +2,9 @@ package array_Coding_Questions_Assignment_Reverse_ArrayList_having_strings;
 
 public class Reverse_Array_having_strings_learn {
 	 public static void main(String[] args) {
-	        String[] arr = {"Apple", "Banana", "Cherry", "Date", "Elderberry"};  // Example string array
+	        String[] a = {"Apple", "Banana", "Cherry", "Date", "Elderberry"};  // Example string array
 	        System.out.print("Original Array: ");
-	        for (String fruit : arr) {
+	        for (String fruit : a) {
 				System.out.print(fruit + " ");
 			}
 			System.out.println(); // New line for better formatting
@@ -12,8 +12,8 @@ public class Reverse_Array_having_strings_learn {
 	        
 	        // Print the elements in reverse order
 	        System.out.print("String array in reverse order: ");
-	        for (int i = arr.length - 1; i >= 0; i--) {
-	            System.out.print(arr[i] + " ");  // Print each string starting from the last
+	        for (int i = a.length - 1; i >= 0; i--) {
+	            System.out.print(a[i] + " ");  // Print each string starting from the last
 	        }
 	    }
 }

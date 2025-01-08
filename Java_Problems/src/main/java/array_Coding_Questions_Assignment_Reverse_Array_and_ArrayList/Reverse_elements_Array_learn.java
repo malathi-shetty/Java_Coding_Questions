@@ -5,17 +5,17 @@ public class Reverse_elements_Array_learn {
 	public static void main(String[] args) {
 		// print the elements of an array in reverse order 
 		
-		  int[] arr = {12, 35, 1, 10, 34, 6};  // Example array
+		  int[] a = {12, 35, 1, 10, 34, 6};  // Example array
 		  // Print original array
 	        System.out.print("Original Array: ");
-	        for (int num : arr) {
+	        for (int num : a) {
 	            System.out.print(num + " ");
 	        }
 	        System.out.println();
 	        // Print the elements in reverse order
 	        System.out.print("Array in reverse order: ");
-	        for (int i = arr.length - 1; i >= 0; i--) {
-	            System.out.print(arr[i] + " ");  // Print each element starting from the last
+	        for (int i = a.length - 1; i >= 0; i--) {
+	            System.out.print(a[i] + " ");  // Print each element starting from the last
 	        }
 
 	}
