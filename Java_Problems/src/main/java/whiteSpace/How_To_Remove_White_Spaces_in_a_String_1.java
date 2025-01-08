@@ -8,8 +8,16 @@ public class How_To_Remove_White_Spaces_in_a_String_1 {
 		System.out.println("Before Removing the white Spaces: " + str);
 		
 		//to remove space using regular expression
-		str = str.replaceAll("\\s", "");
+		 String result = str.replaceAll("\\s+", "");
 		
-		System.out.println("After Removing the white Spaces: " + str);
+		System.out.println("After Removing the white Spaces: " + result);
 	}
 }
+
+/*
+
+\\s+ is a regular expression that matches one or more whitespace characters (spaces, tabs, newlines, etc.).
+
+replaceAll("\\s+", "") replaces all whitespace characters with an empty string (effectively removing them).
+
+*/

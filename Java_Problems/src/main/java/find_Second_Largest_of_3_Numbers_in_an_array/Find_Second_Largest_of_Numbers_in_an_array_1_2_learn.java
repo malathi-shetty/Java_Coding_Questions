@@ -2,7 +2,7 @@ package find_Second_Largest_of_3_Numbers_in_an_array;
 
 import java.util.Arrays;
 
-public class Find_Second_Largest_of_3_Numbers_in_an_array_1_2_learn {
+public class Find_Second_Largest_of_Numbers_in_an_array_1_2_learn {
 
 	public static void main(String[] args) {
 

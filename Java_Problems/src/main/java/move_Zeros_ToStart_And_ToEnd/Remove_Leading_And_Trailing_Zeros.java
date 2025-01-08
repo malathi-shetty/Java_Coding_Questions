@@ -3,10 +3,10 @@ package move_Zeros_ToStart_And_ToEnd;
 public class Remove_Leading_And_Trailing_Zeros {
 
 	public static void main(String[] args) {
-		 String input = "0001203045000";
+		 String num = "0001203045000";
 	        
 	        // Remove leading zeros using regex
-	        String result = input.replaceFirst("^0+", "");
+	        String result = num.replaceFirst("^0+", "");
 	        
 	        // Remove trailing zeros using regex
 	        result = result.replaceAll("0+$", "");
