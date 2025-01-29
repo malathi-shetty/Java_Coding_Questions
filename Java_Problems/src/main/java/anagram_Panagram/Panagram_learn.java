@@ -241,28 +241,241 @@ public class Panagram_learn {
  * pangram by using a boolean array to track the presence of each letter of the
  * alphabet.
  * 
+ * **********
+ * 
+ * ASCII values of characters
+ * 
+ * Each character in a string is represented by a unique number, known as its
+ * ASCII value. For example:
+ * 
+ * The ASCII value of 'a' is 97.
+ * 
+ * The ASCII value of 'b' is 98.
+ * 
+ * The ASCII value of 'c' is 99, and so on.
+ * 
+ * So when we subtract the ASCII value of 'a' from any lowercase letter, we get
+ * the position of that letter in the alphabet, starting from 0 for 'a'.
+ * 
+ * Breaking it down step by step:
+ * 
+ * Consider this line of code:
+ * 
+ * index = c - 'a';
+ * 
+ * c is a character (say, 'b').
+ * 
+ * 'a' is also a character, and its ASCII value is 97.
+ * 
+ * Now, let’s calculate the result of c - 'a':
+ * 
+ * If c is 'b', the ASCII value of 'b' is 98.
+ * 
+ * So, index = 98 - 97 = 1.
+ * 
+ * This means that the letter 'b' corresponds to index 1 in the alphabet (since
+ * 'a' is at index 0, 'b' is at index 1, 'c' is at index 2, and so on).
+ * 
+ * More examples:
+ * 
+ * If c is 'a':
+ * 
+ * index = 'a' - 'a' = 97 - 97 = 0
+ * 
+ * So 'a' maps to index 0.
+ * 
+ * If c is 'c':
+ * 
+ * index = 'c' - 'a' = 99 - 97 = 2
+ * 
+ * So 'c' maps to index 2.
+ * 
+ * Why subtract 'a'?
+ * 
+ * By subtracting the ASCII value of 'a' from the character, we are
+ * "normalizing" the letter to a number starting from 0 (for 'a'), 1 (for 'b'),
+ * and so on, all the way up to 25 (for 'z').
+ * 
+ * How does this help?
+ * 
+ * This helps us map each letter to a position in a boolean array (which has 26
+ * elements for the 26 letters of the alphabet).
+ * 
+ * For example:
+ * 
+ * 'a' will correspond to index 0 in the boolean array.
+ * 
+ * 'b' will correspond to index 1.
+ * 
+ * 'c' will correspond to index 2.
+ * 
+ * The boolean array (alphabet) will be updated to true at the corresponding
+ * index for each letter encountered in the string.
+ ********
+ *
  * 
  * 
+ * What Are ASCII Values?
+ * 
+ * Every character in the alphabet, as well as other characters like
+ * punctuation, digits, and special symbols, is represented by a number. This
+ * number is part of the ASCII table. ASCII (American Standard Code for
+ * Information Interchange) is a standard way of encoding characters into
+ * numbers.
+ * 
+ * For example:
+ * 
+ * The letter 'a' has an ASCII value of 97.
+ * 
+ * The letter 'b' has an ASCII value of 98.
+ * 
+ * The letter 'c' has an ASCII value of 99, and so on.
+ * 
+ * You can see how each letter has a unique number. This is important because it
+ * allows us to manipulate characters mathematically.
+ * 
+ * The Key Operation: c - 'a'
+ * 
+ * Now, in the code index = c - 'a';, here’s what happens:
+ * 
+ * c is a character in the string (for example, 'b').
+ * 
+ * 'a' is also a character, and it’s used as a reference point because we want
+ * to map the letters of the alphabet to the numbers 0, 1, 2, ..., 25.
+ * 
+ * When you subtract the ASCII value of 'a' (97) from the ASCII value of any
+ * other lowercase letter, you get the relative position of that letter in the
+ * alphabet. This makes it easy to map any letter to an index in an array that
+ * will represent the alphabet.
+ * 
+ * Here's the breakdown with an example:
+ * 
+ * Let’s say c is the character 'b'.
+ * 
+ * The ASCII value of 'b' is 98.
+ * 
+ * The ASCII value of 'a' is 97.
+ * 
+ * So when you do this calculation:
+ * 
+ * index = c - 'a';
+ * 
+ * You’re doing:
+ * 
+ * index = 98 - 97;
+ * 
+ * Which gives you:
+ * 
+ * index = 1;
+ * 
+ * Why is that useful?
+ * 
+ * Now, we know that 'a' will map to index 0, 'b' maps to index 1, 'c' maps to
+ * index 2, and so on.
+ * 
+ * This lets us map any letter of the alphabet to a specific position in an
+ * array.
+ * 
+ * How Does This Work in Your Code?
+ * 
+ * In the code, there is a boolean array of size 26, called alphabet, that’s
+ * used to track whether each letter of the alphabet has been seen in the
+ * sentence or not.
+ * 
+ * Here’s what’s happening step-by-step:
+ * 
+ * Initialization: You start with an array of size 26 (boolean[] alphabet = new
+ * boolean[26];). All values in this array are initially set to false.
+ * 
+ * Each index in the array corresponds to a letter of the alphabet:
+ * 
+ * Index 0 corresponds to 'a'
+ * 
+ * Index 1 corresponds to 'b'
+ * 
+ * Index 2 corresponds to 'c'
+ * 
+ * ... up to index 25, which corresponds to 'z'.
+ * 
+ * For each character in the sentence:
+ * 
+ * If the character is a letter (using Character.isLetter(c)), we calculate the
+ * index of that letter in the alphabet using index = c - 'a'.
+ * 
+ * Marking the Letter as Present:
+ * 
+ * We then set the corresponding index in the alphabet array to true:
+ * 
+ * alphabet[index] = true;
+ * 
+ * For example, if we encounter the letter 'b', the index calculated is 1 (as
+ * shown earlier). So, the code does:
+ * 
+ * alphabet[1] = true;
+ * 
+ * Final Check:
+ * 
+ * After processing the entire sentence, we check if every position in the
+ * alphabet array is true. If all positions are true, it means all 26 letters
+ * were found in the sentence, and the sentence is a pangram.
  * 
  * 
+ * Let’s walk through an example with the sentence
+ * "The quick brown fox jumps over the lazy dog".
  * 
+ * Initialization:
  * 
+ * The array alphabet starts with all false values:
  * 
+ * alphabet = [false, false, false, false, ..., false] (26 elements)
  * 
+ * Process each character:
  * 
+ * The sentence is "The quick brown fox jumps over the lazy dog". We go through
+ * each character:
  * 
+ * 'T' → 't' (after converting to lowercase), which corresponds to index 19. So,
+ * alphabet[19] = true.
  * 
+ * 'h' → index 7. So, alphabet[7] = true.
  * 
+ * 'e' → index 4. So, alphabet[4] = true.
  * 
+ * ' ' (space) → ignore.
  * 
+ * 'q' → index 16. So, alphabet[16] = true.
  * 
+ * 'u' → index 20. So, alphabet[20] = true.
  * 
+ * 'i' → index 8. So, alphabet[8] = true.
  * 
+ * 'c' → index 2. So, alphabet[2] = true.
  * 
+ * And so on for the entire sentence.
  * 
+ * After processing the sentence, the alphabet array will look like this:
  * 
+ * alphabet = [true, true, true, true, true, true, true, true, true, true, true,
+ * true, true, true, true, true, true, true, true, true, true, true, true, true,
+ * true, true]
  * 
+ * Every index from 0 to 25 is true, meaning every letter from 'a' to 'z' was
+ * found at least once in the sentence.
  * 
+ * Final Check:
  * 
+ * Since every index in the alphabet array is true, the program will return
+ * true, indicating that the sentence is indeed a pangram.
+ * 
+ * Summary:
+ * 
+ * The key operation c - 'a' converts the character c into its position in the
+ * alphabet (starting from 0 for 'a').
+ * 
+ * This allows us to track which letters appear in the sentence using the
+ * alphabet array.
+ * 
+ * At the end, if all positions in the array are true, the sentence is a
+ * pangram.
  * 
  */
