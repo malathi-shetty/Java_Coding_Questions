@@ -63,6 +63,6 @@ public class ArraysList_Sorted_or_Not_1_learn {
  * Completion: "Confirm Sorted if No Issues."
  * 
  * 
- * 
+ * Output: The ArrayList is sorted..[Apple, Banana, Cherry]
  * 
  */

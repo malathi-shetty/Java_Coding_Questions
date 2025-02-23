@@ -43,4 +43,10 @@ public class Reverse_ArrayList {
  * 
  * Printing: The original and reversed ArrayList are printed to the console.
  * 
+ * Output:
+ * 
+ * Original ArrayList: [3, 5, 1, 8, 2, -4, 7]
+ * 
+Reversed ArrayList: [7, -4, 2, 8, 1, 5, 3]
+ * 
  */

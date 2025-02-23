@@ -124,4 +124,14 @@ public class Array_Coding_Questions_Assignment_Sort_the_ArrayList_Using_Bubble_S
  * The program begins by initializing an unsorted list, sorts it using Bubble
  * Sort, and then prints both the original and sorted lists.
  * 
+ * Output:
+ * 
+ * Original ArrayList:
+ * 
+64 34 25 90 12 22 90 11 
+
+Sorted ArrayList:
+
+11 12 22 25 34 64 90 90 
+ * 
  */

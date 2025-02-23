@@ -27,8 +27,5 @@ public class Count_occurences_of_numbers_using_map_learn {
 		for (Integer key : newobj.keySet()) {
 			System.out.println("Integer: " + key + " --> " + "Count: " + newobj.get(key));
 		}
-
-
 	}
-
 }

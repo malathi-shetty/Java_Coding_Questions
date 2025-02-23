@@ -27,3 +27,16 @@ public class Sort_Elements_in_Array_Bubble_Sort {
 		System.out.println("Array After Sorting: " + Arrays.toString(a));
 	}
 }
+
+/*
+
+Output: 
+
+Array Before Sorting: [4, 2, 1, 5, 3]
+
+Length of the Array: 5
+
+Array After Sorting: [1, 2, 3, 4, 5]
+
+
+*/

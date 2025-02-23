@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-import lombok.var;
+
 
 public class Duplicates_in_the_ArrayList_Using_Frequency_Array {
 

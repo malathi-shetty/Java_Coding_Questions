@@ -33,4 +33,10 @@ For the input array {12, 35, 1, 10, 34, 1}, the output will be:
 
 Array in reverse order: 1 34 10 1 35 12 
 
+Output:
+
+Original Array: 12 35 1 10 34 6 
+
+Array in reverse order: 6 34 10 1 35 12 
+
 */

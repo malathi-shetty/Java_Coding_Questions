@@ -90,4 +90,12 @@ public class Second_Largest_Number_in_the_Array {
  * 
  * Array does not have a second largest number.
  * 
+ * Output:
+ * 
+ * Numbers in the array: 3 5 1 8 2 -4 7 
+ * 
+Second largest number: 7
+
+
+ * 
  */

@@ -34,8 +34,6 @@ public class Array_Coding_Questions_Assignment_find_the_highest_length_and_small
 }
 
 /*
- * 
- * 
  * Split the string into individual words.
  * 
  * Iterate through the words to determine the longest and shortest ones.

@@ -31,3 +31,13 @@ public class Arrays_Sorted_or_Not_1 {
 	}
 
 }
+
+/*
+ * Output:
+ * 
+ * Sorted array: [1, 1, 2, 2, 3, 4, 4, 5]
+ * 
+Array is sorted
+
+
+*/

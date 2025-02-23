@@ -80,4 +80,13 @@ public class Array_Coding_Questions_Assignment_Missing_Element_in_the_Array_lear
  * 
  * The missing number in the array {1, 2, 3, 4, 5, 7, 8, 9, 10} is 6.
  * 
+ * Output:
+ * 
+ * Sum of elements in the array: 49
+ * 
+Sum of total elements from 1 to 10: 55
+
+Missing number is: 6
+
+ * 
  */

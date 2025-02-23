@@ -64,4 +64,12 @@ public class Arrays_Sorted_or_Not_2 {
  * 
  * assuming the array is sorted, and then check each pair of elements to verify
  * if this assumption holds.
+ * 
+ * Output:
+ * 
+ * Array is not sorted in ascending order
+ * 
+Array elements:
+
+1 3 4 5 2 
  */

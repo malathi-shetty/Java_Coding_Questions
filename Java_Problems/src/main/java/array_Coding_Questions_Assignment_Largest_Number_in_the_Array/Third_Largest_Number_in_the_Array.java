@@ -498,7 +498,11 @@ public class Third_Largest_Number_in_the_Array {
  * ensure that any actual number in the dataset will replace it during the
  * comparison.
  * 
+ * Output:
  * 
+ * Numbers in the array: 3 5 1 8 2 -4 7 
+ * 
+Third largest number: 5
  * 
  * 
  */

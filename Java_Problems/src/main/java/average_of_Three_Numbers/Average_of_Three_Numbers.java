@@ -22,3 +22,17 @@ public class Average_of_Three_Numbers {
 
 
 //"Three numbers, add and divide by three for the average."
+
+/* Output:
+
+Enter three Numbers: 
+
+1
+
+2
+
+3
+
+Average of Three Numbers are: 2.0
+
+*/

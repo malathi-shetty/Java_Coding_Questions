@@ -42,4 +42,7 @@ public class ArraysList_Sorted_or_Not_1_2 {
  * Handled edge cases: Added checks for null and lists with 1 or 0 elements.
  * 
  * Used compareToIgnoreCase: For a case-insensitive check.
+ * 
+ * Output: The ArrayList is sorted.
+ * 
  */

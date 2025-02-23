@@ -75,3 +75,6 @@ public class Array_Of_integer_numbers_and_an_integer_target {
 	}
 
 }
+
+
+/* Output: [1, 2] */

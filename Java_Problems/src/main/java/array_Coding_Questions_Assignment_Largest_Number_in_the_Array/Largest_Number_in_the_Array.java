@@ -58,4 +58,11 @@ Exception Handling in main:
 
 A try-catch block is added in the main method to handle the potential IllegalArgumentException. This way, if the method is called with an empty array, the exception will be caught, and the error message will be printed.
 
+Output:
+
+Numbers in the array: 3 5 1 8 2 0 -4 7 
+
+Largest number: 8
+
+
 */

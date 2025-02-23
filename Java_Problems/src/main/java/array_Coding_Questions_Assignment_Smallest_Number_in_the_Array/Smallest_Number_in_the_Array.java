@@ -117,4 +117,6 @@ public class Smallest_Number_in_the_Array {
  * identified correctly.
  * 
  * 
+ * Output: Smallest number: -4
+ * 
  */

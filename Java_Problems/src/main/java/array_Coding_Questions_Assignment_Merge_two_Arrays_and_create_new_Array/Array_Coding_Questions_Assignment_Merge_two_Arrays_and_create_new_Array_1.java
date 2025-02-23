@@ -36,4 +36,6 @@ Merging: The first loop copies elements from array1, and the second loop appends
 
 Output: The merged array is printed using Arrays.toString().
 
+[1, 2, 3, 4, 5, 6]
+
 */

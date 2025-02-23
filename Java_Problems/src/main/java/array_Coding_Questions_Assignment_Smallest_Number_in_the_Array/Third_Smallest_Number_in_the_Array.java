@@ -127,4 +127,6 @@ public class Third_Smallest_Number_in_the_Array {
  * remain Integer.MAX_VALUE, and the output will indicate that there is no third
  * smallest number.
  * 
+ * Output: Third smallest number: 2
+ * 
  */

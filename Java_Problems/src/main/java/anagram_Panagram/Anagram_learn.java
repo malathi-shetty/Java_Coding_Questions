@@ -39,7 +39,6 @@ public class Anagram_learn {
  * main Method: Creates an instance of Anagram_learn and checks if "eat" and
  * "ate" are anagrams, printing the result.
  * 
- * 
  * "Sort and Compare":
  * 
  * Sort: Convert both strings to lowercase and sort their characters.
@@ -58,9 +57,7 @@ public class Anagram_learn {
  * 
  * Anagrams: Hence, "eat" and "ate" are anagrams.
  * 
- * 
- * 
- * 
+ * ****
  * 
  * Anagram_learn class step by step:
  * 
@@ -71,7 +68,6 @@ public class Anagram_learn {
  * letters exactly once.
  * 
  * Components of the Class
- * 
  * 
  * Method: ana(String a, String b)
  * 
@@ -97,7 +93,6 @@ public class Anagram_learn {
  * they are equal, it means a and b are anagrams, and the method returns true;
  * otherwise, it returns false.
  * 
- * 
  * Main Method
  * 
  * Creating an Instance: An instance of the Anagram_learn class is created
@@ -107,7 +102,6 @@ public class Anagram_learn {
  * 
  * Anagram Check: The ana method is called with the test strings, and the result
  * (true or false) is printed to the console.
- * 
  * 
  * Comments Section
  * 
@@ -121,7 +115,6 @@ public class Anagram_learn {
  * Example: Illustrates the process with the example of "eat" and "ate",
  * explaining how both are sorted to "aet".
  * 
- * 
  * Summary
  * 
  * The Anagram_learn class efficiently checks for anagrams using a
@@ -132,10 +125,4 @@ public class Anagram_learn {
  * Convert to lowercase and sort characters.
  * 
  * Compare sorted arrays.
- * 
- * 
- * 
- * 
- * 
- * 
  */

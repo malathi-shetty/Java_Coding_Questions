@@ -47,9 +47,8 @@ public class Check_Array_Sorted_or_not {
  * 
  * The method handles null arrays and arrays with one element by returning true,
  * as they can be considered sorted by default.
+ * 
  *************
- * 
- * 
  * 
  * walk through the logic of checking if the two example arrays (sort and
  * unsort) are sorted, using the detailed steps you provided.
@@ -85,7 +84,8 @@ public class Check_Array_Sorted_or_not {
  * 
  * The same loop iterates from index 0 to 3. Iteration Details:
  * 
- * Iteration 1 (i = 0): Compare unsort[0] (5) and unsort[1] (3): 5 > 3 → found
+ * Iteration 1 (i = 0): Compare unsort[0] (5) and unsort[1] (3): 
+ * 5 > 3 → found
  * an unsorted pair! The method immediately returns false. Since the method
  * returns false during the first iteration, it does not continue checking the
  * remaining elements in the unsort array.
@@ -96,25 +96,7 @@ public class Check_Array_Sorted_or_not {
  * the next element (3), indicating that the order is not maintained. Final
  * Output When you run the program, you will see:
  * 
- * c Copy code Is 'sort' array sorted? true Is 'unsort' array sorted? false This
+ * Is 'sort' array sorted? true Is 'unsort' array sorted? false This
  * illustrates how the logic of iterating through the elements and checking
- * their order works for both sorted and unsorted arrays.
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
+ * their order works for both sorted and unsorted arrays. 
  */

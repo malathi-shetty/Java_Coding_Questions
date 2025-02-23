@@ -6,7 +6,7 @@ import java.util.Map;
 public class Count_occurences_of_letters_using_map_learn {
 
 	public static void main(String[] args) {
-		
+
 		// count occurences of letters using map
 
 		String s = "Hello World"; // Input string
@@ -36,13 +36,16 @@ public class Count_occurences_of_letters_using_map_learn {
 }
 
 /*
-
-Loop Through Characters: The code loops through each character in the string converted to a character array.
-
-Check for Existing Character: Instead of using getOrDefault, it checks if the character is already a key in the map using containsKey.
-
-Update Counts: If the character exists, it increments the count; otherwise, it initializes the count to 1.
-
-Output: Finally, it prints each character and its count.
-
-*/
+ * 
+ * Loop Through Characters: The code loops through each character in the string
+ * converted to a character array.
+ * 
+ * Check for Existing Character: Instead of using getOrDefault, it checks if the
+ * character is already a key in the map using containsKey.
+ * 
+ * Update Counts: If the character exists, it increments the count; otherwise,
+ * it initializes the count to 1.
+ * 
+ * Output: Finally, it prints each character and its count.
+ * 
+ */

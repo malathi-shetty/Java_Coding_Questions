@@ -29,3 +29,13 @@ public class Check_The_Equality_Of_Two_Arrays_1_learn {
 		}	
 	}
 }
+
+/*
+ * 
+Output:
+
+Arrays are Equal - a1, a2
+
+Arrays are NOT Equal - a3, a4
+
+*/

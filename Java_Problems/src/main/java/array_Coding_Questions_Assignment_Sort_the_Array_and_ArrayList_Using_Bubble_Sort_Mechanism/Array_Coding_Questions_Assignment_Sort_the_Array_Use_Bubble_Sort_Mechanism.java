@@ -99,5 +99,15 @@ public class Array_Coding_Questions_Assignment_Sort_the_Array_Use_Bubble_Sort_Me
  * completed.
  * 
  * 
+ * Output:
+ * 
+ * Original array:
+ * 
+64 34 25 90 12 22 90 11 
+
+Sorted array:
+
+11 12 22 25 34 64 90 90 
+ * 
  * 
  */

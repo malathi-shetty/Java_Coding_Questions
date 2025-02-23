@@ -65,4 +65,11 @@ public class Array_Coding_Questions_Assignment_Largest_smallest_Number_in_the_Ar
  * 
  * Ensure the array is not empty to avoid ArrayIndexOutOfBoundsException.
  * 
+ * Output:
+ * 
+ * Numbers in the array: 3 5 1 8 2 -4 7 
+ * 
+Largest number: 8
+
+Smallest number: -4
  */

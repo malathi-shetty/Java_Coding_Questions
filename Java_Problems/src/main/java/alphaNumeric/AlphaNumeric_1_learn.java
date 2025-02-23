@@ -50,10 +50,6 @@ public class AlphaNumeric_1_learn {
  * Final Concatenation: Finally, it concatenates the sorted lowercase letters,
  * sorted uppercase letters, and the original digits.
  * 
- * 
- * 
- * 
- * 
  * This Java program takes an input string that contain mixed case letters
  * and digits and transforms it into a specific output format. Here's a
  * breakdown of how it works:
@@ -80,13 +76,11 @@ public class AlphaNumeric_1_learn {
  * 
  * Finally, it prints the output.
  * 
- * 
  * 2. caseAlphaNum Method
  * 
  * Parameters: It accepts a single string s.
  * 
  * Return Type: It returns a formatted string.
- * 
  * 
  * Steps in the Method:
  * 
@@ -104,36 +98,21 @@ public class AlphaNumeric_1_learn {
  * 
  * Character.isDigit(ch): Adds it to digits if it's a digit.
  * 
- * 
  * Sorting: The contents of the StringBuilder for lowercase and uppercase
  * characters are converted to character arrays (lc and uc).
  * 
  * These arrays are sorted using Arrays.sort().
- * 
- * 
+ *
  * Final Concatenation: The method constructs the final output by concatenating
  * the sorted lowercase characters, sorted uppercase characters, and the
  * original digits, which are appended as they were collected.
  * 
- * 
  * Return Value: The resulting string is returned to the caller.
- * 
  * 
  * Summary In summary, this program systematically organizes a mixed string of
  * characters into a specified format, ensuring that lowercase letters come
  * first (sorted), followed by uppercase letters (sorted), and finally digits
  * (in their original order). The use of StringBuilder for efficient string
  * manipulation and sorting ensures that the output meets the requirements.
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
  * 
  */

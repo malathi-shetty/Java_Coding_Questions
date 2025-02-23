@@ -230,6 +230,8 @@ public class Check_ArrayList_Sorted_or_not {
  * follows the same principles as for an array, using the get method to access
  * elements and iterating through the list to compare adjacent values.
  * 
-
+ * This demonstrates how the approach for checking if an ArrayList is sorted
+ * follows the same principles as checking arrays, comparing each element with
+ * the next, and ensuring no out-of-bounds errors occur.
  * 
  */
