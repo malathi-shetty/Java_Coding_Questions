@@ -2,7 +2,8 @@ package array_Coding_Questions_Assignment_Reverse_ArrayList_having_strings;
 
 public class Reverse_Array_having_strings_learn {
 	 public static void main(String[] args) {
-	        String[] a = {"Apple", "Banana", "Cherry", "Date", "Elderberry"};  // Example string array
+	       String[] a = {"Apple", "Banana", "Cherry", "Date", "Elderberry"};  // Example string array
+		  
 	        System.out.print("Original Array: ");
 	        for (String fruit : a) {
 				System.out.print(fruit + " ");
