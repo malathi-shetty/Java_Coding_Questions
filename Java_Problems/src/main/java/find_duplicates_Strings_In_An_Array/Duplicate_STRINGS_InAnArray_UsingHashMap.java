@@ -11,8 +11,8 @@ public class Duplicate_STRINGS_InAnArray_UsingHashMap {
 		String s = "I am a student student for testing testing learning learning Java Selenium Java Selenium";
 		char[] a = s.toCharArray();
 
-		HashMap<Character, Integer> newobj = new HashMap<Character, Integer>();
-		// HashMap <String, Integer> newobj = new HashMap<String, Integer>();
+		 	HashMap<Character, Integer> newobj = new HashMap<Character, Integer>();
+	//	HashMap <String, Integer> newobj = new HashMap<String, Integer>();
 
 		int count = 1;
 
