@@ -13,10 +13,11 @@ public class Palindrome_Number {
 		int num = sc.nextInt();
 	*/
 		//OR - below 1 statement - int original = 1234;
-			int num = 1234; // Store the original number
-			//int original= 16461; // 4224
-			
+		//int num = 1234; // Store the original number
+			int num= 16461; // 4224
+			System.out.println("num: " + num);
 		int org_num = num;
+		System.out.println("org_num: " + org_num);
 		int rev=0;
 		
 		while(num != 0)
@@ -24,7 +25,7 @@ public class Palindrome_Number {
 			rev = rev * 10 + num % 10;
 			num = num / 10;
 		}
-		System.out.println(rev);
+		System.out.println("rev: " + rev);
 		
 		if(org_num == rev)
 		{

@@ -14,14 +14,16 @@ public class Palindrome_String {
 	*/ 
 		// OR String str = "madam";
 		
-		String str = "madam"; // nitin, naman, radar
+		String s = "madam"; // nitin, naman, radar
+		System.out.println("String: " + s);
 		//String str = "malathi";
-		String org_str = str;
+		String org_str = s;
+		System.out.println("org_str: " + org_str);
 		String rev = "";		
-		int len = str.length();	
+		int len = s.length();	
 		for(int i=len-1; i>=0; i--)
 		{
-			rev = rev+ str.charAt(i);
+			rev = rev+ s.charAt(i);
 		}
 		System.out.println("Reverse String: " + rev);
 		

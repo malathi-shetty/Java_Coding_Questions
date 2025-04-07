@@ -1,0 +1,2584 @@
+Original: "Java coding questions"
+
+Complete character reversal: "snoitseuq gnidoc avaJ"
+
+Word-level reversal: "avaJ gnidoc snoitseuq"
+
+Word-Order Reversal: "Questions Coding Java"
+
+********
+
+* Find Duplicate element?
+
+In programming, the term "element" is a general, non-specific term that can refer to any type of item in a collection (such as an array, list, set, etc.). An element can be:
+
+A number (e.g., an int, Integer, double, etc.)
+
+A string (e.g., a String object in Java)
+
+Any other object or data type.
+
+Example:
+If you have a collection like an array or list, each item within that collection can be referred to as an element, regardless of whether it's a number, a string, or another type.
+
+1. Array of Numbers:
+
+int[] numbers = {1, 2, 3, 4, 1};
+Here, each element of the numbers array is an integer (1, 2, 3, etc.).
+
+2. Array of Strings:
+
+String[] words = {"apple", "banana", "apple", "orange"};
+Here, each element of the words array is a string ("apple", "banana", etc.).
+
+In both cases:
+Element refers to any individual item in the array, whether it's an Integer, String, or another type.
+
+So, when someone asks to find duplicate elements, they mean finding any values that appear more than once, whether those values are numbers (Integer or int), strings, or any other type of object.
+
+*******
+
+1. ArrayList (Dynamic Arrays)
+
+ArrayList<Integer> list = new ArrayList<>();
+list.add(1);
+ArrayList is a dynamic array that can grow or shrink in size.
+
+You can add, remove, or change items without needing to declare the size initially.
+
+Tip: Use ArrayList when you expect the size of your array to change during execution.
+
+Think of "Array" like a list where things can be added or removed freely—just like adding or removing items in a shopping list.
+
+2. Basic Array Declaration
+
+int[] a = {1, 2, 3, 4, 5};
+Arrays are fixed-size containers.
+
+Once declared, you can't change the size of an array. So, choose the size wisely.
+
+When thinking of arrays, remember "Fixed". It’s like a fixed-size box that can’t change once you pack your items.
+
+3. Sorting Arrays
+
+Arrays.sort(a);
+Sorting rearranges array elements in ascending order by default.
+
+Use Arrays.sort() when you need a sorted array.
+
+"Arrays" are sorted by their "size". It organizes them from smallest to biggest like arranging numbers from 1 to 10.
+
+4. Converting Arrays to Lists
+
+Arrays.asList(1, 2, 3, 4, 5);
+Arrays.asList() converts an array to a list (specifically, a fixed-size list).
+
+Lists give more flexibility (like adding/removing elements) than arrays.
+
+Think of "asList" like "array to list": It's a "step" to convert array into a list.
+
+5. Working with Arrays of Numbers
+
+int[] numbers = {1, 2, 3, 4, 1};
+This is a basic array of numbers.
+
+Arrays are indexed starting from 0. So, numbers[0] is 1, numbers[1] is 2, and so on.
+
+You can loop through arrays to access all elements.
+
+"Array = Numbered Boxes". Each number in an array has its own box with a unique number (index) starting from 0.
+
+6. Working with Arrays of Strings
+
+String[] words = {"apple", "banana", "apple", "orange"};
+This is an array of strings.
+
+Strings are sequences of characters, enclosed in double quotes.
+
+Arrays of strings work just like arrays of numbers. You can loop through them or access individual elements by index.
+
+"Strings are words in an array," just like "fruit" in a basket. You can pick one by its position in the basket (index).
+
+7. Why use Arrays.sort()?
+
+Arrays.sort(a);
+Sorting helps organize data for tasks like searching or comparison.
+
+Sorted data often leads to more efficient searches (e.g., binary search).
+
+When you sort an array, you're "organizing" it. Think of it like organizing files by name to find them quicker.
+
+8. String Comparison with Arrays
+If you have an array of strings and want to compare them:
+
+
+String[] fruits = {"apple", "banana", "orange"};
+String target = "banana";
+
+boolean found = Arrays.asList(fruits).contains(target);
+contains() checks if the target string exists in the array.
+ Think of "contains" as a "check": it’s checking if that fruit is in the basket.
+
+9. Array Initialization and Copying
+You can initialize and copy arrays easily.
+
+
+int[] original = {1, 2, 3};
+int[] copy = Arrays.copyOf(original, original.length);
+Arrays.copyOf() makes a new copy of an array.
+
+To copy, think of "copying" the contents from one paper to another (just like photocopying).
+
+10. For-Each Loop for Arrays
+You can loop through arrays like this:
+
+
+for (int num : a) {
+    System.out.println(num);
+}
+The for-each loop simplifies the iteration of arrays or collections.
+
+It’s great when you just want to access each item without needing the index.
+
+The for-each loop means "each item in array". It’s like visiting each person in a line without needing their position number.
+
+11. Find Minimum and Maximum Value in Arrays
+To find the minimum or maximum:
+
+int[] nums = {1, 3, 5, 7, 9};
+int min = Arrays.stream(nums).min().getAsInt();
+int max = Arrays.stream(nums).max().getAsInt();
+stream() allows you to operate on data in a functional style.
+
+min() and max() return the smallest and largest values, respectively.
+
+Think of "stream" like a "river" where you can pick the smallest or largest stone.
+
+Quick Java Recap:
+ArrayList = Dynamic (Flexible, like a to-do list).
+
+Array = Fixed (Like a box that can’t change its size).
+
+Arrays.sort() = Sorts (Arranges from smallest to largest).
+
+Arrays.asList() = Converts array to list.
+
+Arrays.copyOf() = Copies (Cloning the array).
+
+for-each loop = Visit each item in the array.
+
+*****
+
+Java Basics and Key Concepts:
+1. Variables & Data Types
+Primitive Types:
+
+int (integer numbers)
+
+double (floating-point numbers)
+
+char (single characters)
+
+boolean (true/false)
+
+Reference Types:
+
+String, Arrays, Objects (anything that isn't a primitive type).
+
+
+"Primitives are simple types (e.g., int, double) and references are objects."
+
+2. String Operations
+
+String str = "Hello World";
+String str2 = str.toLowerCase();  // Converts to lowercase
+int length = str.length();         // Finds length
+boolean containsWord = str.contains("World");  // Check for substring
+String Manipulation is frequent in automation tests, e.g., comparing expected results with actual output.
+
+
+"Strings are like containers that hold letters and can be manipulated like Lego blocks."
+
+3. Arrays & Lists (Collection Framework)
+Arrays: Fixed-size, used for storing values of the same type.
+
+ArrayList: Resizable, dynamic lists (good for storing data where the size might change).
+
+
+"Arrays are boxes, ArrayLists are bags (flexible with size)."
+
+4. Loops: For, While, For-Each
+For Loop:
+
+
+for(int i = 0; i < 5; i++) {
+    System.out.println(i);
+}
+While Loop:
+
+
+int i = 0;
+while(i < 5) {
+    System.out.println(i);
+    i++;
+}
+For-each Loop: (best for arrays or collections)
+
+
+for (String word : words) {
+    System.out.println(word);
+}
+
+"For is like counting each step. While is like keep going while a condition is true. For-each is like visiting every element."
+
+5. Conditional Statements: If-Else
+
+if(x > 10) {
+    System.out.println("Greater than 10");
+} else {
+    System.out.println("Less than or equal to 10");
+}
+
+"If you check, else you act."
+
+6. Switch Case
+
+switch (day) {
+    case 1:
+        System.out.println("Monday");
+        break;
+    case 2:
+        System.out.println("Tuesday");
+        break;
+    // Other cases...
+}
+Great for multiple conditions (better than many if-else statements).
+
+
+"Switch is a way to quickly change between many cases."
+
+7. Methods/Functions
+
+public void printMessage(String message) {
+    System.out.println(message);
+}
+Return Type: Whether the method returns something (like int or String) or void (no return).
+
+Parameters: Inputs the method needs to work with.
+
+
+"Methods do things and return results; they can take in parameters and return values."
+
+8. Object-Oriented Concepts: Classes, Objects, Inheritance, Polymorphism, Abstraction, Encapsulation
+Class: A blueprint for creating objects.
+
+Object: An instance of a class.
+
+Inheritance: A child class inherits properties and behaviors from a parent class.
+
+Polymorphism: Objects of different classes can be treated as objects of a common superclass.
+
+Abstraction: Hiding implementation details and showing only essential features.
+
+Encapsulation: Wrapping the data (variables) and code (methods) into a single unit.
+
+
+"OOP = Objects help in Organizing Program with Inheritance, Polymorphism, Abstraction, and Encapsulation."
+
+Collections Framework (Useful for Test Automation)
+
+9. List
+
+List<Integer> numbers = new ArrayList<>();
+numbers.add(5);
+numbers.add(10);
+A List allows duplicates and maintains the order of insertion.
+
+
+"List = Linearly organized, Storing elements in order."
+
+10. Set
+
+Set<String> uniqueWords = new HashSet<>();
+uniqueWords.add("apple");
+uniqueWords.add("banana");
+Set does not allow duplicates.
+
+
+"Set means no duplicates allowed."
+
+11. Map
+
+Map<String, Integer> nameAgeMap = new HashMap<>();
+nameAgeMap.put("Alice", 30);
+Map stores key-value pairs. Good for storing test data with unique keys.
+
+
+"Map = Match keys to values."
+
+**********
+
+1. Variables and Data Types
+Variables are used to store data. In Java, you need to declare a data type when creating a variable.
+
+Common Data Types:
+Primitive Data Types: These hold simple values and are the building blocks in Java.
+
+int – for integers (whole numbers).
+
+double – for floating-point numbers.
+
+char – for a single character.
+
+boolean – for true/false values.
+
+long, float, byte, short – for other numeric types.
+
+Example: Declaring and Initializing Variables
+
+public class Main {
+    public static void main(String[] args) {
+        int age = 25;               // Integer variable
+        double price = 19.99;       // Floating-point variable
+        char grade = 'A';           // Character variable
+        boolean isActive = true;    // Boolean variable
+
+        System.out.println("Age: " + age);
+        System.out.println("Price: " + price);
+        System.out.println("Grade: " + grade);
+        System.out.println("Active: " + isActive);
+    }
+}
+2. Control Flow Statements
+Control flow statements determine the flow of execution in a program. Java provides several types of control flow statements:
+
+If-Else Statement:
+Used to make decisions based on conditions.
+
+
+public class Main {
+    public static void main(String[] args) {
+        int age = 18;
+
+        if (age >= 18) {
+            System.out.println("Adult");
+        } else {
+            System.out.println("Minor");
+        }
+    }
+}
+Switch Statement:
+Used when you have many conditions based on a single variable's value.
+
+
+public class Main {
+    public static void main(String[] args) {
+        int day = 3;
+
+        switch (day) {
+            case 1: 
+                System.out.println("Monday");
+                break;
+            case 2: 
+                System.out.println("Tuesday");
+                break;
+            case 3: 
+                System.out.println("Wednesday");
+                break;
+            default: 
+                System.out.println("Invalid day");
+        }
+    }
+}
+3. Loops
+Loops allow you to repeat a block of code multiple times.
+
+For Loop:
+Used when you know how many times you need to iterate.
+
+
+public class Main {
+    public static void main(String[] args) {
+        for (int i = 0; i < 5; i++) {
+            System.out.println("i: " + i);
+        }
+    }
+}
+While Loop:
+Used when you don't know how many times the loop will run in advance (based on a condition).
+
+
+public class Main {
+    public static void main(String[] args) {
+        int i = 0;
+        while (i < 5) {
+            System.out.println("i: " + i);
+            i++;
+        }
+    }
+}
+Do-While Loop:
+Similar to while, but guarantees at least one iteration, as the condition is checked after the loop runs.
+
+
+public class Main {
+    public static void main(String[] args) {
+        int i = 0;
+        do {
+            System.out.println("i: " + i);
+            i++;
+        } while (i < 5);
+    }
+}
+4. Arrays
+An array is a collection of variables of the same type, stored in a contiguous memory location.
+
+Declaring and Initializing Arrays:
+
+public class Main {
+    public static void main(String[] args) {
+        // Declaring an array of integers
+        int[] numbers = {1, 2, 3, 4, 5};
+
+        // Accessing array elements
+        System.out.println(numbers[0]);  // Outputs: 1
+        System.out.println(numbers[4]);  // Outputs: 5
+
+        // Looping through the array
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.println(numbers[i]);
+        }
+    }
+}
+5. Methods/Functions
+Methods in Java allow you to perform specific tasks and return values. You define a method by specifying its return type, name, and parameters (if any).
+
+Declaring Methods:
+
+public class Main {
+    public static void main(String[] args) {
+        int sum = addNumbers(5, 10);  // Calling method
+        System.out.println("Sum: " + sum);
+    }
+
+    // Method to add two numbers
+    public static int addNumbers(int a, int b) {
+        return a + b;
+    }
+}
+Method Overloading:
+Java allows you to have multiple methods with the same name but with different parameter types or numbers. This is called method overloading.
+
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println(addNumbers(5, 10));        // Calls first method
+        System.out.println(addNumbers(2.5, 3.5));     // Calls second method
+    }
+
+    public static int addNumbers(int a, int b) {
+        return a + b;
+    }
+
+    public static double addNumbers(double a, double b) {
+        return a + b;
+    }
+}
+6. Classes and Objects
+In Java, everything revolves around objects and classes. A class is a blueprint for creating objects, while an object is an instance of that class.
+
+Defining a Class:
+
+class Car {
+    String model;
+    int year;
+
+    // Constructor to initialize object
+    Car(String model, int year) {
+        this.model = model;
+        this.year = year;
+    }
+
+    // Method to display object details
+    void displayDetails() {
+        System.out.println("Model: " + model + ", Year: " + year);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Car myCar = new Car("Toyota", 2022);  // Creating an object
+        myCar.displayDetails();  // Calling object method
+    }
+}
+7. Object-Oriented Programming (OOP) Basics
+Java is an object-oriented programming language. Here are the four main principles:
+
+Encapsulation: Wrapping data (variables) and code (methods) together into a single unit (class). This can be achieved by using access modifiers like private, public, etc.
+
+Example: Making instance variables private and providing getter/setter methods.
+
+Inheritance: A way to form new classes from existing ones.
+
+Example: A Car class can inherit from a Vehicle class.
+
+Polymorphism: The ability to perform the same action in different ways. This can be achieved via method overloading or overriding.
+
+Example: Different drive() methods for different types of vehicles.
+
+Abstraction: Hiding the complex implementation and showing only the necessary features.
+
+Example: Using abstract classes and interfaces to define common functionality while leaving the implementation to the subclasses.
+
+8. Java Access Modifiers
+Access modifiers control the visibility and accessibility of classes, methods, and variables:
+
+public: The member is accessible from anywhere.
+
+private: The member is only accessible within the same class.
+
+protected: The member is accessible within the same package and subclasses.
+
+default (no modifier): The member is accessible only within the same package.
+
+9. Commonly Used Java Classes
+Java provides a set of built-in classes in the java.util package for performing common tasks like handling collections, strings, and more:
+
+String: A class to work with text (immutable).
+
+ArrayList: A resizable array, part of the Collections Framework.
+
+HashMap: A collection for key-value pairs.
+
+Date: For working with date and time.
+
+Example of using ArrayList:
+
+
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> fruits = new ArrayList<>();
+        fruits.add("Apple");
+        fruits.add("Banana");
+
+        System.out.println(fruits);  // Outputs: [Apple, Banana]
+    }
+}
+10. Exception Handling
+In Java, exceptions are used to handle errors and other exceptional events during the execution of a program.
+
+Try-Catch Block:
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            int result = 10 / 0;  // This will throw an exception
+        } catch (ArithmeticException e) {
+            System.out.println("Error: " + e.getMessage());
+        }
+    }
+}
+
+********
+
+Commonly Used Java Classes
+Java has a rich set of built-in classes that help perform common tasks like working with strings, collections, input/output operations, dates, and more. Here’s a breakdown of some of the most commonly used classes in Java.
+
+1. String Class
+The String class represents sequences of characters. Strings are immutable in Java, meaning once created, they cannot be changed.
+
+Common Methods:
+
+length(): Returns the length of the string.
+
+charAt(int index): Returns the character at the specified index.
+
+substring(int beginIndex): Returns a substring from the specified index to the end.
+
+toLowerCase() / toUpperCase(): Converts the string to lowercase/uppercase.
+
+equals(Object obj): Compares two strings for equality.
+
+contains(CharSequence sequence): Checks if the string contains a specified sequence of characters.
+
+
+public class Main {
+    public static void main(String[] args) {
+        String str = "Hello, World!";
+        System.out.println("Length: " + str.length());         // 13
+        System.out.println("Substring: " + str.substring(7));  // World!
+    }
+}
+2. ArrayList (Part of Collections Framework)
+ArrayList is a resizable array implementation of the List interface. It allows dynamic resizing, meaning it can grow and shrink as needed.
+
+Common Methods:
+
+add(E e): Adds an element to the list.
+
+get(int index): Returns the element at the specified index.
+
+remove(int index): Removes the element at the specified index.
+
+size(): Returns the size of the list.
+
+contains(Object o): Returns true if the list contains the specified element.
+
+
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Apple");
+        list.add("Banana");
+        System.out.println("Size: " + list.size());  // 2
+        System.out.println("First item: " + list.get(0));  // Apple
+    }
+}
+3. HashMap (Part of Collections Framework)
+HashMap is a collection that maps keys to values, allowing constant-time performance for basic operations like get and put, assuming the hash function disperses the elements properly.
+
+Common Methods:
+
+put(K key, V value): Inserts a key-value pair.
+
+get(Object key): Returns the value for the given key.
+
+remove(Object key): Removes the entry for the specified key.
+
+containsKey(Object key): Returns true if the map contains the specified key.
+
+
+import java.util.HashMap;
+
+public class Main {
+    public static void main(String[] args) {
+        HashMap<String, Integer> map = new HashMap<>();
+        map.put("Apple", 2);
+        map.put("Banana", 3);
+        System.out.println("Apple count: " + map.get("Apple"));  // 2
+    }
+}
+4. Date Class (Part of java.util)
+The Date class represents a specific instant in time, with millisecond precision. It has been replaced by the LocalDate, LocalTime, and LocalDateTime classes in Java 8, but it's still used for backward compatibility.
+
+Common Methods:
+
+getTime(): Returns the number of milliseconds since January 1, 1970 (epoch time).
+
+toString(): Returns a string representation of the date.
+
+
+import java.util.Date;
+
+public class Main {
+    public static void main(String[] args) {
+        Date date = new Date();
+        System.out.println(date);  // Current date and time
+    }
+}
+Exceptions in Java
+In Java, exceptions are events that disrupt the normal flow of the program. They are classified into two types:
+
+Checked Exceptions: These exceptions are checked at compile-time.
+
+Must be either caught or declared to be thrown.
+
+Example: IOException, SQLException.
+
+Unchecked Exceptions: These exceptions occur at runtime and are not checked at compile-time.
+
+Example: NullPointerException, ArrayIndexOutOfBoundsException.
+
+Java has a hierarchical exception class structure that includes Throwable, which is the superclass of both Error and Exception.
+
+Common Exceptions in Java
+NullPointerException: Occurs when you attempt to use an object reference that points to null.
+
+ArrayIndexOutOfBoundsException: Occurs when trying to access an array with an invalid index.
+
+ArithmeticException: Occurs when an illegal arithmetic operation is performed, such as dividing by zero.
+
+ClassNotFoundException: Occurs when trying to load a class using Class.forName() but the class is not found.
+
+FileNotFoundException: Occurs when trying to open a file that does not exist.
+
+IOException: A general exception for Input/Output operations, such as file operations.
+
+Exception Handling in Java
+Java uses the try-catch-finally block to handle exceptions. Here’s how it works:
+
+try: Block of code that might throw an exception.
+
+catch: Block of code to handle the exception.
+
+finally: Block of code that executes regardless of whether an exception was thrown or not (used for cleanup).
+
+Example of Exception Handling
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            // Code that might throw an exception
+            int result = 10 / 0;  // ArithmeticException
+        } catch (ArithmeticException e) {
+            // Handling the exception
+            System.out.println("Error: Division by zero!");
+        } finally {
+            // Code that will always execute
+            System.out.println("This block will always execute.");
+        }
+    }
+}
+Throws Keyword
+The throws keyword is used in method declarations to indicate that the method might throw an exception.
+
+The method that throws the exception does not handle it, leaving the responsibility to the caller.
+
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            throwException();
+        } catch (Exception e) {
+            System.out.println("Caught exception: " + e.getMessage());
+        }
+    }
+
+    public static void throwException() throws Exception {
+        throw new Exception("This is a thrown exception");
+    }
+}
+Common Checked Exceptions
+IOException: Thrown when there are input/output errors (e.g., reading/writing files).
+
+SQLException: Thrown when working with SQL databases and there’s an issue with the database query.
+
+FileNotFoundException: A subclass of IOException, thrown when trying to access a file that doesn’t exist.
+
+Common Unchecked Exceptions
+NullPointerException: Occurs when trying to use an object reference that is null.
+
+ArrayIndexOutOfBoundsException: Occurs when trying to access an invalid index in an array.
+
+ArithmeticException: Occurs when an arithmetic operation fails, like division by zero.
+
+Custom Exception
+You can create your own custom exceptions by extending the Exception or RuntimeException class. If you want to create a checked exception, you would extend Exception; if you want an unchecked exception, extend RuntimeException.
+
+
+class CustomException extends Exception {
+    public CustomException(String message) {
+        super(message);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            throw new CustomException("This is a custom exception!");
+        } catch (CustomException e) {
+            System.out.println("Caught: " + e.getMessage());
+        }
+    }
+}
+
+Summary of Exception Hierarchy
+Throwable (Superclass of all errors and exceptions)
+
+Error: Represents serious issues (e.g., OutOfMemoryError, StackOverflowError).
+
+Exception: Represents less severe exceptions that can be handled by the program.
+
+Checked Exception: Must be explicitly handled or declared (e.g., IOException, SQLException).
+
+Unchecked Exception (RuntimeException): Occurs at runtime (e.g., NullPointerException, ArithmeticException).
+
+Tips for Exception Handling:
+try-catch: Think of it as "try" to execute some code and "catch" the error if it occurs.
+
+throws: If you want to "throw" an exception out of a method, use throws to declare it.
+
+finally: Always execute "finally", no matter what (like cleaning up after yourself).
+
+
+
+**********
+
+1. Java Collections Framework:
+The Collections Framework in Java provides classes and interfaces to store, retrieve, and manipulate data. There are different types of collections like List, Set, Queue, and Map.
+
+a. List (Ordered, allows duplicates):
+A List stores elements in a specific order and allows duplicate elements.
+
+Common Implementations: ArrayList, LinkedList, Vector.
+
+
+List<String> list = new ArrayList<>();
+list.add("Apple");
+list.add("Banana");
+list.add("Apple");  // Duplicates allowed
+b. Set (Unordered, no duplicates):
+A Set does not allow duplicate elements and does not guarantee the order.
+
+Common Implementations: HashSet, LinkedHashSet, TreeSet.
+
+
+Set<String> set = new HashSet<>();
+set.add("Apple");
+set.add("Banana");
+set.add("Apple");  // Duplicate will not be added
+c. Queue (FIFO: First In, First Out):
+A Queue is used for handling elements in a first-in-first-out order.
+
+Common Implementations: LinkedList, PriorityQueue.
+
+
+Queue<String> queue = new LinkedList<>();
+queue.add("First");
+queue.add("Second");
+queue.add("Third");
+d. Map (Key-Value pairs):
+A Map stores key-value pairs. Each key is unique, but the values can be duplicates.
+
+Common Implementations: HashMap, TreeMap, LinkedHashMap.
+
+
+Map<String, Integer> map = new HashMap<>();
+map.put("Alice", 30);
+map.put("Bob", 25);
+e. Important Methods in Collection Framework:
+add(): Adds an element.
+
+remove(): Removes an element.
+
+contains(): Checks if an element exists.
+
+size(): Returns the number of elements.
+
+isEmpty(): Checks if the collection is empty.
+
+2. Arrays:
+Arrays are fixed-size containers in Java that hold elements of the same type.
+
+Array Declaration:
+
+int[] numbers = {1, 2, 3, 4};
+String[] names = {"Alice", "Bob"};
+Array Length:
+Use array.length to get the number of elements.
+
+
+System.out.println(numbers.length);  // Prints the length of the array
+Accessing Elements:
+Arrays are zero-indexed, meaning the first element is at index 0.
+
+
+System.out.println(numbers[0]);  // Prints 1
+Important Operations:
+Sorting: Arrays.sort(arr)
+
+Copying: Arrays.copyOf(arr, newSize)
+
+Converting to List: Arrays.asList(arr)
+
+3. Strings:
+Strings in Java are immutable, meaning once a string object is created, it cannot be changed.
+
+String Declaration:
+
+String str = "Hello";
+String Operations:
+
+String upper = str.toUpperCase();  // Converts to uppercase
+String sub = str.substring(1, 3);  // Extracts substring (index 1 to 2)
+int len = str.length();  // Length of the string
+boolean equals = str.equals("hello");  // Compares strings
+String Concatenation:
+
+String result = "Hello" + " " + "World";  // Concatenates strings
+Tips for Strings:
+"String = Immutable and always efficient in use."
+
+4. Methods/Functions:
+Methods in Java are blocks of code that perform a specific task.
+
+Method Declaration:
+
+public void printMessage(String message) {
+    System.out.println(message);
+}
+Void: No return value.
+
+Return types: Can return any type, e.g., int, String.
+
+Calling Methods:
+
+printMessage("Hello, Java!");
+Method Overloading:
+You can define multiple methods with the same name, but different parameters.
+
+
+public int add(int a, int b) {
+    return a + b;
+}
+
+public double add(double a, double b) {
+    return a + b;
+}
+Tips for Methods:
+"Methods do something and can return or just act."
+
+5. Immutable Objects:
+In Java, an object is immutable if its state cannot be changed once it is created.
+
+Example of an Immutable Class:
+
+final class Person {
+    private final String name;
+    
+    public Person(String name) {
+        this.name = name;
+    }
+    
+    public String getName() {
+        return name;
+    }
+}
+final: Used to prevent the class from being subclassed and the field from being modified.
+
+
+"Immutable = Can't change the state once created."
+
+6. Heap vs Stack:
+Heap:
+Used for storing objects (dynamic memory).
+
+It is larger and slower than the stack.
+
+Memory is allocated dynamically.
+
+Stack:
+Stores local variables, method calls, and references.
+
+It is faster but limited in size.
+
+
+"Heap = Large and dynamic. Stack = Small and fast."
+
+7. Loops:
+For Loop:
+
+for (int i = 0; i < 5; i++) {
+    System.out.println(i);
+}
+While Loop:
+
+int i = 0;
+while (i < 5) {
+    System.out.println(i);
+    i++;
+}
+Do-While Loop:
+
+int i = 0;
+do {
+    System.out.println(i);
+    i++;
+} while (i < 5);
+For-Each Loop (for collections and arrays):
+
+for (String word : words) {
+    System.out.println(word);
+}
+
+"For" = Iterate with control, "While" = Continue while condition is true, "Do-While" = **Do once, then check condition."
+
+8. Conditional Statements:
+If-Else:
+
+if (x > 10) {
+    System.out.println("Greater than 10");
+} else {
+    System.out.println("10 or less");
+}
+Switch Case:
+
+switch (day) {
+    case 1: System.out.println("Monday"); break;
+    case 2: System.out.println("Tuesday"); break;
+    default: System.out.println("Invalid day");
+}
+
+"If = Check the condition, "Switch = Pick one of many cases."
+
+9. Objects in Java:
+An Object is an instance of a class.
+
+Creating an Object:
+
+class Car {
+    String model;
+    int year;
+
+    Car(String model, int year) {
+        this.model = model;
+        this.year = year;
+    }
+}
+
+Car myCar = new Car("Toyota", 2020);
+Accessing Object Properties:
+
+System.out.println(myCar.model);  // Accesses the model
+
+"Object = A real-world instance of a class."
+
+Summary of Java Key Concepts:
+Collections Framework = Store and manage data (List, Set, Map, Queue).
+
+Arrays = Fixed-size, indexed containers for homogeneous data.
+
+Strings = Immutable text objects that support many methods.
+
+Methods = Blocks of code performing specific tasks.
+
+Immutable Objects = Objects that can’t change once created.
+
+Heap & Stack = Heap is dynamic and large, Stack is small and fast.
+
+Loops = For, While, Do-While, For-Each for iteration.
+
+Conditional Statements = Make decisions based on conditions (if, switch).
+
+Objects = Instances of classes representing real-world entities.
+
+***********
+
+10. Generics in Java
+Generics allow you to write flexible, type-safe code. You can use generics to make classes, interfaces, and methods work with different types while ensuring type safety at compile time.
+
+Generic Class Example:
+
+class Box<T> {
+    private T item;
+
+    public void setItem(T item) {
+        this.item = item;
+    }
+
+    public T getItem() {
+        return item;
+    }
+}
+
+Box<Integer> intBox = new Box<>();
+intBox.setItem(10);
+System.out.println(intBox.getItem());  // Outputs: 10
+T represents a type parameter that can be replaced with any object type (e.g., Integer, String, etc.).
+
+
+"Generics allow you to generalize your classes or methods to work with any type."
+
+11. Varargs (Variable Arguments)
+Varargs allow you to pass a variable number of arguments to a method. This makes methods flexible when the exact number of arguments is unknown.
+
+Varargs Example:
+
+public void printNumbers(int... numbers) {
+    for (int num : numbers) {
+        System.out.println(num);
+    }
+}
+
+printNumbers(1, 2, 3);  // Prints 1, 2, 3
+printNumbers(5, 6);     // Prints 5, 6
+The ... syntax allows passing multiple arguments of the same type.
+
+
+"Varargs let you pass any number of arguments to a method."
+
+12. Lambda Expressions (Functional Programming)
+Lambda expressions provide a clear and concise way to represent functional interfaces (interfaces with a single method). It simplifies code, especially when dealing with collections.
+
+Lambda Expression Example:
+
+List<String> names = Arrays.asList("Alice", "Bob", "Charlie");
+names.forEach(name -> System.out.println(name));  // Prints each name
+A lambda expression is a short version of an anonymous function (e.g., name -> System.out.println(name)).
+
+Predicate Example:
+
+Predicate<Integer> isEven = num -> num % 2 == 0;
+System.out.println(isEven.test(4));  // True, because 4 is even
+
+"Lambdas are concise methods to express code in a functional style."
+
+13. Enum Types
+Enums represent a fixed set of constants. They are useful when you have a predefined list of values that don’t change (e.g., days of the week, months).
+
+Enum Example:
+
+enum Day {
+    MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY
+}
+
+Day today = Day.MONDAY;
+System.out.println(today);  // Outputs: MONDAY
+You can also add methods to enums.
+
+
+enum Day {
+    MONDAY("Workday"), TUESDAY("Workday"), SATURDAY("Weekend");
+
+    private String type;
+
+    Day(String type) {
+        this.type = type;
+    }
+
+    public String getType() {
+        return type;
+    }
+}
+
+System.out.println(Day.MONDAY.getType());  // Outputs: Workday
+
+"Enums are a set of predefined values, like categories."
+
+14. Default Methods in Interfaces
+Since Java 8, interfaces can have default methods that provide a default implementation.
+
+Default Method Example:
+
+interface Animal {
+    default void makeSound() {
+        System.out.println("Animal makes a sound");
+    }
+}
+
+class Dog implements Animal {
+    // Inherits the default method from Animal
+}
+
+Dog dog = new Dog();
+dog.makeSound();  // Outputs: Animal makes a sound
+Default methods allow you to extend interfaces without breaking existing implementations.
+
+
+"Interfaces can now have default methods that provide default behaviors."
+
+15. Inner Classes (Nested Classes)
+An inner class is a class defined within another class. It can access the outer class's members.
+
+Types of Inner Classes:
+Non-static inner class
+
+Static nested class
+
+Anonymous inner class
+
+Example: Non-static Inner Class:
+
+class Outer {
+    private String message = "Hello from outer class";
+
+    class Inner {
+        void printMessage() {
+            System.out.println(message);  // Accesses outer class variable
+        }
+    }
+}
+
+Outer outer = new Outer();
+Outer.Inner inner = outer.new Inner();
+inner.printMessage();  // Outputs: Hello from outer class
+
+"Inner classes are classes defined inside other classes, allowing access to outer class variables."
+
+16. Serialization
+Serialization is the process of converting an object into a byte stream so it can be saved to a file or sent over the network. Deserialization is the reverse process (converting a byte stream back to an object).
+
+Example:
+
+import java.io.*;
+
+class Person implements Serializable {
+    String name;
+    int age;
+
+    Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+}
+
+// Serialization
+ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("person.ser"));
+out.writeObject(new Person("Alice", 25));
+out.close();
+
+// Deserialization
+ObjectInputStream in = new ObjectInputStream(new FileInputStream("person.ser"));
+Person p = (Person) in.readObject();
+in.close();
+
+System.out.println(p.name);  // Outputs: Alice
+Serializable interface is required to mark a class as serializable.
+
+
+"Serialization is for saving objects, and deserialization is for rebuilding them."
+
+17. Final Keyword
+The final keyword is used in several contexts:
+
+Final variable: The value cannot be changed once assigned.
+
+Final method: The method cannot be overridden by subclasses.
+
+Final class: The class cannot be subclassed.
+
+Example:
+
+final int MAX_VALUE = 100;  // Cannot be reassigned
+Example (Final Method):
+
+class Parent {
+    final void show() {
+        System.out.println("This method cannot be overridden");
+    }
+}
+
+class Child extends Parent {
+    // This will cause a compile-time error:
+    // void show() { System.out.println("Trying to override"); }
+}
+
+"Final = Cannot change, override, or extend."
+
+18. Threading and Concurrency
+In Java, a Thread is the smallest unit of a program that can be executed independently. Threads allow programs to perform multiple tasks simultaneously.
+
+Thread Example (Extending Thread Class):
+
+class MyThread extends Thread {
+    public void run() {
+        System.out.println("Thread running");
+    }
+}
+
+MyThread t = new MyThread();
+t.start();  // Starts the thread
+Runnable Interface Example:
+
+class MyRunnable implements Runnable {
+    public void run() {
+        System.out.println("Runnable running");
+    }
+}
+
+Thread t = new Thread(new MyRunnable());
+t.start();
+Concurrency: You can use the synchronized keyword to ensure that only one thread accesses a block of code at a time.
+
+
+"Threads allow you to perform multiple tasks simultaneously."
+
+19. Exception Handling (try-catch)
+Java provides an exception handling mechanism to handle errors during the program's runtime without crashing the program.
+
+Try-Catch Example:
+
+try {
+    int result = 10 / 0;  // This will cause an exception
+} catch (ArithmeticException e) {
+    System.out.println("Error: " + e.getMessage());  // Handle the error
+} finally {
+    System.out.println("This will always run");
+}
+Try: Contains code that might throw an exception.
+
+Catch: Handles the exception.
+
+Finally: Executes code that must run regardless of an exception.
+
+
+"Try and Catch to handle errors gracefully."
+
+20. Java 8 Features
+Java 8 introduced functional programming features, making it more concise and expressive:
+
+Streams: For processing collections in a functional style.
+
+Optional: To avoid NullPointerException and handle null values safely.
+
+Stream Example:
+
+List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
+numbers.stream()
+       .filter(n -> n % 2 == 0)
+       .forEach(System.out::println);  // Outputs: 2, 4
+
+"Streams let you process collections in a functional way."
+
+Summary of Advanced Java Concepts:
+Generics = Write type-safe and flexible code.
+
+Varargs = Methods that can accept variable arguments.
+
+Lambdas = Concise and functional-style code.
+
+Enums = Fixed sets of constants.
+
+Inner Classes = Classes defined inside other classes.
+
+Serialization = Save and read objects from files.
+
+Final = Constants, unchangeable methods, and unextensible classes.
+
+Threading = Handle tasks concurrently with multiple threads.
+
+Exception Handling = Gracefully manage errors.
+
+Java 8 Features = Embrace Streams, Optional, and Functional Programming.
+
+
+**********
+
+1. Class and Object Basics
+In Java, a class is a blueprint for creating objects. An object is an instance of a class.
+
+Class Example:
+
+class Car {
+    String model;  // Instance variable
+    int year;      // Instance variable
+    
+    // Constructor to initialize the object
+    Car(String model, int year) {
+        this.model = model;
+        this.year = year;
+    }
+
+    // Method to display object details
+    void displayDetails() {
+        System.out.println("Model: " + model + ", Year: " + year);
+    }
+}
+Class: Car is a blueprint that defines the properties (model, year) and methods (displayDetails) of a Car object.
+
+Object: You create an object using the new keyword.
+
+Object Creation:
+
+Car myCar = new Car("Toyota", 2020);
+myCar.displayDetails();  // Outputs: Model: Toyota, Year: 2020
+2. Constructor Basics
+A constructor is a special method used to initialize an object. It has the same name as the class and does not have a return type.
+
+Instance Constructor (Non-static constructor):
+This constructor is used to initialize instance variables of the object.
+
+Every time you create an object, the instance constructor is called automatically.
+
+
+class Car {
+    String model;
+    int year;
+
+    // Instance Constructor
+    Car(String model, int year) {
+        this.model = model;
+        this.year = year;
+        System.out.println("Car object created!");
+    }
+
+    void displayDetails() {
+        System.out.println("Model: " + model + ", Year: " + year);
+    }
+}
+
+Car car1 = new Car("Honda", 2021);  // Constructor is called here
+Constructor Calling:
+You can call constructors within other constructors using this() (for constructor chaining).
+
+
+class Car {
+    String model;
+    int year;
+
+    // Constructor 1
+    Car(String model) {
+        this.model = model;
+        this.year = 2022;  // Default year
+    }
+
+    // Constructor 2
+    Car(String model, int year) {
+        this(model);  // Calling Constructor 1
+        this.year = year;
+    }
+
+    void displayDetails() {
+        System.out.println("Model: " + model + ", Year: " + year);
+    }
+}
+
+Car car1 = new Car("Toyota");
+car1.displayDetails();  // Outputs: Model: Toyota, Year: 2022
+
+Car car2 = new Car("Honda", 2021);
+car2.displayDetails();  // Outputs: Model: Honda, Year: 2021
+this(): Calls another constructor in the same class.
+
+3. Static vs Non-Static
+Non-static (Instance): Requires an object to access.
+
+Static: Belongs to the class itself, rather than an instance of the class. Can be accessed without creating an object.
+
+Non-static Example:
+
+class Car {
+    String model;  // Instance variable
+    int year;      // Instance variable
+
+    // Non-static method
+    void displayDetails() {
+        System.out.println("Model: " + model + ", Year: " + year);
+    }
+}
+
+Car myCar = new Car();
+myCar.model = "Toyota";
+myCar.year = 2020;
+myCar.displayDetails();  // Outputs: Model: Toyota, Year: 2020
+Instance variables (model, year) and methods like displayDetails require an object of the class to be accessed.
+
+Static Example:
+
+class Car {
+    static int totalCars;  // Static variable
+
+    // Static method
+    static void displayTotalCars() {
+        System.out.println("Total Cars: " + totalCars);
+    }
+
+    Car() {
+        totalCars++;  // Increment the static variable
+    }
+}
+
+Car car1 = new Car();
+Car car2 = new Car();
+Car.displayTotalCars();  // Outputs: Total Cars: 2
+Static variable (totalCars) and method displayTotalCars() can be accessed without creating an object.
+
+Key Differences:
+
+Static: Belongs to the class and can be accessed without creating an instance.
+
+Non-static (Instance): Belongs to the object, so you need to create an instance to use them.
+
+4. Method Basics
+In Java, methods define actions that can be performed on objects or data.
+
+Method Declaration:
+
+class Car {
+    String model;
+    int year;
+
+    // Non-static method
+    void displayDetails() {
+        System.out.println("Model: " + model + ", Year: " + year);
+    }
+
+    // Static method
+    static void displayMessage() {
+        System.out.println("Welcome to Car World!");
+    }
+}
+Method Calling:
+Non-static method needs an object to be called.
+
+
+Car myCar = new Car();
+myCar.displayDetails();  // Calling a non-static method
+Static method can be called directly using the class name (without creating an object).
+
+
+Car.displayMessage();  // Calling a static method
+5. Method Overloading and Overriding
+Method Overloading: Defining multiple methods with the same name but different parameters.
+
+class Car {
+    void displayDetails(String model) {
+        System.out.println("Model: " + model);
+    }
+
+    void displayDetails(String model, int year) {
+        System.out.println("Model: " + model + ", Year: " + year);
+    }
+}
+
+Car car = new Car();
+car.displayDetails("Toyota");  // Outputs: Model: Toyota
+car.displayDetails("Honda", 2020);  // Outputs: Model: Honda, Year: 2020
+Method overloading allows the same method name to work with different arguments.
+
+Method Overriding: A subclass provides a specific implementation of a method that is already defined in its superclass.
+
+class Vehicle {
+    void start() {
+        System.out.println("Vehicle starting...");
+    }
+}
+
+class Car extends Vehicle {
+    @Override  // Overriding start() method
+    void start() {
+        System.out.println("Car starting...");
+    }
+}
+
+Vehicle myVehicle = new Car();
+myVehicle.start();  // Outputs: Car starting...
+@Override annotation tells the compiler that you're intentionally overriding a method from the superclass.
+
+6. Constructor vs Method
+Constructor:
+
+Used to initialize objects when they are created.
+
+Has no return type.
+
+Name is the same as the class name.
+
+Method:
+
+Performs actions or computations on an object.
+
+Can have a return type (e.g., int, String).
+
+Can be called multiple times after the object is created.
+
+Constructor Example:
+
+class Car {
+    String model;
+
+    // Constructor
+    Car(String model) {
+        this.model = model;
+    }
+}
+Car car = new Car("Tesla");  // Constructor is called
+Method Example:
+
+class Car {
+    String model;
+
+    // Method
+    void displayModel() {
+        System.out.println("Car model: " + model);
+    }
+}
+Car car = new Car();
+car.model = "Tesla";
+car.displayModel();  // Calling a method
+Summary of Key Concepts
+Class: A blueprint for creating objects.
+
+Object: An instance of a class.
+
+Constructor: Used to initialize an object. Constructors have the same name as the class.
+
+Static vs Non-static:
+
+Static: Belongs to the class, not the object.
+
+Non-static: Belongs to the object; requires an instance.
+
+Methods: Define behaviors of objects.
+
+Non-static methods: Require an object to call.
+
+Static methods: Can be called without an object.
+
+*********
+
+1. Constructor Calling
+In Java, constructors are special methods used to initialize objects when they are created. Sometimes, you might want to call one constructor from another within the same class. This is known as constructor calling.
+
+Using this() to Call Another Constructor
+this() is used to call another constructor in the same class. This is useful when you have multiple constructors and want to avoid repeating initialization code.
+
+Constructor Chaining: The practice of calling one constructor from another constructor is called constructor chaining.
+
+Example: Constructor Calling Using this()
+
+class Car {
+    String model;
+    int year;
+
+    // Constructor 1: Takes a model only
+    Car(String model) {
+        this(model, 2022);  // Calls Constructor 2
+        System.out.println("Constructor 1 called");
+    }
+
+    // Constructor 2: Takes a model and year
+    Car(String model, int year) {
+        this.model = model;
+        this.year = year;
+        System.out.println("Constructor 2 called");
+    }
+
+    void displayDetails() {
+        System.out.println("Model: " + model + ", Year: " + year);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // Calling Constructor 1
+        Car car1 = new Car("Honda");
+        car1.displayDetails();  // Outputs: Model: Honda, Year: 2022
+    }
+}
+Explanation:
+Constructor 1 (Car(String model)): This constructor only takes the model of the car as a parameter. It calls Constructor 2 (Car(String model, int year)) using this(model, 2022), passing the model and a default year (2022).
+
+The constructor chaining helps reduce code duplication and improves maintainability.
+
+Important Points:
+this() must always be the first statement in a constructor.
+
+It can only call other constructors in the same class.
+
+2. Constructor Overloading
+Constructor overloading allows a class to have multiple constructors with the same name but different parameter lists. It enables you to create objects with different ways of initializing values, making your code more flexible.
+
+Constructor Overloading Example
+
+class Car {
+    String model;
+    int year;
+
+    // Constructor 1: No parameters (default values)
+    Car() {
+        this.model = "Unknown";
+        this.year = 2020;
+        System.out.println("Constructor 1: No parameters");
+    }
+
+    // Constructor 2: Takes model as a parameter
+    Car(String model) {
+        this.model = model;
+        this.year = 2020;
+        System.out.println("Constructor 2: Model parameter");
+    }
+
+    // Constructor 3: Takes model and year as parameters
+    Car(String model, int year) {
+        this.model = model;
+        this.year = year;
+        System.out.println("Constructor 3: Model and Year parameters");
+    }
+
+    void displayDetails() {
+        System.out.println("Model: " + model + ", Year: " + year);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // Calling Constructor 1 (No parameters)
+        Car car1 = new Car();
+        car1.displayDetails();  // Outputs: Model: Unknown, Year: 2020
+
+        // Calling Constructor 2 (One parameter)
+        Car car2 = new Car("Toyota");
+        car2.displayDetails();  // Outputs: Model: Toyota, Year: 2020
+
+        // Calling Constructor 3 (Two parameters)
+        Car car3 = new Car("Ford", 2021);
+        car3.displayDetails();  // Outputs: Model: Ford, Year: 2021
+    }
+}
+Explanation:
+Constructor 1 (Car()): This constructor has no parameters and initializes the model to "Unknown" and year to 2020.
+
+Constructor 2 (Car(String model)): This constructor takes the model of the car as a parameter and sets the year to 2020.
+
+Constructor 3 (Car(String model, int year)): This constructor takes both model and year as parameters, allowing full customization of both fields.
+
+Constructor Overloading Rules:
+Different Parameter Lists: Constructors must have a different number or types of parameters to be considered overloaded.
+
+No Return Type: Like all constructors, overloaded constructors do not have a return type.
+
+Important Points:
+When you create an object, Java will automatically call the constructor that best matches the arguments you provide.
+
+The constructor with the matching number and type of parameters will be called automatically.
+
+3. Constructor Chaining with Superclass Constructor
+When you are working with inheritance, constructors from the superclass can also be called within the subclass using super(). This is similar to this() for calling constructors within the same class.
+
+Example: Constructor Chaining with super()
+
+class Vehicle {
+    String type;
+
+    // Vehicle constructor
+    Vehicle(String type) {
+        this.type = type;
+        System.out.println("Vehicle constructor called");
+    }
+}
+
+class Car extends Vehicle {
+    String model;
+
+    // Car constructor calls Vehicle constructor using super()
+    Car(String model, String type) {
+        super(type);  // Calls Vehicle constructor
+        this.model = model;
+        System.out.println("Car constructor called");
+    }
+
+    void displayDetails() {
+        System.out.println("Type: " + type + ", Model: " + model);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // Calling the Car constructor, which calls Vehicle constructor using super()
+        Car myCar = new Car("Toyota", "Sedan");
+        myCar.displayDetails();  // Outputs: Type: Sedan, Model: Toyota
+    }
+}
+Explanation:
+Superclass (Vehicle) Constructor: The Vehicle class has a constructor that initializes the type.
+
+Subclass (Car) Constructor: The Car class constructor calls the superclass constructor (super(type)) to initialize the type of the vehicle before initializing the model.
+
+super():
+
+Used to call the constructor of the superclass.
+
+Must be the first statement in the subclass constructor.
+
+4. Key Takeaways
+Constructor Chaining with this():
+
+Allows calling one constructor from another in the same class.
+
+Helps reduce code duplication.
+
+Must be the first statement in the constructor.
+
+Constructor Overloading:
+
+Multiple constructors with the same name but different parameter lists.
+
+Provides flexibility to initialize objects in different ways.
+
+Constructor Chaining with super():
+
+Calls the superclass constructor from the subclass.
+
+Helps initialize the superclass’s instance variables before the subclass’s variables.
+
+Tips:
+Constructor Calling: this() is used for self (calling the same class constructor), and super() is used for parent (calling the superclass constructor).
+
+Constructor Overloading: Think of it as having multiple ways to create an object, like different recipes for the same dish.
+
+***********
+
+1. Object Initialization and Creation
+In Java, object initialization is the process of setting the initial values of an object's properties (or instance variables) when it's created. Object creation refers to creating an instance of a class, and this is typically done using the new keyword.
+
+Object Creation and Initialization Process
+Here’s how you create and initialize an object in Java:
+
+Define a class with instance variables (properties).
+
+Create a constructor that initializes the object's properties when the object is created.
+
+Create an object using the new keyword, which invokes the constructor.
+
+Example of Object Creation and Initialization
+
+class Car {
+    String model;
+    int year;
+
+    // Constructor to initialize the object
+    Car(String model, int year) {
+        this.model = model;
+        this.year = year;
+    }
+
+    // Method to display object details
+    void displayDetails() {
+        System.out.println("Model: " + model + ", Year: " + year);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // Object creation and initialization
+        Car myCar = new Car("Toyota", 2020);  // Calls the constructor
+
+        // Accessing object's method to display details
+        myCar.displayDetails();  // Outputs: Model: Toyota, Year: 2020
+    }
+}
+Explanation:
+The Car class has two instance variables: model and year.
+
+The constructor Car(String model, int year) is used to initialize these variables when the object is created.
+
+The object myCar is created using new Car("Toyota", 2020), which invokes the constructor and initializes the object with the specified values.
+
+2. Constructor Chaining
+Constructor chaining refers to the practice of calling one constructor from another constructor in the same class (using this()) or from a superclass (using super()). This is useful when you want to avoid repeating initialization code across multiple constructors and streamline object creation.
+
+Constructor Chaining in the Same Class (Using this())
+You can call one constructor from another constructor in the same class using this(). This allows you to avoid redundant initialization code.
+
+Example of Constructor Chaining in the Same Class
+
+class Car {
+    String model;
+    int year;
+
+    // Constructor 1: Default constructor with default values
+    Car() {
+        this("Unknown", 2022);  // Calls Constructor 2 with default values
+    }
+
+    // Constructor 2: Constructor with parameters
+    Car(String model, int year) {
+        this.model = model;
+        this.year = year;
+    }
+
+    void displayDetails() {
+        System.out.println("Model: " + model + ", Year: " + year);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // Calling Constructor 1 (which calls Constructor 2 internally)
+        Car car1 = new Car();
+        car1.displayDetails();  // Outputs: Model: Unknown, Year: 2022
+
+        // Calling Constructor 2
+        Car car2 = new Car("Honda", 2021);
+        car2.displayDetails();  // Outputs: Model: Honda, Year: 2021
+    }
+}
+Explanation:
+Constructor 1 (Car()): This constructor doesn't take any parameters. Instead, it calls Constructor 2 (Car(String model, int year)) using this("Unknown", 2022), passing default values for the model and year.
+
+Constructor 2 (Car(String model, int year)): This constructor takes model and year as parameters and initializes the corresponding instance variables.
+
+Constructor Chaining: The this() keyword allows one constructor to call another constructor within the same class.
+
+Important Notes:
+
+this() must always be the first statement in a constructor.
+
+It is used for constructor chaining within the same class.
+
+Constructor Chaining with Superclass Constructor (Using super())
+In inheritance, you can call a constructor from the superclass (parent class) using super(). This is important when a subclass needs to initialize the properties defined in the superclass before initializing its own properties.
+
+Example of Constructor Chaining with super()
+
+class Vehicle {
+    String type;
+
+    // Constructor in the superclass
+    Vehicle(String type) {
+        this.type = type;
+        System.out.println("Vehicle constructor called");
+    }
+}
+
+class Car extends Vehicle {
+    String model;
+
+    // Constructor in the subclass
+    Car(String model, String type) {
+        super(type);  // Calls the superclass constructor
+        this.model = model;
+        System.out.println("Car constructor called");
+    }
+
+    void displayDetails() {
+        System.out.println("Type: " + type + ", Model: " + model);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // Creating an object of the subclass (Car)
+        Car myCar = new Car("Toyota", "Sedan");
+        myCar.displayDetails();  // Outputs: Type: Sedan, Model: Toyota
+    }
+}
+Explanation:
+The Vehicle class has a constructor that initializes the type of the vehicle.
+
+The Car class inherits from the Vehicle class and calls the superclass constructor using super(type) to initialize the type before initializing its own model property.
+
+Constructor chaining with super() allows the Car class to leverage the initialization logic of the Vehicle class.
+
+Important Notes:
+
+super() must be the first statement in the subclass constructor.
+
+It is used for constructor chaining from subclass to superclass.
+
+If you don't explicitly call super(), the default constructor of the superclass is called automatically, but if the superclass doesn't have a no-argument constructor, you'll need to call a specific constructor using super().
+
+3. Object Initialization vs Constructor Chaining
+Object Initialization: This is the process of setting initial values for an object's instance variables. It happens when the object is created using a constructor. Object initialization happens within the constructor.
+
+Constructor Chaining: This is a technique that allows one constructor to call another constructor (either in the same class or the superclass) to reuse initialization logic. It's used to make code more efficient and avoid repetition.
+
+Summary
+Object Creation:
+
+Use the new keyword to create an object.
+
+The constructor is invoked during object creation to initialize the object’s state.
+
+Object Initialization:
+
+Initialize object properties through a constructor or setter methods.
+
+Constructor Chaining:
+
+Within the same class: Use this() to call another constructor in the same class.
+
+From subclass to superclass: Use super() to call a constructor of the superclass.
+
+Tips:
+this(): Think of it as calling another "self" constructor in the same class.
+
+super(): Think of it as calling the "parent" constructor in the superclass.
+
+********
+
+| Feature                | throw                                                                 | throws                                                                 |
+|------------------------|-----------------------------------------------------------------------|-----------------------------------------------------------------------|
+| **Type**               | Keyword used to explicitly throw an exception.                       | Keyword used in a method signature to declare that the method can throw an exception. |
+| **Usage**              | Used inside a method or block of code to throw an exception explicitly. | Used in the method signature to specify that the method may throw an exception. |
+| **Where it's used**    | Inside the method body or a constructor.                             | In the method declaration or constructor declaration. |
+| **Functionality**      | It is used to actually throw an exception and transfer control to the catch block or propagate it to the caller. | It is used to declare exceptions that a method may throw, indicating that the caller of the method should handle them. |
+| **Syntax Example**     | throw new Exception("Custom Exception!");                           | public void myMethod() throws IOException, SQLException {} |
+| **Purpose**            | Used to throw an exception that is either checked or unchecked.      | Used to declare that a method can throw certain checked exceptions, and it tells the compiler that the calling code needs to handle those exceptions. |
+| **Effect**             | When throw is executed, the flow of execution is transferred to the exception handler (if any). | When throws is used, the compiler checks the method for exceptions, but the responsibility for handling the exceptions lies with the caller of the method. |
+| **Used for**           | Throwing an instance of an exception explicitly in the code.         | Declaring that a method can throw an exception to its caller. |
+| **Scope**              | Applies only within the method or block in which it is used.         | Applies at the method signature level. |
+
+Detailed Explanation with Examples
+1. throw Keyword
+Purpose: It is used to explicitly throw an exception from the code.
+
+Where Used: Inside a method or a constructor.
+
+When: You know exactly when you want to trigger an exception.
+
+Example:
+
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            validateAge(15);  // Pass 15 to check if it throws exception
+        } catch (IllegalArgumentException e) {
+            System.out.println("Caught Exception: " + e.getMessage());
+        }
+    }
+
+    public static void validateAge(int age) {
+        if (age < 18) {
+            // Throwing an exception
+            throw new IllegalArgumentException("Age must be 18 or above.");
+        }
+        System.out.println("Valid age: " + age);
+    }
+}
+In this example:
+
+throw new IllegalArgumentException("Age must be 18 or above.") explicitly throws an exception when the age is below 18.
+
+2. throws Keyword
+Purpose: It is used in a method declaration to indicate that the method can throw certain exceptions.
+
+Where Used: In the method or constructor declaration.
+
+When: You want to declare that a method can throw checked exceptions, and the caller of the method must handle these exceptions.
+
+Example:
+
+
+import java.io.*;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            readFile("non_existent_file.txt");
+        } catch (IOException e) {
+            System.out.println("Caught IOException: " + e.getMessage());
+        }
+    }
+
+    // Declaring that this method might throw an IOException
+    public static void readFile(String filename) throws IOException {
+        FileReader file = new FileReader(filename);  // This may throw IOException
+        BufferedReader fileInput = new BufferedReader(file);
+        System.out.println(fileInput.readLine());
+    }
+}
+In this example:
+
+throws IOException in the method signature means the method might throw an IOException.
+
+The caller (in this case, the main method) is responsible for handling this exception, which is why it uses try-catch to catch and handle the IOException.
+
+Key Points to Remember
+throw:
+
+Used to explicitly throw an exception.
+
+It must be followed by an instance of an exception (e.g., throw new Exception("Message");).
+
+It transfers control to the catch block (if present) or propagates the exception to the calling method.
+
+throws:
+
+Used in the method signature to declare that the method may throw exceptions.
+
+It is followed by the exception class names (e.g., throws IOException, SQLException).
+
+It allows a method to pass on the responsibility of handling the exception to the calling method.
+
+Summary Example: throw vs throws
+
+import java.io.*;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            // Call a method that declares to throw exceptions
+            performAction();
+        } catch (IOException e) {
+            System.out.println("Caught IOException: " + e.getMessage());
+        }
+    }
+
+    // Method that throws an exception using 'throws'
+    public static void performAction() throws IOException {
+        // Simulating an error that needs to be thrown
+        throw new IOException("An I/O error occurred during action");
+    }
+}
+In this code:
+
+throws IOException in the performAction method indicates that this method may throw an IOException, which must be handled by the caller (main method).
+
+throw new IOException() is used to explicitly throw an exception in the method body.
+
+********
+
+1. extends
+Purpose: Indicates that a class is inheriting (subclassing) another class.
+
+Used in: Class declaration.
+
+Explanation: When a class extends another class, it inherits the properties and methods of the parent class. A subclass can also override methods of the parent class to provide specific functionality.
+
+Example:
+
+
+class Animal {
+    void sound() {
+        System.out.println("Animal makes a sound");
+    }
+}
+
+class Dog extends Animal {
+    @Override
+    void sound() {
+        System.out.println("Dog barks");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Dog dog = new Dog();
+        dog.sound();  // Output: Dog barks
+    }
+}
+2. implements
+Purpose: Indicates that a class is implementing an interface.
+
+Used in: Class declaration.
+
+Explanation: When a class implements an interface, it must provide concrete implementations for all the methods declared in that interface.
+
+Example:
+
+
+interface Vehicle {
+    void start();
+    void stop();
+}
+
+class Car implements Vehicle {
+    @Override
+    public void start() {
+        System.out.println("Car starts");
+    }
+
+    @Override
+    public void stop() {
+        System.out.println("Car stops");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Vehicle vehicle = new Car();
+        vehicle.start();  // Output: Car starts
+        vehicle.stop();   // Output: Car stops
+    }
+}
+3. final
+Purpose: Used to make variables constant, prevent method overriding, or prevent inheritance of a class.
+
+Used in: Variable, Method, Class.
+
+Explanation:
+
+If a variable is declared as final, its value cannot be changed once assigned.
+
+If a method is final, it cannot be overridden by subclasses.
+
+If a class is final, it cannot be subclassed (inherited).
+
+Example:
+
+
+final int MAX_SPEED = 100;  // This value cannot be changed
+
+class Animal {
+    final void sleep() {
+        System.out.println("Animal is sleeping");
+    }
+}
+
+class Dog extends Animal {
+    // This will give a compile-time error
+    // void sleep() { System.out.println("Dog is sleeping"); }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Animal animal = new Animal();
+        animal.sleep();  // Output: Animal is sleeping
+    }
+}
+4. finally
+Purpose: Defines a block that is always executed after a try-catch block, regardless of whether an exception was thrown or not.
+
+Used in: Exception handling (try-catch-finally).
+
+Explanation: The finally block is used to release resources like file handles, database connections, or clean-up tasks.
+
+Example:
+
+
+try {
+    System.out.println("Try block");
+    int result = 10 / 0;  // This will cause an exception
+} catch (Exception e) {
+    System.out.println("Catch block: " + e.getMessage());
+} finally {
+    System.out.println("Finally block (always runs)");
+}
+Output:
+
+
+Try block
+Catch block: / by zero
+Finally block (always runs)
+5. finalize
+Purpose: A method in the Object class that is called just before an object is garbage collected.
+
+Used in: Object class.
+
+Explanation: The finalize() method can be overridden to perform cleanup operations before an object is destroyed. However, it is not commonly used in modern Java programming.
+
+Example:
+
+
+class MyClass {
+    @Override
+    protected void finalize() throws Throwable {
+        System.out.println("Object is being garbage collected");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        MyClass obj = new MyClass();
+        obj = null;  // Eligible for garbage collection
+        System.gc();  // Suggests JVM to run garbage collector
+    }
+}
+6. interface
+Purpose: Defines a contract for classes to implement.
+
+Used in: Interface declaration.
+
+Explanation: An interface contains abstract methods (without implementation) and constants. Classes can implement an interface and provide concrete implementations for the methods.
+
+Example:
+
+
+interface Animal {
+    void sound();
+}
+
+class Dog implements Animal {
+    @Override
+    public void sound() {
+        System.out.println("Bark");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Animal myDog = new Dog();
+        myDog.sound();  // Output: Bark
+    }
+}
+7. abstract
+Purpose: Defines a class or method that cannot be instantiated or has to be implemented by subclasses.
+
+Used in: Class or Method.
+
+Explanation: An abstract class cannot be instantiated, and an abstract method must be implemented in the subclass.
+
+Example:
+
+
+abstract class Animal {
+    abstract void sound();  // Abstract method
+}
+
+class Dog extends Animal {
+    @Override
+    void sound() {
+        System.out.println("Bark");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Animal myDog = new Dog();
+        myDog.sound();  // Output: Bark
+    }
+}
+8. super
+Purpose: Refers to the parent class. It is used to access the parent class's methods or constructor.
+
+Used in: Class methods, constructor.
+
+Explanation: You can use super to call a superclass constructor or methods from a subclass.
+
+Example:
+
+
+class Animal {
+    Animal() {
+        System.out.println("Animal Constructor");
+    }
+}
+
+class Dog extends Animal {
+    Dog() {
+        super();  // Calls the constructor of Animal class
+        System.out.println("Dog Constructor");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Dog dog = new Dog();  // Output: Animal Constructor, Dog Constructor
+    }
+}
+9. this
+Purpose: Refers to the current instance of the class.
+
+Used in: Instance methods and constructors.
+
+Explanation: It can be used to refer to the current object’s instance variables and methods. It is also used to call another constructor within the same class (constructor chaining).
+
+Example:
+
+
+class Car {
+    String model;
+    int year;
+
+    Car(String model, int year) {
+        this.model = model;  // Refers to the instance variable
+        this.year = year;    // Refers to the instance variable
+    }
+
+    void display() {
+        System.out.println("Car Model: " + model + ", Year: " + year);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Car car = new Car("Toyota", 2020);
+        car.display();  // Output: Car Model: Toyota, Year: 2020
+    }
+}
+10. new
+Purpose: Used to create new objects or arrays.
+
+Used in: Object creation.
+
+Explanation: The new keyword is used to create an instance of a class or an array.
+
+Example:
+
+
+class Car {
+    String model;
+    int year;
+
+    Car(String model, int year) {
+        this.model = model;
+        this.year = year;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Car myCar = new Car("Toyota", 2021);  // Creates a new object of Car
+        System.out.println(myCar.model);  // Output: Toyota
+    }
+}
+11. break
+Purpose: Used to exit from loops or switch cases.
+
+Used in: Loop, switch statements.
+
+Explanation: break is used to terminate the execution of a loop or switch statement prematurely.
+
+Example:
+
+
+for (int i = 0; i < 5; i++) {
+    if (i == 3) {
+        break;  // Exit the loop when i equals 3
+    }
+    System.out.println(i);
+}
+// Output: 0, 1, 2
+12. assert
+Purpose: Used for debugging to test assumptions in the code.
+
+Used in: Debugging.
+
+Explanation: assert helps you validate conditions at runtime. If the condition is false, it throws an AssertionError. By default, assertions are disabled, and you can enable them using the -ea flag when running the Java program.
+
+Example:
+
+
+int age = 25;
+assert age >= 18 : "Age must be at least 18";  // This will pass because 25 >= 18
+
+// If you change the age to below 18, an assertion error will occur:
+assert age >= 18 : "Age must be at least 18";  // This will throw an AssertionError
+
+
+*******
+
+Garbage Collection in Java
+Garbage collection (GC) is a process by which Java automatically frees up memory by removing objects that are no longer in use or referenced. This helps manage memory efficiently and ensures that the program doesn't run out of memory.
+
+Key Concepts of Garbage Collection in Java
+Automatic Memory Management:
+
+Java has an automatic garbage collection system that automatically reclaims memory.
+
+It is responsible for tracking objects that are no longer needed (i.e., objects that are no longer referenced) and clearing them from memory.
+
+Heap Memory:
+
+Java's heap is where objects are stored. The garbage collector works in the heap to identify and remove objects that are no longer referenced.
+
+The heap is divided into different generations, such as:
+
+Young Generation: Where new objects are created. This is where most of the garbage collection happens (Minor GC).
+
+Old Generation: Where long-lived objects are moved after surviving several GC cycles. If objects are no longer referenced in the old generation, they are collected (Major GC or Full GC).
+
+Reference Types:
+
+Strong Reference: An object that is strongly referenced by a variable. The garbage collector will not reclaim this object until the reference goes out of scope or is explicitly set to null.
+
+Weak Reference: An object referenced weakly. It can be collected by the garbage collector if no strong references exist.
+
+Phantom Reference: Used for objects that should be cleaned up after finalization.
+
+Soft Reference: Objects that are referenced softly. They may be collected when memory is needed but will be retained when there is no memory pressure.
+
+GC Roots:
+
+These are the objects that the garbage collector considers as "alive." They are the starting point from which the reachability of objects is checked. If an object can be reached from any of the GC roots, it is considered reachable, and thus, not eligible for garbage collection.
+
+GC Roots include:
+
+Local variables in a method or thread stack.
+
+Active threads.
+
+Static variables (e.g., class-level variables).
+
+JNI (Java Native Interface) references.
+
+How Garbage Collection Works
+Mark-and-Sweep Algorithm:
+
+Mark Phase: The garbage collector traverses the object graph starting from the GC roots and marks all reachable objects as "live."
+
+Sweep Phase: Once all reachable objects are marked, the collector sweeps through the heap and removes all unmarked (unreachable) objects.
+
+Generational Garbage Collection:
+
+The Young Generation (new objects) undergoes frequent collection. This area is relatively small and can be collected quickly.
+
+Objects that survive several collections in the Young Generation are eventually promoted to the Old Generation (tenured generation), where they are collected less frequently.
+
+This is based on the observation that most objects are short-lived (young objects) and can be reclaimed faster, while long-lived objects (old objects) are less frequently collected.
+
+Types of Garbage Collection
+Minor Garbage Collection (Young Generation):
+
+Happens when the Young Generation (where new objects are created) becomes full. It is relatively fast, as only a subset of the heap is collected (the Young Generation).
+
+After a minor GC, surviving objects are promoted to the Old Generation.
+
+Major (Full) Garbage Collection (Old Generation):
+
+Occurs when the Old Generation becomes full, and it includes both the Young Generation and the Old Generation. This is more expensive and takes longer because it involves scanning more objects.
+
+It is triggered less frequently because it requires more resources.
+
+Incremental and Concurrent Garbage Collection:
+
+Some JVMs provide incremental and concurrent garbage collectors to reduce pause times. These garbage collectors work in the background to minimize the impact on application performance.
+
+Stop-the-World Event:
+
+During garbage collection, all application threads are paused. This is called a stop-the-world event, where the application’s execution halts to allow garbage collection to occur. The duration of this pause is what can impact application performance.
+
+Important Garbage Collection Methods and Concepts
+System.gc():
+
+You can explicitly suggest that the JVM performs garbage collection using System.gc(). However, this is just a request to the JVM, and it is not guaranteed that garbage collection will actually occur immediately.
+
+Example:
+
+
+System.gc();  // Suggest garbage collection
+finalize() Method:
+
+The finalize() method is a method in the Object class, which can be overridden by objects to perform cleanup before being garbage collected. It is called just before an object is reclaimed by the garbage collector.
+
+Warning: The use of finalize() is not recommended in modern Java development because it is unreliable. It is better to use try-with-resources or explicitly close resources like file streams or database connections.
+
+Example:
+
+
+class MyClass {
+    @Override
+    protected void finalize() throws Throwable {
+        System.out.println("Cleaning up resources...");
+        super.finalize();
+    }
+}
+Note: finalize() is deprecated in newer versions of Java (since Java 9) and is considered unreliable.
+
+Common Garbage Collectors in Java
+Serial Garbage Collector:
+
+Suitable for single-threaded applications. It uses a single thread to perform both minor and major collections.
+
+Parallel Garbage Collector:
+
+Uses multiple threads to perform garbage collection, improving performance in multi-threaded applications. The default garbage collector in many JVMs (since Java 7) is the Parallel GC.
+
+CMS (Concurrent Mark-Sweep) Garbage Collector:
+
+Designed to minimize pauses by performing most of the work concurrently with the application. It marks and sweeps the heap without stopping the application.
+
+G1 (Garbage First) Garbage Collector:
+
+Designed for applications running on multi-processor machines with large heaps. It tries to predict and manage garbage collection pauses.
+
+ZGC (Z Garbage Collector):
+
+A low-latency garbage collector introduced in Java 11. It is designed to minimize GC pause times for applications that require high responsiveness.
+
+Shenandoah GC:
+
+A low-latency garbage collector, similar to ZGC, designed to reduce pause times for large heap sizes.
+
+How to Monitor Garbage Collection in Java
+JVM options: You can enable GC logging by adding the following options when running a Java program:
+
+
+java -Xlog:gc* -jar myprogram.jar
+This will print out information about garbage collection events, such as when collections happen, how long they take, and which generation was collected.
+
+Tools for GC monitoring:
+
+JVisualVM: A monitoring tool that provides information about heap usage, garbage collection activity, and memory consumption.
+
+JConsole: A tool that allows you to monitor memory usage and garbage collection statistics in real time.
+
+Summary
+Garbage Collection is an automatic process that reclaims memory from objects that are no longer referenced.
+
+The garbage collector works with the heap memory, using algorithms like Mark-and-Sweep and Generational Collection to clean up unused objects.
+
+Minor and Major Garbage Collection cycles help reclaim memory for new and long-lived objects.
+
+System.gc() can be called to suggest a garbage collection, but it’s not guaranteed to run.
+
+Use of the finalize() method for cleanup before garbage collection is discouraged in newer Java versions.
+
+Understanding garbage collection helps in writing memory-efficient Java applications and knowing when GC might impact performance.
