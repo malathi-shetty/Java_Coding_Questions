@@ -2,7 +2,7 @@ package array_Coding_Questions_Assignment_Common_elements_in_both_the_Arrays;
 
 import java.util.HashSet;
 
-public class Common_Numbers_Between_three_Arrays {
+public class Numbers_Common_Between_three_Arrays {
 
 	public static void main(String[] args) {
 		int[] a = { 1, 2, 3 };

@@ -3,7 +3,7 @@ package array_Coding_Questions_Assignment_Common_elements_in_both_the_Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
-public class Common_Numbers_in_both_the_Arrays_Set_1 {
+public class Numbers_Common_in_both_the_Arrays_Set_1 {
 
 	public static void main(String[] args) {
 		 int[] a = {1, 2, 3, 4, 8,9,9};

@@ -1,7 +1,7 @@
 package array_Coding_Questions_Assignment_Common_elements_in_both_the_Arrays;
 
 import java.util.*;
-public class Common_Numbers_in_both_the_Arrays_using_retainAll {
+public class Number_Common_in_both_the_Arrays_using_retainAll {
 
 	public static void main(String[] args) {
 		 List<Integer> list1 = Arrays.asList(1, 2, 3, 4, 5);

@@ -2,7 +2,7 @@ package array_Coding_Questions_Assignment_Common_elements_in_both_the_Arrays;
 
 import java.util.HashSet;
 
-public class Common_Single_Number_In_An_Array_1_using_HashSet {
+public class Number_Common_Single_In_An_Array_1_using_HashSet {
 
 	public static void main(String[] args) {
 

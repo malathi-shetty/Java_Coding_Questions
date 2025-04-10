@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public class Common_String_Between_two_List_retainAll2 {
+public class String_Common_Between_two_List_retainAll2 {
 
 	public static void main(String[] args) {
 		 List<String> list1 = new ArrayList<>();

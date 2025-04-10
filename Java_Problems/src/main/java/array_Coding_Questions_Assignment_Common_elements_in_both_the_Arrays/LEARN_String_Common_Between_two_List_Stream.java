@@ -4,7 +4,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 
-public class LEARN_Common_String_Between_two_List_Stream {
+public class LEARN_String_Common_Between_two_List_Stream {
 
 	
 	//NOT SUPPORTED JDK - else correct code

@@ -3,7 +3,7 @@ package array_Coding_Questions_Assignment_Common_elements_in_both_the_Arrays;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class LEARN_Common_Numbers_in_both_the_Arrays_retainAll {
+public class LEARN_Numbers_Common_in_both_the_Arrays_retainAll {
 
 	// by using ArrayList with retainAll method
 	

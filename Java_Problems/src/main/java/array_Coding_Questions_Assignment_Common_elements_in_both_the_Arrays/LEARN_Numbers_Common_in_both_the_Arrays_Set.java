@@ -3,7 +3,7 @@ package array_Coding_Questions_Assignment_Common_elements_in_both_the_Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
-public class LEARN_Common_Numbers_in_both_the_Arrays_Set {
+public class LEARN_Numbers_Common_in_both_the_Arrays_Set {
 
 	public static void main(String[] args) {
 		

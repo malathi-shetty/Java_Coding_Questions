@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
 
-public class Common_Numbers_in_both_the_Arrays_using_ArrayList {
+public class Numbers_Common_in_both_the_Arrays_using_ArrayList {
 
 	public static void main(String[] args) {
 
