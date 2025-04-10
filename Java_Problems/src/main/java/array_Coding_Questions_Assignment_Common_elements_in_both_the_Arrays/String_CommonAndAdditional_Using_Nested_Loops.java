@@ -1,9 +1,9 @@
-package find_additional_element_in_list_while_comparing_2_List;
+package array_Coding_Questions_Assignment_Common_elements_in_both_the_Arrays;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Find_additional_element_in_list_while_comparing_2_List_4_Using_Nested_Loops {
+public class String_CommonAndAdditional_Using_Nested_Loops {
 
 	public static void main(String[] args) {
 		List<String> list1 = new ArrayList<>();

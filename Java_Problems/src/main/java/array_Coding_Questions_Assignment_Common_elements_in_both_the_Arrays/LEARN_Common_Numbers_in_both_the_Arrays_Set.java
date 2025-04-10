@@ -3,33 +3,39 @@ package array_Coding_Questions_Assignment_Common_elements_in_both_the_Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
-public class Array_Coding_Questions_Assignment_Common_elements_in_both_the_Arrays_Using_HashSet_learn {
+public class LEARN_Common_Numbers_in_both_the_Arrays_Set {
 
 	public static void main(String[] args) {
+		
 		// Common elements in both the Arrays
-		int[] a1 = { 1, 2, 3, 4, 5 };
-		int[] a2 = { 4, 5, 6, 7, 8 };
+		int[] a = {1, -2, 3, 4, 5, -6};
+        int[] b = {-6, 4, 9, 10, 1};
+        
+      //  int[] a = { 1, 2, 3, 4, 5 };
+	//	int[] ab = { 4, 5, 6, 7, 8 };
 
-		Set<Integer> set = new HashSet<>();
-		Set<Integer> dup = new HashSet<>();
+        Set<Integer> set = new HashSet<>();
+        Set<Integer> common = new HashSet<>();
 
-		// Add all elements from the first array to the set
-		for (int num : a1) {
-			set.add(num);
-		}
+     // Add all elements from the first array to the set
+        for (int num : a) {
+            set.add(num);
+        }
 
-		// Check if elements from the second array are in the set
-		for (int num : a2) {
-			if (set.contains(num)) {
-				dup.add(num);
-			}
-		}
+     // Check if elements from the second array are in the set
+        for (int num : b) {
+            if (set.contains(num)) {
+                common.add(num);
+            }
+        }
 
-		System.out.println("Common elements: " + dup); // Output: [4, 5]
+        System.out.println("Common elements: " + common);
 
 	}
 
 }
+
+// Common elements: [1, 4, -6]
 
 /*
  * 

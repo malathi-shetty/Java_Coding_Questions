@@ -1,10 +1,10 @@
-package find_Common_Elements_In_An_Array;
+package array_Coding_Questions_Assignment_Common_elements_in_both_the_Arrays;
 
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
 
-public class Find_Common_Elements_Between_any_two_Arrays_3_2_ArrayList_Learn {
+public class Common_Numbers_in_both_the_Arrays_using_ArrayList {
 
 	public static void main(String[] args) {
 

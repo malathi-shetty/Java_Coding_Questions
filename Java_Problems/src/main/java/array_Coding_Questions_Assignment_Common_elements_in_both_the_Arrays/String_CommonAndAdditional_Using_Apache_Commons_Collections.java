@@ -1,11 +1,11 @@
-package find_additional_element_in_list_while_comparing_2_List;
+package array_Coding_Questions_Assignment_Common_elements_in_both_the_Arrays;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.commons.collections4.CollectionUtils;
 
-public class Find_additional_element_in_list_while_comparing_2_List_3_Using_Apache_Commons_Collections {
+public class String_CommonAndAdditional_Using_Apache_Commons_Collections {
 
 	public static void main(String[] args) {
 		List<String> list1 = new ArrayList<>();

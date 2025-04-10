@@ -1,0 +1,1638 @@
+1. char[] a = s.toCharArray();
+This converts a String (s) into a char array (a sequence of characters).
+
+Example:
+
+
+String s = "Hello";
+char[] a = s.toCharArray(); // Now 'a' contains {'H', 'e', 'l', 'l', 'o'}
+Explanation:
+
+A String in Java is made up of characters. But sometimes, we might want to work with these characters individually. So, we can convert a string into an array of characters using toCharArray(). The result is an array where each element is one character from the string.
+
+2. What is charAt(j)?
+charAt(j) is a method of the String class in Java. It returns the character at a specific position in a string.
+
+Example:
+
+
+String word = "Hello";
+char c = word.charAt(1); // Gets the character at index 1 (starts at 0)
+System.out.println(c); // Prints "e"
+Explanation:
+
+In the string "Hello", the index starts from 0 (i.e., "H" is at index 0, "e" is at index 1, etc.).
+
+charAt(j) retrieves the character at index j. In the example above, word.charAt(1) returns the character 'e'.
+
+3. reversedWord += word.charAt(j);
+This adds a character from the string to another string or variable reversedWord.
+
+Example:
+
+
+String word = "Hello";
+String reversedWord = "";
+for (int j = word.length() - 1; j >= 0; j--) {
+    reversedWord += word.charAt(j); // Builds reversed word
+}
+System.out.println(reversedWord); // Prints "olleH"
+Explanation:
+
+charAt(j) gets the character at position j in the string word.
+
++= appends the character to reversedWord, so you can build a reversed string one character at a time.
+
+4. letters.append(c);
+The StringBuilder class in Java has an append() method that adds a character or string to the end of a current string.
+
+Example:
+
+
+StringBuilder letters = new StringBuilder();
+char c = 'A';
+letters.append(c); // Adds 'A' to the StringBuilder
+System.out.println(letters); // Prints "A"
+Explanation:
+
+StringBuilder is a class used to create mutable (changeable) strings. When you use append(), it adds whatever is inside the parentheses (in this case, the character c) to the end of the existing content in letters.
+
+5. String[] words = s.split(" ");
+This splits a string into an array of substrings based on a delimiter, in this case, a space (" ").
+
+Example:
+
+
+String s = "This is a sentence";
+String[] words = s.split(" "); // Splits the string by spaces
+System.out.println(Arrays.toString(words)); // Prints [This, is, a, sentence]
+Explanation:
+
+The split() method breaks the string into parts (substrings) wherever it finds a space, and returns them as an array of strings.
+
+6. letters.reverse();
+This reverses the content of a StringBuilder.
+
+Example:
+
+
+StringBuilder letters = new StringBuilder("Hello");
+letters.reverse(); // Reverses the content of 'letters'
+System.out.println(letters); // Prints "olleH"
+Explanation:
+
+The reverse() method reverses the order of the characters in the StringBuilder. If the string was "Hello", after reversing, it becomes "olleH".
+
+7. Arrays.asList(1, 2, 2, 2);
+This converts a list of elements (like integers) into a List object.
+
+Example:
+
+
+List<Integer> list = Arrays.asList(1, 2, 2, 2); 
+System.out.println(list); // Prints [1, 2, 2, 2]
+Explanation:
+
+Arrays.asList() takes a comma-separated list of values and returns a List object. This allows you to work with a collection of items more easily, like adding, removing, or sorting them.
+
+8. Arrays.sort();
+This sorts an array in ascending order.
+
+Example:
+
+
+int[] numbers = {5, 2, 8, 3, 1};
+Arrays.sort(numbers); // Sorts the array in ascending order
+System.out.println(Arrays.toString(numbers)); // Prints [1, 2, 3, 5, 8]
+Explanation:
+
+The Arrays.sort() method sorts an array into ascending order. If you have an array of numbers, it will rearrange them from smallest to largest.
+
+9. s2 = s2.replaceAll("[^a-zA-Z0-9]", "");
+This removes any character from a string that is not a letter or a number.
+
+Example:
+
+
+String s2 = "Hello, World! 123";
+s2 = s2.replaceAll("[^a-zA-Z0-9]", ""); 
+System.out.println(s2); // Prints "HelloWorld123"
+Explanation:
+
+replaceAll("[^a-zA-Z0-9]", "") replaces any character that is not a letter (A-Z or a-z) or a digit (0-9) with an empty string, effectively removing it.
+
+10. int k = Character.getNumericValue(a[i]);
+This converts a character to its corresponding numeric value.
+
+Example:
+
+
+char c = '5';
+int k = Character.getNumericValue(c); 
+System.out.println(k); // Prints 5
+Explanation:
+
+Character.getNumericValue(c) converts the character c into its numeric equivalent. For example, if c is '5', it returns the integer 5.
+
+11. System.out.print("\t");
+This prints a tab character, which is often used to create indents or space between items.
+
+Example:
+
+
+System.out.print("\tHello");
+System.out.print("\tWorld!");
+Explanation:
+
+\t represents a tab in Java, which creates a space equivalent to about 4 spaces or one "tab" stop in a text editor. It’s commonly used for formatting output.
+
+12. String Substring: String part1 = s.substring(0, start);
+This extracts a portion of a string, from index 0 to start.
+
+Example:
+
+
+String s = "Hello, World!";
+String part1 = s.substring(0, 5); // Extracts the first 5 characters
+System.out.println(part1); // Prints "Hello"
+Explanation:
+
+substring(start, end) extracts the part of the string starting from start to end (but not including end). In this case, it extracts the first 5 characters ("Hello").
+
+13. Math.max(max, count);
+This finds the larger of two numbers.
+
+Example:
+
+
+int max = 5;
+int count = 8;
+max = Math.max(max, count); // Sets 'max' to the larger of the two numbers
+System.out.println(max); // Prints 8
+Explanation:
+
+Math.max(a, b) compares a and b and returns the larger of the two values. In the above example, count (8) is larger than max (5), so max becomes 8.
+
+14. rev: " + rev.trim();
+This trims any leading or trailing spaces from a string.
+
+Example:
+
+
+String rev = "  Hello World!  ";
+rev = rev.trim(); // Removes leading and trailing spaces
+System.out.println(rev); // Prints "Hello World!"
+Explanation:
+
+trim() removes extra spaces from the beginning and end of the string. It doesn't affect spaces between words.
+
+
+
+15. What is s.split(" ")?
+s.split(" ") is a method that splits a string into an array of substrings using the space character (" ") as a delimiter.
+
+Example:
+
+
+String sentence = "Hello World Java";
+String[] words = sentence.split(" "); // Splits the string by spaces
+System.out.println(Arrays.toString(words)); // Prints [Hello, World, Java]
+Explanation:
+
+The split(" ") method divides the string sentence into parts wherever it finds spaces.
+
+It returns an array of substrings: ["Hello", "World", "Java"].
+
+16. What is s.split("")?
+s.split("") splits a string into an array where each element is a single character from the original string.
+
+Example:
+
+
+String word = "Hello";
+String[] characters = word.split(""); // Splits the string into individual characters
+System.out.println(Arrays.toString(characters)); // Prints [H, e, l, l, o]
+Explanation:
+
+Here, the empty string "" is used as a delimiter, which causes each character of the string to be treated as a separate substring.
+
+In the example, "Hello" is split into ["H", "e", "l", "l", "o"].
+
+17. What does ^ mean?
+In regular expressions (regex) and certain string operations in Java, the ^ symbol has special meanings:
+
+In Regular Expressions (Regex): ^ means the start of a string.
+
+Example:
+
+
+String str = "apple";
+boolean matches = str.matches("^a.*"); // Checks if the string starts with "a"
+System.out.println(matches); // Prints true, because "apple" starts with 'a'
+In Bitwise XOR Operator: The ^ symbol is also used as the bitwise XOR (exclusive OR) operator.
+
+Example:
+
+
+int a = 5;  // 0101 in binary
+int b = 3;  // 0011 in binary
+int result = a ^ b;  // 0110 in binary (XOR of 5 and 3)
+System.out.println(result); // Prints 6
+In string manipulation, you typically see ^ in regex patterns, where it indicates the beginning of a string or a line.
+
+18. What is Character.getNumericValue(c)?
+Character.getNumericValue(c) converts a character into its numeric value if the character represents a digit.
+
+Example:
+
+
+char c = '5';
+int numericValue = Character.getNumericValue(c);
+System.out.println(numericValue); // Prints 5
+Explanation:
+
+This method takes a character, such as '5', and returns its integer equivalent (5).
+
+This is especially useful when you need to extract the numeric value of a character in a string (e.g., '0' through '9').
+
+Other Examples:
+
+If c is a letter like 'A', Character.getNumericValue(c) will return 10 because the letter 'A' is considered the 10th letter in the alphabet (in certain contexts, like hexadecimal numbers).
+
+Similarly, Character.getNumericValue('C') will return 12 (for hexadecimal).
+
+In addition to Character.getNumericValue(c), Java provides several useful annotations or methods for handling characters, strings, and numeric values. Below, I'll explain some other annotations and related methods in Java, especially for characters and strings.
+
+19. Character.isDigit(c) — Check if a character is a digit
+This method checks whether the character is a digit (0-9).
+
+Example:
+
+
+char c = '5';
+boolean isDigit = Character.isDigit(c);
+System.out.println(isDigit); // Prints true
+Explanation:
+
+Character.isDigit(c) returns true if the character is a digit. If c is '5', it returns true. For characters like 'A', it would return false.
+
+20. Character.isLetter(c) — Check if a character is a letter
+This method checks whether the character is a letter (either uppercase or lowercase).
+
+Example:
+
+
+char c = 'A';
+boolean isLetter = Character.isLetter(c);
+System.out.println(isLetter); // Prints true
+Explanation:
+
+Character.isLetter(c) returns true if the character is a letter, and false if it’s not. In this case, 'A' is a letter, so the result is true.
+
+21. Character.isWhitespace(c) — Check if a character is a whitespace character
+This method checks if the character is a whitespace character (spaces, tabs, etc.).
+
+Example:
+
+
+char c = ' ';
+boolean isWhitespace = Character.isWhitespace(c);
+System.out.println(isWhitespace); // Prints true
+Explanation:
+
+Character.isWhitespace(c) returns true if the character is a whitespace (like space, tab, etc.). In this case, since the character is a space (' '), the result is true.
+
+22. Character.toUpperCase(c) — Convert a character to uppercase
+This method converts a given character to its uppercase form, if it's a letter.
+
+Example:
+
+
+char c = 'b';
+char upperC = Character.toUpperCase(c);
+System.out.println(upperC); // Prints 'B'
+Explanation:
+
+Character.toUpperCase(c) converts the character c to uppercase. If c is already uppercase, it remains the same.
+
+23. Character.toLowerCase(c) — Convert a character to lowercase
+This method converts a character to its lowercase form.
+
+Example:
+
+
+char c = 'A';
+char lowerC = Character.toLowerCase(c);
+System.out.println(lowerC); // Prints 'a'
+Explanation:
+
+Character.toLowerCase(c) converts the character c to lowercase. If c is already lowercase, it remains the same.
+
+24. Character.isUpperCase(c) — Check if a character is uppercase
+This method checks if the character is an uppercase letter.
+
+Example:
+
+
+char c = 'Z';
+boolean isUpper = Character.isUpperCase(c);
+System.out.println(isUpper); // Prints true
+Explanation:
+
+Character.isUpperCase(c) returns true if the character is an uppercase letter. In this case, 'Z' is uppercase, so the result is true.
+
+25. Character.isLowerCase(c) — Check if a character is lowercase
+This method checks if the character is a lowercase letter.
+
+Example:
+
+
+char c = 'z';
+boolean isLower = Character.isLowerCase(c);
+System.out.println(isLower); // Prints true
+Explanation:
+
+Character.isLowerCase(c) returns true if the character is a lowercase letter. In this case, 'z' is lowercase, so the result is true.
+
+26. Character.toString(c) — Convert a character to a string
+This method converts a single character into a string.
+
+Example:
+
+
+char c = 'a';
+String s = Character.toString(c);
+System.out.println(s); // Prints "a"
+Explanation:
+
+Character.toString(c) converts the character c into a string. So 'a' becomes the string "a".
+
+27. Character.forDigit(int digit, int radix) — Convert a digit to its corresponding character
+This method converts an integer digit to a character based on the given radix (like hexadecimal, octal, etc.).
+
+Example:
+
+
+int digit = 10;
+char c = Character.forDigit(digit, 16); // Convert 10 to a hexadecimal character
+System.out.println(c); // Prints 'a'
+Explanation:
+
+Character.forDigit(digit, radix) converts a numeric digit into its corresponding character in a particular base (radix). Here, it converts 10 into 'a' (in hexadecimal).
+
+28. String.valueOf(char c) — Convert a character to a string
+This method is similar to Character.toString(c), but it’s a method of the String class. It converts a character into a string.
+
+Example:
+
+
+char c = 'b';
+String s = String.valueOf(c);
+System.out.println(s); // Prints "b"
+Explanation:
+
+String.valueOf(c) converts the character c into a string. So 'b' becomes the string "b".
+
+Summary of Useful Character Operations
+Character to numeric value: Character.getNumericValue(c)
+
+Checking if a character is a digit: Character.isDigit(c)
+
+Checking if a character is a letter: Character.isLetter(c)
+
+Checking if a character is whitespace: Character.isWhitespace(c)
+
+Converting to uppercase: Character.toUpperCase(c)
+
+Converting to lowercase: Character.toLowerCase(c)
+
+Checking case: Character.isUpperCase(c) and Character.isLowerCase(c)
+
+Character to string: Character.toString(c) or String.valueOf(c)
+
+Digit to character: Character.forDigit(digit, radix)
+
+Example of Combining Some Methods Together
+Here’s a simple example using a combination of these methods:
+
+Example:
+
+
+public class CharacterExample {
+    public static void main(String[] args) {
+        String input = "abc 123 XYZ";
+        StringBuilder result = new StringBuilder();
+        
+        for (int i = 0; i < input.length(); i++) {
+            char c = input.charAt(i);
+            
+            if (Character.isLetter(c)) {
+                result.append(Character.toUpperCase(c)); // Convert letters to uppercase
+            } else if (Character.isDigit(c)) {
+                result.append(Character.getNumericValue(c)); // Add digit as its numeric value
+            } else {
+                result.append(' '); // Add a space for non-alphanumeric characters
+            }
+        }
+        
+        System.out.println(result.toString()); // Prints "ABC 123 XYZ"
+    }
+}
+Explanation:
+
+This code takes each character from the input string input, checks if it’s a letter, a digit, or something else, and processes it accordingly.
+
+It converts letters to uppercase and retains the digits as they are.
+
+For spaces and other characters, it adds a space in the result.
+
+29. System.out.print("\t"); — Tab character and other annotations
+The System.out.print() method is used to print to the console in Java. The \t inside it represents a tab character, which is used to create horizontal spacing.
+
+Other common annotations or escape characters in System.out.print():
+
+\n: New line – Moves to the next line.
+
+
+System.out.print("Hello\nWorld"); // Prints:
+// Hello
+// World
+\r: Carriage return – Moves the cursor back to the beginning of the line without advancing to the next line.
+
+
+System.out.print("Hello\rWorld"); // Prints "World" (overwrites "Hello")
+\\: Backslash – Prints a literal backslash (\).
+
+
+System.out.print("This is a backslash: \\"); // Prints: This is a backslash: \
+\": Double quotes – Prints double quotes (").
+
+
+System.out.print("He said, \"Hello!\""); // Prints: He said, "Hello!"
+
+30. Basic Java Operations
+Here are some other common Java operations and methods:
+
+1. Using Loops:
+Loops are essential for repeating tasks.
+
+Example:
+
+
+for (int i = 0; i < 5; i++) {
+    System.out.println(i); // Prints numbers 0 to 4
+}
+Explanation:
+
+The for loop runs the block of code inside it 5 times, printing numbers from 0 to 4.
+
+2. Working with Arrays:
+Arrays store multiple values of the same type.
+
+Example:
+
+
+int[] numbers = {1, 2, 3, 4, 5};
+for (int i = 0; i < numbers.length; i++) {
+    System.out.println(numbers[i]); // Prints each number
+}
+Explanation:
+
+This example iterates over an array of integers and prints each number.
+
+3. Using Math Class for Basic Calculations:
+Java's Math class provides useful functions for mathematical operations.
+
+Example:
+
+
+double result = Math.pow(2, 3); // 2 raised to the power of 3
+System.out.println(result); // Prints 8.0
+Explanation:
+
+Math.pow(base, exponent) returns the result of raising base to the power of exponent.
+
+4. String Concatenation:
+You can concatenate strings using + or StringBuilder.
+
+Example:
+
+
+String str1 = "Hello";
+String str2 = "World";
+String result = str1 + " " + str2; // Concatenates "Hello World"
+System.out.println(result); // Prints "Hello World"
+Explanation:
+
+The + operator combines strings together. StringBuilder can be used for more efficient concatenation, especially in loops.
+
+5. Using ArrayList for Dynamic Arrays:
+An ArrayList can grow or shrink in size, unlike arrays which have a fixed size.
+
+Example:
+
+
+ArrayList<String> list = new ArrayList<>();
+list.add("Java");
+list.add("is");
+list.add("fun");
+System.out.println(list); // Prints [Java, is, fun]
+Explanation:
+
+ArrayList allows you to dynamically add elements to a list.
+
+How to Use These Methods Together
+You can combine these methods to achieve your programming goals. For example, let's say you need to reverse a string and then split it into words:
+
+Example:
+
+
+String s = "Hello, World!";
+String reversed = new StringBuilder(s).reverse().toString(); // Reverse the string
+String[] words = reversed.split(" "); // Split the reversed string by spaces
+System.out.println(Arrays.toString(words)); // Prints the reversed words
+Explanation:
+
+First, the string s is reversed using StringBuilder.
+
+Then, it is split into words using split(" "), and the result is printed.
+
+In addition to Character.getNumericValue(c), Java provides several useful annotations or methods for handling characters, strings, and numeric values. Below, I'll explain some other annotations and related methods in Java, especially for characters and strings.
+
+1. Character.isDigit(c) — Check if a character is a digit
+This method checks whether the character is a digit (0-9).
+
+Example:
+
+
+char c = '5';
+boolean isDigit = Character.isDigit(c);
+System.out.println(isDigit); // Prints true
+Explanation:
+
+Character.isDigit(c) returns true if the character is a digit. If c is '5', it returns true. For characters like 'A', it would return false.
+
+2. Character.isLetter(c) — Check if a character is a letter
+This method checks whether the character is a letter (either uppercase or lowercase).
+
+Example:
+
+
+char c = 'A';
+boolean isLetter = Character.isLetter(c);
+System.out.println(isLetter); // Prints true
+Explanation:
+
+Character.isLetter(c) returns true if the character is a letter, and false if it’s not. In this case, 'A' is a letter, so the result is true.
+
+3. Character.isWhitespace(c) — Check if a character is a whitespace character
+This method checks if the character is a whitespace character (spaces, tabs, etc.).
+
+Example:
+
+
+char c = ' ';
+boolean isWhitespace = Character.isWhitespace(c);
+System.out.println(isWhitespace); // Prints true
+Explanation:
+
+Character.isWhitespace(c) returns true if the character is a whitespace (like space, tab, etc.). In this case, since the character is a space (' '), the result is true.
+
+4. Character.toUpperCase(c) — Convert a character to uppercase
+This method converts a given character to its uppercase form, if it's a letter.
+
+Example:
+
+
+char c = 'b';
+char upperC = Character.toUpperCase(c);
+System.out.println(upperC); // Prints 'B'
+Explanation:
+
+Character.toUpperCase(c) converts the character c to uppercase. If c is already uppercase, it remains the same.
+
+5. Character.toLowerCase(c) — Convert a character to lowercase
+This method converts a character to its lowercase form.
+
+Example:
+
+
+char c = 'A';
+char lowerC = Character.toLowerCase(c);
+System.out.println(lowerC); // Prints 'a'
+Explanation:
+
+Character.toLowerCase(c) converts the character c to lowercase. If c is already lowercase, it remains the same.
+
+6. Character.isUpperCase(c) — Check if a character is uppercase
+This method checks if the character is an uppercase letter.
+
+Example:
+
+
+char c = 'Z';
+boolean isUpper = Character.isUpperCase(c);
+System.out.println(isUpper); // Prints true
+Explanation:
+
+Character.isUpperCase(c) returns true if the character is an uppercase letter. In this case, 'Z' is uppercase, so the result is true.
+
+7. Character.isLowerCase(c) — Check if a character is lowercase
+This method checks if the character is a lowercase letter.
+
+Example:
+
+
+char c = 'z';
+boolean isLower = Character.isLowerCase(c);
+System.out.println(isLower); // Prints true
+Explanation:
+
+Character.isLowerCase(c) returns true if the character is a lowercase letter. In this case, 'z' is lowercase, so the result is true.
+
+8. Character.toString(c) — Convert a character to a string
+This method converts a single character into a string.
+
+Example:
+
+
+char c = 'a';
+String s = Character.toString(c);
+System.out.println(s); // Prints "a"
+Explanation:
+
+Character.toString(c) converts the character c into a string. So 'a' becomes the string "a".
+
+9. Character.forDigit(int digit, int radix) — Convert a digit to its corresponding character
+This method converts an integer digit to a character based on the given radix (like hexadecimal, octal, etc.).
+
+Example:
+
+
+int digit = 10;
+char c = Character.forDigit(digit, 16); // Convert 10 to a hexadecimal character
+System.out.println(c); // Prints 'a'
+Explanation:
+
+Character.forDigit(digit, radix) converts a numeric digit into its corresponding character in a particular base (radix). Here, it converts 10 into 'a' (in hexadecimal).
+
+10. String.valueOf(char c) — Convert a character to a string
+This method is similar to Character.toString(c), but it’s a method of the String class. It converts a character into a string.
+
+Example:
+
+
+char c = 'b';
+String s = String.valueOf(c);
+System.out.println(s); // Prints "b"
+Explanation:
+
+String.valueOf(c) converts the character c into a string. So 'b' becomes the string "b".
+
+Summary of Useful Character Operations
+Character to numeric value: Character.getNumericValue(c)
+
+Checking if a character is a digit: Character.isDigit(c)
+
+Checking if a character is a letter: Character.isLetter(c)
+
+Checking if a character is whitespace: Character.isWhitespace(c)
+
+Converting to uppercase: Character.toUpperCase(c)
+
+Converting to lowercase: Character.toLowerCase(c)
+
+Checking case: Character.isUpperCase(c) and Character.isLowerCase(c)
+
+Character to string: Character.toString(c) or String.valueOf(c)
+
+Digit to character: Character.forDigit(digit, radix)
+
+Example of Combining Some Methods Together
+Here’s a simple example using a combination of these methods:
+
+Example:
+
+
+public class CharacterExample {
+    public static void main(String[] args) {
+        String input = "abc 123 XYZ";
+        StringBuilder result = new StringBuilder();
+        
+        for (int i = 0; i < input.length(); i++) {
+            char c = input.charAt(i);
+            
+            if (Character.isLetter(c)) {
+                result.append(Character.toUpperCase(c)); // Convert letters to uppercase
+            } else if (Character.isDigit(c)) {
+                result.append(Character.getNumericValue(c)); // Add digit as its numeric value
+            } else {
+                result.append(' '); // Add a space for non-alphanumeric characters
+            }
+        }
+        
+        System.out.println(result.toString()); // Prints "ABC 123 XYZ"
+    }
+}
+Explanation:
+
+This code takes each character from the input string input, checks if it’s a letter, a digit, or something else, and processes it accordingly.
+
+It converts letters to uppercase and retains the digits as they are.
+
+For spaces and other characters, it adds a space in the result.
+
+
+
+1. String Manipulation
+Strings in Java are immutable, meaning that once a string is created, it cannot be changed. However, Java provides several methods to manipulate strings and perform common operations.
+
+Basic String Methods:
+length(): Returns the length of the string (number of characters).
+
+
+String s = "Hello";
+int len = s.length(); // 5
+charAt(int index): Returns the character at the specified index.
+
+
+char c = s.charAt(1); // 'e'
+substring(int start, int end): Extracts a substring from the string.
+
+
+String sub = s.substring(0, 3); // "Hel"
+toUpperCase(): Converts all characters of the string to uppercase.
+
+
+String upper = s.toUpperCase(); // "HELLO"
+toLowerCase(): Converts all characters of the string to lowercase.
+
+
+String lower = s.toLowerCase(); // "hello"
+contains(String str): Checks if the string contains a specific sequence of characters.
+
+
+boolean contains = s.contains("ell"); // true
+replace(CharSequence target, CharSequence replacement): Replaces all occurrences of a specified sequence of characters.
+
+
+String replaced = s.replace("e", "a"); // "Hallo"
+trim(): Removes leading and trailing spaces from the string.
+
+
+String trimmed = "   Hello   ".trim(); // "Hello"
+split(String regex): Splits the string into an array of substrings based on the provided delimiter.
+
+
+String sentence = "Java is fun";
+String[] words = sentence.split(" "); // ["Java", "is", "fun"]
+equals(String anotherString): Checks if two strings are equal.
+
+
+boolean isEqual = s.equals("Hello"); // true
+concat(String str): Concatenates another string to the current string.
+
+
+String concat = s.concat(" World"); // "Hello World"
+2. Numeric Operations
+Java provides a set of methods for working with numbers, whether you're dealing with primitive types or wrapper classes.
+
+Common Methods for Numbers:
+Math.pow(double base, double exponent): Raises a number to the power of another number.
+
+
+double result = Math.pow(2, 3); // 8.0 (2^3)
+Math.sqrt(double a): Returns the square root of a number.
+
+
+double sqrt = Math.sqrt(9); // 3.0
+Math.max(int a, int b): Returns the maximum of two numbers.
+
+
+int max = Math.max(5, 10); // 10
+Math.min(int a, int b): Returns the minimum of two numbers.
+
+
+int min = Math.min(5, 10); // 5
+Math.abs(int a): Returns the absolute value of a number.
+
+
+int abs = Math.abs(-10); // 10
+Math.random(): Returns a random number between 0.0 and 1.0.
+
+
+double randomValue = Math.random(); // Random value between 0.0 and 1.0
+Integer.parseInt(String s): Converts a string to an integer.
+
+
+int num = Integer.parseInt("123"); // 123
+Double.parseDouble(String s): Converts a string to a double.
+
+
+double num = Double.parseDouble("123.45"); // 123.45
+String.valueOf(int i): Converts a number to a string.
+
+
+String str = String.valueOf(123); // "123"
+3. Arrays Operations
+Arrays are a key component in Java for storing multiple values. Java provides several utilities for working with arrays.
+
+Common Array Operations:
+Arrays.sort(T[] a): Sorts the array.
+
+
+int[] numbers = {3, 1, 4, 1, 5};
+Arrays.sort(numbers); // [1, 1, 3, 4, 5]
+Arrays.toString(T[] a): Converts the array into a string representation.
+
+
+String[] words = {"Java", "Python", "C++"};
+System.out.println(Arrays.toString(words)); // [Java, Python, C++]
+Arrays.copyOfRange(T[] original, int from, int to): Copies a range of elements from one array to a new array.
+
+
+int[] copy = Arrays.copyOfRange(numbers, 1, 4); // [1, 3, 4]
+Arrays.fill(T[] a, T val): Fills an array with a specific value.
+
+
+int[] filledArray = new int[5];
+Arrays.fill(filledArray, 10); // [10, 10, 10, 10, 10]
+Arrays.equals(T[] a, T[] b): Checks if two arrays are equal.
+
+
+boolean isEqual = Arrays.equals(numbers, new int[]{1, 1, 3, 4, 5}); // true
+for-each loop: A more concise way to loop through arrays.
+
+
+for (int number : numbers) {
+    System.out.println(number); // Prints each number in the array
+}
+4. Common Collection Operations
+Collections, such as ArrayList, HashMap, and HashSet, provide flexibility when working with groups of objects in Java.
+
+ArrayList Example:
+add(E e): Adds an element to the list.
+
+
+ArrayList<String> list = new ArrayList<>();
+list.add("Java");
+list.add("Python");
+remove(int index): Removes the element at the specified index.
+
+
+list.remove(0); // Removes "Java"
+size(): Returns the number of elements in the list.
+
+
+int size = list.size(); // 1
+contains(Object o): Checks if the list contains the specified element.
+
+
+boolean contains = list.contains("Python"); // true
+HashMap Example:
+put(K key, V value): Adds a key-value pair to the map.
+
+
+HashMap<String, Integer> map = new HashMap<>();
+map.put("Java", 100);
+map.put("Python", 90);
+get(Object key): Retrieves the value associated with the specified key.
+
+
+int javaScore = map.get("Java"); // 100
+remove(Object key): Removes the key-value pair for the specified key.
+
+
+map.remove("Python"); // Removes Python from the map
+containsKey(Object key): Checks if the map contains a specific key.
+
+
+boolean hasJava = map.containsKey("Java"); // true
+HashSet Example:
+add(E e): Adds an element to the set.
+
+
+HashSet<String> set = new HashSet<>();
+set.add("Java");
+set.add("Python");
+remove(Object o): Removes the specified element from the set.
+
+
+set.remove("Java"); // Removes "Java"
+contains(Object o): Checks if the set contains the specified element.
+
+
+boolean contains = set.contains("Python"); // true
+5. Control Flow Operations
+Control flow structures (like if, for, while, etc.) are fundamental to programming in Java.
+
+if-else statement: Executes a block of code if a condition is true.
+
+
+if (x > 10) {
+    System.out.println("x is greater than 10");
+} else {
+    System.out.println("x is less than or equal to 10");
+}
+for loop: Iterates over a range of values.
+
+
+for (int i = 0; i < 10; i++) {
+    System.out.println(i); // Prints numbers from 0 to 9
+}
+while loop: Repeats a block of code as long as the condition is true.
+
+
+int i = 0;
+while (i < 10) {
+    System.out.println(i);
+    i++;
+}
+switch statement: Selects one of many code blocks to be executed based on the value of an expression.
+
+
+switch (day) {
+    case 1:
+        System.out.println("Monday");
+        break;
+    case 2:
+        System.out.println("Tuesday");
+        break;
+    default:
+        System.out.println("Invalid day");
+}
+Summary
+In Java, you’ll frequently encounter these methods and operations when working with strings, numbers, arrays, and collections. Mastering these fundamental tools allows you to write efficient and effective programs.
+
+Key Takeaways:
+Strings: Use methods like substring(), split(), toUpperCase(), replace(), etc., to manipulate and query strings.
+
+Numbers: Use Math methods like pow(), sqrt(), max(), and methods like Integer.parseInt() to manipulate and convert numeric values.
+
+Arrays: Sort, search, copy, and manipulate arrays using methods in the Arrays utility class.
+
+Collections: Use ArrayList, HashMap, and HashSet to store and manipulate groups of objects dynamically.
+
+In Java, there is no difference between the two syntaxes:
+
+int[] a;
+
+int a[];
+
+Both declare an array of integers. The two forms are equivalent in functionality, but the difference lies in the style and preference for readability.
+
+Explanation:
+int[] a;: This is the more modern and preferred syntax in Java. It explicitly places the [] next to the type (int), clearly indicating that a is an array of integers. This makes it more intuitive and easier to understand, especially when reading complex variable declarations.
+
+int a[];: This is a more traditional syntax, borrowed from C and C++ programming. It places the [] after the variable name (a), which might make it appear like a is a normal variable of type int and that the array is a modifier. However, in Java, it still declares a as an array of integers, just like int[] a;.
+
+Key Points:
+Both are valid: Both syntaxes are valid and do the same thing.
+
+Preferred style: int[] a; is the preferred style in Java because it clearly associates the [] with the type (int[]), indicating that a is an array of integers.
+
+Array initialization: Both can be used the same way when initializing the array. For example:
+
+
+int[] a = new int[10]; // Preferred
+int a[] = new int[10]; // Valid, but less common
+Example:
+
+public class ArrayExample {
+    public static void main(String[] args) {
+        // Using int[] a
+        int[] a = {1, 2, 3, 4, 5};
+        System.out.println(a[0]); // Outputs 1
+
+        // Using int a[]
+        int b[] = {6, 7, 8, 9, 10};
+        System.out.println(b[0]); // Outputs 6
+    }
+}
+Conclusion:
+int[] a; and int a[]; are functionally identical, and the choice between them is mostly a matter of style.
+
+int[] a; is preferred because it clearly indicates that a is an array of integers, making the code easier to read and understand, especially for those who are newer to Java.
+
+i++ & ++i 
+
+
+The expressions i++ and ++i both increment the value of the variable i by 1, but they differ in when the increment operation occurs in relation to the use of the variable. These are called post-increment (i++) and pre-increment (++i).
+
+1. Post-increment (i++):
+What it does: The value of i is used first, and then it is incremented after the expression is evaluated.
+
+Usage: i++ returns the current value of i and then increments i by 1.
+
+Example:
+
+
+int i = 5;
+int result = i++; // result gets the current value of i (5), then i is incremented to 6
+System.out.println("result: " + result); // 5
+System.out.println("i: " + i); // 6
+Step-by-step:
+
+result is assigned the current value of i (5).
+
+Then, i is incremented (i becomes 6).
+
+2. Pre-increment (++i):
+What it does: The value of i is incremented first, and then the new value of i is used in the expression.
+
+Usage: ++i increments i first and then returns the new value of i.
+
+Example:
+
+
+int i = 5;
+int result = ++i; // i is incremented to 6, then result gets the new value of i (6)
+System.out.println("result: " + result); // 6
+System.out.println("i: " + i); // 6
+Step-by-step:
+
+i is incremented (i becomes 6).
+
+result is assigned the new value of i (6).
+
+Summary of the Difference:
+i++ (Post-increment): Returns the original value of i before it is incremented.
+
+++i (Pre-increment): Increments i first, and then returns the updated value of i.
+
+When to Use Each:
+i++: Useful when you want to use the current value of i in an expression and then increment it.
+
+++i: Useful when you want to increment i and then immediately use the incremented value.
+
+Example in a Loop:
+Consider a loop where both might be used:
+
+Post-increment (i++):
+
+
+for (int i = 0; i < 5; i++) {
+    System.out.println("i++: " + i); // Prints 0, 1, 2, 3, 4
+}
+Pre-increment (++i):
+
+
+for (int i = 0; i < 5; ++i) {
+    System.out.println("++i: " + i); // Prints 1, 2, 3, 4, 5
+}
+In both cases, the loop runs 5 times, but the value printed is different based on whether the increment happens before or after the value is used in the loop body.
+
+With post-increment (i++), i is used first, then incremented.
+
+With pre-increment (++i), i is incremented first, then used.
+
+Conclusion:
+The practical difference between i++ and ++i becomes more evident in complex expressions or when the result of the incremented value is immediately used. Otherwise, in simple loops, they are often interchangeable.
+
+
+1. Arithmetic Operators
+Java provides basic arithmetic operators that can help you achieve simple operations to add differences, like addition, subtraction, multiplication, and division. Here's how you can use them:
+
+Addition (+): Adds two values.
+
+Subtraction (-): Finds the difference between two values.
+
+
+int a = 10;
+int b = 5;
+int sum = a + b;        // sum = 15
+int difference = a - b; // difference = 5
+2. Difference Using Increment/Decrement Operators
+The increment (++) and decrement (--) operators can add or subtract by 1 in a very concise way. This is especially useful in loops, counters, and when managing indices.
+
+Pre-increment and Post-increment:
+
+int i = 5;
+int preIncrement = ++i; // Increments i first, then assigns to preIncrement (i = 6)
+int postIncrement = i++; // Assigns current i to postIncrement, then increments (i = 7)
+Pre-decrement and Post-decrement:
+
+int j = 10;
+int preDecrement = --j; // Decrements j first, then assigns to preDecrement (j = 9)
+int postDecrement = j--; // Assigns current j to postDecrement, then decrements (j = 8)
+3. Using Math.abs() to Handle Differences
+If you need to calculate the absolute difference between two numbers (i.e., regardless of which number is larger), you can use Math.abs():
+
+
+int a = 5;
+int b = 10;
+int difference = Math.abs(a - b); // difference = 5
+This ensures that the result is always a positive number, regardless of whether a or b is larger.
+
+4. Using Math.max() and Math.min() to Manage Differences
+You can also use Math.max() or Math.min() to find the larger or smaller value, and then calculate the difference.
+
+
+int a = 5;
+int b = 10;
+int maxValue = Math.max(a, b);  // maxValue = 10
+int minValue = Math.min(a, b);  // minValue = 5
+int difference = maxValue - minValue; // difference = 5
+This can be useful for handling ranges or comparing values.
+
+5. Difference Between Two Dates Using java.time
+If you're dealing with dates and need to calculate the difference between them, you can use the java.time package.
+
+Example with LocalDate:
+
+import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
+
+LocalDate startDate = LocalDate.of(2025, 4, 1);
+LocalDate endDate = LocalDate.of(2025, 4, 10);
+
+long daysBetween = ChronoUnit.DAYS.between(startDate, endDate); // 9 days
+System.out.println("Days difference: " + daysBetween);
+You can use this technique to calculate differences between dates in terms of days, months, or years.
+
+6. Difference in Arrays (Element-wise Difference)
+If you want to find the difference between elements of two arrays, you can iterate through them and subtract corresponding elements.
+
+
+int[] array1 = {10, 20, 30};
+int[] array2 = {1, 2, 3};
+int[] differences = new int[array1.length];
+
+for (int i = 0; i < array1.length; i++) {
+    differences[i] = array1[i] - array2[i];
+}
+
+System.out.println(Arrays.toString(differences)); // [9, 18, 27]
+This technique helps you calculate the difference between corresponding elements in two arrays.
+
+7. Difference in Strings (Lexicographical Comparison)
+If you want to compare two strings to find out which one is lexicographically greater or smaller, you can use compareTo() method. It returns a positive, negative, or zero value depending on whether one string is greater, smaller, or equal to another.
+
+
+String s1 = "apple";
+String s2 = "banana";
+int result = s1.compareTo(s2); // Returns a negative number because "apple" is less than "banana"
+This can be useful if you need to determine the lexicographical difference between strings or sort them.
+
+8. Handling Differences in Floating-Point Numbers
+When working with floating-point numbers, due to precision issues, you should use a tolerance (epsilon) when comparing differences:
+
+
+double a = 0.1 + 0.2;
+double b = 0.3;
+double epsilon = 1e-9;
+
+if (Math.abs(a - b) < epsilon) {
+    System.out.println("a and b are effectively equal.");
+}
+This ensures you're comparing floating-point numbers in a way that accounts for small rounding errors.
+
+9. Using for or while Loops for Calculating Differences
+You can loop through elements or ranges and add/subtract values depending on the logic you're applying. Here's an example of calculating the sum of differences between consecutive numbers in an array:
+
+
+int[] numbers = {1, 4, 7, 10};
+int totalDifference = 0;
+
+for (int i = 1; i < numbers.length; i++) {
+    totalDifference += numbers[i] - numbers[i - 1];
+}
+
+System.out.println("Total difference: " + totalDifference); // 9 (3 + 3 + 3)
+This technique can be useful in scenarios where you need to calculate cumulative differences.
+
+10. Using Stream to Calculate Differences
+If you're using Java 8 or later, you can use Streams to handle collections and find differences between elements.
+
+
+import java.util.Arrays;
+
+int[] numbers = {10, 20, 30};
+int totalDifference = Arrays.stream(numbers)
+                             .skip(1) // Start from the second element
+                             .reduce(0, (a, b) -> b - a);
+
+System.out.println("Total difference: " + totalDifference); // 20 (30 - 10)
+This approach uses the power of streams for processing collections in a functional style.
+
+Summary of Key Methods/Operators for Adding Differences:
+Arithmetic Operators (+, -): Basic addition and subtraction of numbers.
+
+Increment/Decrement Operators (++, --): For adding or subtracting 1.
+
+Math.abs(): For absolute differences.
+
+Math.max() / Math.min(): To calculate difference between the maximum or minimum values.
+
+java.time: For calculating differences between dates.
+
+Array Manipulation: Subtract corresponding elements of arrays.
+
+String Comparison: Using compareTo() to find lexicographical differences.
+
+Floating-Point Comparison: Use epsilon to handle precision issues.
+
+Loops: Iterating through ranges or arrays to calculate differences.
+
+Streams: For functional-style processing and difference calculations in collections.
+
+*********
+
+1. Basic Java Concepts
+Start with understanding the core basics. These are fundamental and will help you as you progress to more advanced topics:
+
+Variables and Data Types
+Primitive types: int, char, float, boolean, etc.
+
+Reference types: Objects, Arrays, Strings.
+
+Operators
+Arithmetic Operators: +, -, *, /, % (modulo).
+
+Relational Operators: ==, !=, >, <, >=, <= (comparisons).
+
+Logical Operators: && (AND), || (OR), ! (NOT).
+
+Control Flow
+Conditionals: if, else, switch.
+
+Loops: for, while, do-while.
+
+2. Object-Oriented Programming (OOP)
+This is the cornerstone of Java, and everything in Java is centered around classes and objects.
+
+Classes and Objects
+Class: A blueprint for objects.
+
+Object: An instance of a class.
+
+Methods
+Defining methods: Functions inside a class.
+
+Return types: Methods can return values or be void (nothing).
+
+Parameters: How data is passed into methods.
+
+Encapsulation
+Access modifiers: private, public, protected, default.
+
+Getter and Setter methods: Access and modify private fields.
+
+Inheritance
+Superclass and subclass: Extending a class to create a new one.
+
+Method overriding: Changing behavior of a method in a subclass.
+
+Polymorphism
+Method Overloading: Same method name but different parameters.
+
+Method Overriding: Changing the implementation in a subclass.
+
+Abstraction
+Abstract classes: Cannot be instantiated but can be inherited.
+
+Interfaces: Contracts that classes must follow.
+
+Composition
+Has-a relationship: Using objects as fields within other objects.
+
+3. Core Java Libraries and APIs
+As you grow more comfortable with the basics and OOP, you'll use the Java standard library for everyday tasks:
+
+Collections Framework
+List, Set, Map: Handling groups of objects.
+
+ArrayList, HashMap, HashSet: Practical implementations of collections.
+
+Iterator: For iterating over collections.
+
+Strings
+String manipulation: substring(), replace(), split(), charAt().
+
+StringBuilder: For efficient string concatenation.
+
+File Handling
+Reading from and writing to files: BufferedReader, BufferedWriter.
+
+File I/O with streams: FileInputStream, FileOutputStream.
+
+Exception Handling
+Try-catch blocks: Handling errors gracefully.
+
+Throwing exceptions: Using throw and throws to create custom exceptions.
+
+4. Advanced Java Concepts
+Once you are comfortable with the basics, dive into more advanced topics:
+
+Java Concurrency
+Threads: Running multiple parts of code at the same time.
+
+Synchronization: Ensuring thread safety.
+
+Executors: Managing threads more easily.
+
+Streams and Lambdas (Java 8+)
+Streams: Processing sequences of elements (filter, map, reduce).
+
+Lambdas: Shorter syntax for functions (e.g., x -> x * 2).
+
+Functional interfaces: Interfaces with a single abstract method.
+
+Java Reflection
+Reflection: Inspecting classes and objects at runtime.
+
+Annotations: Using metadata in code.
+
+5. Best Practices
+As you continue to learn Java, applying good practices will make your code easier to understand and maintain:
+
+Code Readability: Use clear variable names, proper indentation, and comments.
+
+Design Patterns: Common solutions to recurring problems (e.g., Singleton, Factory).
+
+Testing: Writing unit tests with tools like JUnit.
+
+Version Control: Using Git to manage code changes and collaborate.
+
+Let's Start with an Example Walkthrough:
+I know it can be overwhelming, so let’s break it down into manageable steps. We’ll start with something basic and build it up.
+
+Task: Calculate the sum of all even numbers from 1 to 100.
+Step 1: Basic loop
+
+We can use a for loop to iterate through numbers from 1 to 100.
+
+Condition: If a number is even (i.e., divisible by 2), we add it to the sum.
+
+
+public class SumEvenNumbers {
+    public static void main(String[] args) {
+        int sum = 0; // To store the sum of even numbers
+
+        // Loop through numbers from 1 to 100
+        for (int i = 1; i <= 100; i++) {
+            if (i % 2 == 0) { // Check if the number is even
+                sum += i; // Add the even number to the sum
+            }
+        }
+
+        // Output the result
+        System.out.println("Sum of even numbers from 1 to 100: " + sum);
+    }
+}
+Step 2: Explanation
+
+Variables: sum holds the cumulative sum of even numbers.
+
+For Loop: Iterates from 1 to 100.
+
+Condition (if (i % 2 == 0)): Checks if the current number is divisible by 2 (even number).
+
+Addition: Each even number is added to the sum.
+
+Step 3: Output
+
+The program prints the sum of all even numbers from 1 to 100.
+
+What you learned: This program gives you exposure to:
+
+Loops (for iteration).
+
+Conditionals (to check even numbers).
+
+Basic arithmetic (addition).
+
+**********
+
+1. Variables and Data Types
+Concept
+In Java, variables are used to store data that can be manipulated during program execution. Each variable has a specific data type that determines what kind of data it can hold.
+
+Common data types:
+
+Primitive types: int, double, char, boolean
+
+Reference types: Objects, Arrays, Strings
+
+Exercise
+Create a program that:
+
+Declares a variable of each of the primitive types.
+
+Initializes them with appropriate values.
+
+Print each variable to the console.
+
+
+public class DataTypesExample {
+    public static void main(String[] args) {
+        int myInt = 10;            // Integer type
+        double myDouble = 5.5;     // Floating-point type
+        char myChar = 'A';         // Character type
+        boolean myBool = true;     // Boolean type
+        
+        // Print all values
+        System.out.println("Integer: " + myInt);
+        System.out.println("Double: " + myDouble);
+        System.out.println("Character: " + myChar);
+        System.out.println("Boolean: " + myBool);
+    }
+}
+2. Control Flow (if-else and switch)
+Concept
+Control flow statements allow you to make decisions in your code. You can check conditions using if-else and switch statements to control the flow of your program.
+
+if-else: Used to check if a condition is true or false and execute code accordingly.
+
+switch: Used to evaluate one variable or expression against multiple possible values.
+
+Exercise
+Create a program that:
+
+Takes an integer input from the user (1-3).
+
+Use a switch statement to print the corresponding message for each number (1: "Apple", 2: "Banana", 3: "Cherry").
+
+If the number is not 1, 2, or 3, print "Invalid fruit number".
+
+
+import java.util.Scanner;
+
+public class FruitSwitchExample {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a number (1-3): ");
+        int number = scanner.nextInt();
+
+        switch (number) {
+            case 1:
+                System.out.println("Apple");
+                break;
+            case 2:
+                System.out.println("Banana");
+                break;
+            case 3:
+                System.out.println("Cherry");
+                break;
+            default:
+                System.out.println("Invalid fruit number");
+        }
+    }
+}
+3. Loops (for, while, do-while)
+Concept
+Loops are used to repeat a block of code multiple times:
+
+for loop: Ideal when you know the number of iterations.
+
+while loop: Useful when you want to repeat as long as a condition is true.
+
+do-while loop: Similar to the while loop, but it ensures the block runs at least once.
+
+Exercise
+Create a program that:
+
+Prints the numbers 1 to 10 using a for loop.
+
+Then, using a while loop, print the even numbers between 2 and 10.
+
+Lastly, use a do-while loop to print numbers 11 to 15.
+
+
+public class LoopsExample {
+    public static void main(String[] args) {
+        // Using a for loop
+        System.out.println("For Loop:");
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(i);
+        }
+
+        // Using a while loop
+        System.out.println("While Loop:");
+        int j = 2;
+        while (j <= 10) {
+            System.out.println(j);
+            j += 2;  // Increment by 2
+        }
+
+        // Using a do-while loop
+        System.out.println("Do-While Loop:");
+        int k = 11;
+        do {
+            System.out.println(k);
+            k++;
+        } while (k <= 15);
+    }
+}
+4. Methods and Functions
+Concept
+In Java, methods are blocks of code that perform specific tasks. They can accept parameters and return values.
+
+void methods: Do not return a value.
+
+Returning methods: Return a specific type of value (e.g., int, double).
+
+Exercise
+Create a program that:
+
+Defines a method addNumbers(int a, int b) that returns the sum of a and b.
+
+Defines a printMessage() method that prints a simple message ("Hello, World!").
+
+Calls both methods from the main method.
+
+
+public class MethodsExample {
+    public static void main(String[] args) {
+        int result = addNumbers(10, 20);  // Calling the addNumbers method
+        System.out.println("Sum: " + result);
+
+        printMessage();  // Calling the printMessage method
+    }
+
+    // Method to add two numbers
+    public static int addNumbers(int a, int b) {
+        return a + b;
+    }
+
+    // Method to print a message
+    public static void printMessage() {
+        System.out.println("Hello, World!");
+    }
+}
+5. Arrays
+Concept
+Arrays in Java are used to store multiple values of the same type in a single variable. You can access array elements using an index.
+
+Single-dimensional arrays: A simple list of values.
+
+Multi-dimensional arrays: Arrays of arrays.
+
+Exercise
+Create a program that:
+
+Declares an array of 5 integers.
+
+Initializes the array with values.
+
+Loops through the array and prints each element.
+
+Then, find and print the sum of all elements.
+
+
+public class ArraysExample {
+    public static void main(String[] args) {
+        int[] numbers = {1, 2, 3, 4, 5};
+
+        // Print each element of the array
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.println("Element " + i + ": " + numbers[i]);
+        }
+
+        // Calculate the sum of the array elements
+        int sum = 0;
+        for (int num : numbers) {
+            sum += num;
+        }
+        System.out.println("Sum of array elements: " + sum);
+    }
+}
+6. String Manipulation
+Concept
+Strings in Java are objects that represent sequences of characters. Common operations include:
+
+substring(): Extracts part of a string.
+
+replace(): Replaces characters in a string.
+
+split(): Splits a string into an array based on a delimiter.
+
+Exercise
+Create a program that:
+
+Takes a sentence as input.
+
+Splits the sentence into words and prints each word on a new line.
+
+Replaces a specific word in the sentence (e.g., replace "Java" with "Python").
+
+
+import java.util.Scanner;
+
+public class StringExample {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a sentence: ");
+        String sentence = scanner.nextLine();
+
+        // Split the sentence into words
+        String[] words = sentence.split(" ");
+        for (String word : words) {
+            System.out.println(word);
+        }
+
+        // Replace a word in the sentence
+        String updatedSentence = sentence.replace("Java", "Python");
+        System.out.println("Updated Sentence: " + updatedSentence);
+    }
+}

@@ -1,13 +1,12 @@
-package find_Common_Elements_In_An_Array;
+package array_Coding_Questions_Assignment_Common_elements_in_both_the_Arrays;
 
 import java.util.HashSet;
 
-public class Find_Common_Elements_Between_two_Arrays_2 {
+public class Common_Numbers_in_both_the_Arrays_Set_2 {
 
 	public static void main(String[] args) {
 
 		int[] a = { 1, 2, 3 };
-	//	int[] b = { 1, 3, 1 };
 		int[] b = { 4, 8, 10 };
 
 		HashSet newobj = new HashSet();

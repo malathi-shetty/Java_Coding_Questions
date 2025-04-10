@@ -1,6 +1,6 @@
-package reverse_first_and_last_digit_of_a_number_without_converting_to_string;
+package SwapFirstLastDigit_of_a_number;
 
-public class Reverse_first_and_last_digit_of_a_number_without_converting_to_string_3 {
+public class SwapFirstLastDigit_3 {
 
 	public static void main(String[] args) {
 		 int number = 12345;

@@ -1,11 +1,11 @@
-package find_additional_element_in_list_while_comparing_2_List;
+package array_Coding_Questions_Assignment_Common_elements_in_both_the_Arrays;
 
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public class Find_additional_element_in_list_while_comparing_2_List_1_Using_List_and_Set {
+public class String_CommonAndAdditional_Using_List_and_Set {
 
 	public static void main(String[] args) {
 		

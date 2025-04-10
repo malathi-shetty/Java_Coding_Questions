@@ -1,4 +1,4 @@
-package swap_the_two_numbers_using_the_substring_method;
+package swap_Two_Numbers_5_Ways;
 
 public class Swap_the_two_numbers_using_the_substring_method {
 

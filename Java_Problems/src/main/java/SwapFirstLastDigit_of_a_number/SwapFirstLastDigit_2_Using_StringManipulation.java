@@ -1,6 +1,6 @@
-package reverse_first_and_last_digit_of_a_number_without_converting_to_string;
+package SwapFirstLastDigit_of_a_number;
 
-public class Reverse_first_and_last_digit_of_a_number_without_converting_to_string_2_learn {
+public class SwapFirstLastDigit_2_Using_StringManipulation {
 
 	public static void main(String[] args) {
 		// Test cases
@@ -15,6 +15,7 @@ public class Reverse_first_and_last_digit_of_a_number_without_converting_to_stri
 		// int num = 7;
 		// int num = -5;
 
+		System.out.println("num: " + num);
 		int result = reverseFirstAndLastDigit(num);
 		System.out.println("Result: " + result); // Expected Output: -52341 (for input -12345)
 	}
@@ -57,6 +58,12 @@ public class Reverse_first_and_last_digit_of_a_number_without_converting_to_stri
 	}
 
 }
+
+/*output:
+ * 
+ * num: -12345
+Result: -52341
+ */
 
 /*
  * 

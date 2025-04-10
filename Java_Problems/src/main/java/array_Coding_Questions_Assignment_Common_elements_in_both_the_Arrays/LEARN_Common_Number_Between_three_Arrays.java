@@ -1,8 +1,8 @@
-package find_Common_Elements_In_An_Array;
+package array_Coding_Questions_Assignment_Common_elements_in_both_the_Arrays;
 
 import java.util.HashSet;
 
-public class Find_Common_Elements_Between_all_three_Arrays_4 {
+public class LEARN_Common_Number_Between_three_Arrays {
 
 	public static void main(String[] args) {
 		int[] a = { 1, 2, 3 };
@@ -42,6 +42,22 @@ public class Find_Common_Elements_Between_all_three_Arrays_4 {
 
 	}
 }
+
+/* Output:
+ * 
+ * Elements in first Array - a: [1, 2, 3]
+ * 
+Common Elements in both Arrays - a & b: [2]
+
+Common Elements in both Arrays - a & c: [1, 2]
+
+Common Elements in all three Arrays: [2]
+
+
+*/
+ 
+
+
 /*
  * Add Elements to newobj: The newobj HashSet contains all elements from array a.
  * 

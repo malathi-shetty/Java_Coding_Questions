@@ -2,6 +2,14 @@ package whiteSpace;
 
 public class Character_Reverse_Preserve_White_Spaces_in_a_String_1_LEARN {
 
+	public static void main(String[] args) {
+		reverseString("I am Not a String");
+
+		reverseString("JAVA JSP ANDROID");
+
+		reverseString("1 22 333 4444 55555");
+	}
+	
 	static void reverseString(String s) {
 		// Converting inputString i.e a to char array 'inputStringArray' i.e s
 
@@ -47,13 +55,7 @@ public class Character_Reverse_Preserve_White_Spaces_in_a_String_1_LEARN {
 		System.out.println(s + " ---> " + String.valueOf(r));
 	}
 
-	public static void main(String[] args) {
-		reverseString("I am Not a String");
-
-		reverseString("JAVA JSP ANDROID");
-
-		reverseString("1 22 333 4444 55555");
-	}
+	
 }
 
 

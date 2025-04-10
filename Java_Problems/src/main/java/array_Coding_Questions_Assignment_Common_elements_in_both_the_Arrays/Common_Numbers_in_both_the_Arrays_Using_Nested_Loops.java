@@ -3,7 +3,7 @@ package array_Coding_Questions_Assignment_Common_elements_in_both_the_Arrays;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Array_Coding_Questions_Assignment_Common_elements_in_both_the_Arrays_Using_Nested_Loops {
+public class Common_Numbers_in_both_the_Arrays_Using_Nested_Loops {
 
 	public static void main(String[] args) {
 		// Common elements in both the Arrays

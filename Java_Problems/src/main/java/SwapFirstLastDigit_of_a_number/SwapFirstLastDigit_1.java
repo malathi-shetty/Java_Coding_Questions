@@ -1,6 +1,6 @@
-package reverse_first_and_last_digit_of_a_number_without_converting_to_string;
+package SwapFirstLastDigit_of_a_number;
 
-public class Reverse_first_and_last_digit_of_a_number_without_converting_to_string_1_learn {
+public class SwapFirstLastDigit_1 {
 
 	public static int swapFirstLast(int num) {
 
@@ -62,6 +62,14 @@ public class Reverse_first_and_last_digit_of_a_number_without_converting_to_stri
 	}
 
 }
+
+/*output:
+ * 
+ * Number before swapping first and last digit: -12345
+ * 
+Number after swapping first and last digit: -52341
+
+ */
 
 /*
  * 
