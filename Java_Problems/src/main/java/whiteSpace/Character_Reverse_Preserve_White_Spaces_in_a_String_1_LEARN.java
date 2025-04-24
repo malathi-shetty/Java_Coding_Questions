@@ -13,46 +13,46 @@ public class Character_Reverse_Preserve_White_Spaces_in_a_String_1_LEARN {
 	static void reverseString(String s) {
 		// Converting inputString i.e a to char array 'inputStringArray' i.e s
 
-		char[] a = s.toCharArray();
+		char[] a = s.toCharArray(); //	Convert input string into a char array
 
 		// Defining a new char array 'resultArray' i.e result with same size as
 		// inputStringArray
 
-		char[] r = new char[a.length];
+		char[] r = new char[a.length]; //Create result array of same length
 
 		// First for loop :
 		// For every space in the 'inputStringArray',
 		// we insert spaces in the 'resultArray' at the corresponding positions
 
-		for (int i = 0; i < a.length; i++) {
-			if (a[i] == ' ') {
-				r[i] = ' ';
+		for (int i = 0; i < a.length; i++) { // Loop through each character
+			if (a[i] == ' ') { //	If current char is space...
+				r[i] = ' ';    // ...copy it to same position in result array
 			}
 		}
 
 		// Initializing 'j' with length of resultArray
 
-		int j = r.length - 1;
+		int j = r.length - 1; // Start filling result from end
 
 		// Second for loop :
 		// we copy every non-space character of inputStringArray
 		// from first to last at 'j' position of resultArray
 
-		for (int i = 0; i < a.length; i++) {
-			if (a[i] != ' ') {
+		for (int i = 0; i < a.length; i++) { //Loop again to reverse non-space characters
+			if (a[i] != ' ') { //Process only non-space characters
 				// If resultArray already has space at index j then decrementing 'j'
 
-				if (r[j] == ' ') {
-					j--;
+				if (r[j] == ' ') { //Skip preserved spaces in result
+					j--;  
 				}
 
-				r[j] = a[i];
+				r[j] = a[i];   //Assign character to the correct reversed position
 
-				j--;
+				j--;           //Move backward in result array
 			}
 		}
 
-		System.out.println(s + " ---> " + String.valueOf(r));
+		System.out.println(s + " ---> " + String.valueOf(r)); //Print the original and modified strings
 	}
 
 	

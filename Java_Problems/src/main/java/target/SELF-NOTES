@@ -1,0 +1,139 @@
+What is a Consecutive Sequence?
+A consecutive sequence is a set of numbers that come one after another, without skipping any number, and in order.
+
+🧠 In simpler terms:
+The numbers increase (or decrease) by exactly 1.
+
+No gaps allowed.
+
+✅ Examples of Consecutive Sequences:
+📈 Increasing:
+[1, 2, 3, 4, 5] ✅
+
+[7, 8, 9] ✅
+
+[10, 11, 12, 13, 14] ✅
+
+📉 Decreasing (also considered consecutive in some cases):
+[5, 4, 3, 2, 1] ✅ (if order doesn't matter)
+
+[3, 2, 1] ✅
+
+❌ Not Consecutive:
+[1, 3, 4] ❌ (because 2 is missing)
+
+[10, 12, 13] ❌ (because 11 is missing)
+
+[1, 2, 2, 3] ❌ (duplicate breaks the sequence)
+
+"Find the longest consecutive sequence in an array."
+
+Input: [100, 4, 200, 1, 3, 2]
+
+Output: 4 (because 1, 2, 3, 4 is the longest sequence)
+
+🚀 Bonus: Real-life examples
+Days of the week: Monday, Tuesday, Wednesday... ✅
+
+Consecutive numbers on a lottery ticket: 12, 13, 14, 15 ✅
+
+******
+
+Suggested Order to Study:
+✅ Target_Sum → Simple intro to pairs and hashing
+
+✅ Target_Sum_indices → Learn how to return indices using hashmap
+
+✅ AllPairSums → How to track all unique pairs
+
+✅ Consecutive_Sequence_having_maximum_Sum → For sequences and running sums
+
+✅ Consecutive_Sequence_having_Sum_EqualTo_Target → Brute force range sum
+
+✅ Consecutive_Triplets_sum_Equals_target → Practice fixed-length sliding window
+
+✅ Consecutive_Pairs_sum_Equals_target → Basic consecutive element logic
+
+✅ Target_NumberOccurrence_Using_ArrayList → ArrayList traversal
+
+✅ NonContinous_Sequence_having_Sums_upto_target → Recursive thinking & backtracking
+
+****
+
+🔹 Day 1: Core Two-Sum Patterns (Foundation)
+Focus: Pairs with a target sum using HashMaps and Lists
+Importance: ⭐⭐⭐⭐⭐ (Common in coding rounds)
+
+🔸 Target_Sum — Basic pair finding using list
+
+🔸 Target_Sum_indices — Classic Two Sum using HashMap (MUST KNOW)
+
+🔸 AllPairSums — All unique pairs + index tracking (shows deep understanding)
+
+🧠 Practice Tip:
+
+Change the target to see how pairs change
+
+Try with negative numbers and duplicates
+
+🔹 Day 2: Consecutive Sequences (Max Sum / Exact Sum)
+Focus: Subarray sums and windowing
+Importance: ⭐⭐⭐⭐
+
+🔸 Consecutive_Sequence_having_maximum_Sum — Find longest consecutive increasing numbers with max sum (like Kadane’s)
+
+🔸 Consecutive_Sequence_having_Sum_EqualTo_Target — Find all consecutive subsequences summing to target (brute-force approach)
+
+🧠 Practice Tip:
+
+Can you convert #5 to a sliding window for optimization?
+
+🔹 Day 3: Fixed Size Windows / Triplets / Pairs
+Focus: Triplets and sliding windows
+Importance: ⭐⭐⭐
+
+🔸 Consecutive_Triplets_sum_Equals_target — Check sum of every 3 consecutive elements
+
+🔸 Consecutive_Pairs_sum_Equals_target — Pairs of adjacent elements with a sum
+
+🧠 Practice Tip:
+
+Try changing the size: from triplets to quadruplets
+
+Try writing a generalized version that takes size k
+
+🔹 Day 4: Collections + Count Logic
+Focus: Working with Java Collections
+Importance: ⭐⭐
+
+🔸 Target_NumberOccurrence_Using_ArrayList — Count how many times a number appears in a list
+
+🧠 Practice Tip:
+
+Try converting this to a frequency map using HashMap
+
+Practice both ArrayList and HashMap usage
+
+🔹 Day 5: Recursion & Backtracking
+Focus: Non-continuous subset sums
+Importance: ⭐⭐⭐⭐⭐ (Often asked for depth of understanding)
+
+🔸 NonContinous_Sequence_having_Sums_upto_target — All subsets whose sum = target
+
+🧠 Practice Tip:
+
+Try converting recursion to iteration (if possible)
+
+Try variations: find only 1 valid subset, or all unique ones
+
+🧾 By the End of 5 Days:
+✅ You’ll have mastered:
+
+HashMap + Two Sum variants
+
+Consecutive vs non-consecutive sequences
+
+Sliding windows, brute-force, and optimized patterns
+
+Basic recursion and subset logic
+
